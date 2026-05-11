@@ -1,6 +1,5 @@
 requests
 python-dotenv
-google-generativeai
-Pillow
-linkedin-api
 openai
+huggingface_hub
+Pillow
