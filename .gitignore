@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+
+# Environment Variables
+.env
+
+# IDE Files
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Generated Assets
+assets/post.png
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python Build
+build/
+dist/
+*.egg-info/
+
+# Secrets
+secrets.json
+credentials.json
+
+# Token Scripts
+get_access_token.py
+get_linkedin_token.py
+get_urn.py
