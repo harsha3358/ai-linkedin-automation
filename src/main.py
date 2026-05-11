@@ -1,10 +1,7 @@
 from scrape_news import fetch_ai_news
 from rank_news import rank_articles
-
 from generate_post import generate_content
-
 from generate_image import generate_image
-
 from post_linkedin import post_to_linkedin
 
 
@@ -18,34 +15,27 @@ def run_pipeline():
 
     best_article = rank_articles(articles)
 
-    print("\nBest Article:\n")
+    print("Best Article:")
     print(best_article)
 
-    print("\nGenerating AI content...\n")
+    print("Generating AI content...")
 
     content = generate_content(best_article)
 
     linkedin_post = content["linkedin_post"]
-
     image_prompt = content["image_prompt"]
 
-    print("\nLINKEDIN POST:\n")
     print(linkedin_post)
 
-    print("\nIMAGE PROMPT:\n")
-    print(image_prompt)
+    print("Generating image...")
 
-    print("\nGenerating cinematic image...\n")
+    generate_image(image_prompt)
 
-    image_path = generate_image(image_prompt)
-
-    print(f"\nImage saved at: {image_path}")
-
-    print("\nPosting to LinkedIn...\n")
+    print("Posting to LinkedIn...")
 
     post_to_linkedin(linkedin_post)
 
-    print("\nDONE 🚀")
+    print("DONE 🚀")
 
 
 if __name__ == "__main__":

@@ -1,22 +1,23 @@
 import os
 import requests
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = os.getenv("LINKEDIN_ACCESS_TOKEN")
+TOKEN = os.getenv("LINKEDIN_ACCESS_TOKEN", "").strip()
+PERSON_URN = os.getenv("LINKEDIN_PERSON_URN", "").strip()
 
-PERSON_URN = os.getenv("LINKEDIN_PERSON_URN")
-
-headers = {
-    "Authorization": f"Bearer {TOKEN}",
-    "X-Restli-Protocol-Version": "2.0.0",
-    "Content-Type": "application/json"
-}
 
 def post_to_linkedin(text):
 
-    post_data = {
+    headers = {
+        "Authorization": f"Bearer {TOKEN}",
+        "X-Restli-Protocol-Version": "2.0.0",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
         "author": PERSON_URN,
         "lifecycleState": "PUBLISHED",
         "specificContent": {
@@ -35,8 +36,9 @@ def post_to_linkedin(text):
     response = requests.post(
         "https://api.linkedin.com/v2/ugcPosts",
         headers=headers,
-        json=post_data
+        json=payload,
+        timeout=60
     )
 
-    print("STATUS:", response.status_code)
+    print("LinkedIn Status:", response.status_code)
     print(response.text)

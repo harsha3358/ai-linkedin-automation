@@ -9,58 +9,88 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
 
-if not API_KEY.startswith("sk-or-v1-"):
-    raise ValueError("Invalid OpenRouter API key")
+if not API_KEY:
+    raise ValueError("OPENROUTER_API_KEY missing")
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=API_KEY,
 )
 
-# fallback models
 MODELS = [
-    "meta-llama/llama-3.3-70b-instruct:free",
-    "mistralai/mistral-7b-instruct:free",
-    "google/gemma-2-9b-it:free"
+    "openai/gpt-3.5-turbo",
+    "meta-llama/llama-3-8b-instruct"
 ]
 
 
-def try_model(model_name, prompt):
+def safe_json_parse(text):
 
-    print(f"\nTrying model: {model_name}")
+    text = text.replace("```json", "")
+    text = text.replace("```", "")
 
-    response = client.chat.completions.create(
-        model=model_name,
-        messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
+    start = text.find("{")
+    end = text.rfind("}") + 1
 
-    return response
+    text = text[start:end]
+
+    return json.loads(text)
+
+
+def fallback_content(article):
+
+    return {
+        "linkedin_post": f"""
+AI startups are moving differently now.
+
+{article['title']}
+
+The biggest shift?
+
+Small teams now have enterprise-level leverage using AI.
+
+The next generation of founders won't build bigger teams.
+
+They'll build smarter systems.
+
+We're entering the AI-native era.
+
+What workflow has AI replaced for you recently?
+
+#AI #Startups #ArtificialIntelligence #FutureOfWork #Automation
+""",
+
+        "image_prompt": """
+futuristic AI startup workspace,
+cyberpunk founder aesthetics,
+Gen Z startup energy,
+cinematic neon lighting,
+hyper realistic,
+ultra detailed,
+AI-native future world,
+professional LinkedIn visual
+"""
+    }
 
 
 def generate_content(article):
 
     prompt = f"""
-You are a viral AI founder and futuristic internet creator.
+You are a viral AI founder creating LinkedIn content.
 
 Audience:
 - Gen Z
 - Gen Alpha
-- AI founders
-- startup builders
+- startup founders
+- AI builders
 
 STYLE:
-- bold
 - futuristic
+- bold
 - internet-native
-- emotionally engaging
 - concise
+- emotional
 - viral
-- visually spaced
+- highly engaging
 
 NEWS TITLE:
 {article['title']}
@@ -71,40 +101,42 @@ NEWS DESCRIPTION:
 Return ONLY valid JSON.
 
 FORMAT:
-
 {{
   "linkedin_post": "...",
   "image_prompt": "..."
 }}
 """
 
-    last_error = None
-
     for model in MODELS:
 
         try:
 
-            response = try_model(model, prompt)
+            print(f"Trying model: {model}")
+
+            response = client.chat.completions.create(
+                model=model,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                timeout=60
+            )
 
             text = response.choices[0].message.content
 
-            print("\nRAW MODEL OUTPUT:\n")
-            print(text)
-
-            text = text.replace("```json", "")
-            text = text.replace("```", "")
-
-            data = json.loads(text)
+            data = safe_json_parse(text)
 
             return data
 
         except Exception as e:
 
-            print(f"\nModel failed: {model}")
+            print(f"Model failed: {model}")
             print(str(e))
 
-            last_error = e
+            time.sleep(10)
 
-            time.sleep(5)
+    print("Using fallback content generator...")
 
-    raise last_error
+    return fallback_content(article)
