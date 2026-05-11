@@ -5,7 +5,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
+
+if not API_KEY:
+    raise ValueError("OPENROUTER_API_KEY is missing")
 
 print("OPENROUTER KEY FOUND:", API_KEY is not None)
 
