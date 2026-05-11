@@ -1,5 +1,7 @@
 import os
 import json
+import time
+
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -7,17 +9,37 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
 
-if not API_KEY:
-    raise ValueError("OPENROUTER_API_KEY is missing")
-
-print("OPENROUTER KEY FOUND:", API_KEY is not None)
+if not API_KEY.startswith("sk-or-v1-"):
+    raise ValueError("Invalid OpenRouter API key")
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=API_KEY,
 )
 
-MODEL = "meta-llama/llama-3.3-70b-instruct:free"
+# fallback models
+MODELS = [
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "mistralai/mistral-7b-instruct:free",
+    "google/gemma-2-9b-it:free"
+]
+
+
+def try_model(model_name, prompt):
+
+    print(f"\nTrying model: {model_name}")
+
+    response = client.chat.completions.create(
+        model=model_name,
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
+    )
+
+    return response
 
 
 def generate_content(article):
@@ -25,44 +47,20 @@ def generate_content(article):
     prompt = f"""
 You are a viral AI founder and futuristic internet creator.
 
-Your audience is:
+Audience:
 - Gen Z
 - Gen Alpha
-- startup founders
-- AI builders
-- creators
-- ambitious students
+- AI founders
+- startup builders
 
-Write like:
-- a smart AI founder
-- internet-native
+STYLE:
+- bold
 - futuristic
+- internet-native
 - emotionally engaging
-- highly shareable
-
-DO NOT sound:
-- corporate
-- robotic
-- generic
-- like a consultant
-
-STYLE RULES:
-- short punchy lines
-- visually spaced formatting
-- emotionally charged hooks
-- curiosity-driven
-- startup energy
-- futuristic thinking
-- easy to skim
-- high engagement
-
-POST STRUCTURE:
-1. Strong viral hook
-2. Why this matters
-3. Future prediction
-4. Emotional insight
-5. CTA
-6. Hashtags
+- concise
+- viral
+- visually spaced
 
 NEWS TITLE:
 {article['title']}
@@ -78,55 +76,35 @@ FORMAT:
   "linkedin_post": "...",
   "image_prompt": "..."
 }}
-
-linkedin_post:
-- should feel viral
-- should feel modern
-- should trigger curiosity
-- should feel like future tech culture
-- should contain short spaced paragraphs
-
-image_prompt:
-- futuristic AI startup world
-- Gen Z aesthetics
-- cinematic lighting
-- neon atmosphere
-- hyper realistic
-- ambitious founder energy
-- social media optimized
-- ultra detailed
 """
 
-    response = client.chat.completions.create(
-        model=MODEL,
-        messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
+    last_error = None
 
-    text = response.choices[0].message.content
+    for model in MODELS:
 
-    print("\nRAW MODEL OUTPUT:\n")
-    print(text)
+        try:
 
-    text = text.replace("```json", "").replace("```", "")
+            response = try_model(model, prompt)
 
-    data = json.loads(text)
+            text = response.choices[0].message.content
 
-    return data
+            print("\nRAW MODEL OUTPUT:\n")
+            print(text)
 
+            text = text.replace("```json", "")
+            text = text.replace("```", "")
 
-if __name__ == "__main__":
+            data = json.loads(text)
 
-    sample_article = {
-        "title": "OpenAI launches next-generation autonomous AI agents",
-        "description": "OpenAI introduced powerful autonomous AI agents capable of handling complex workflows independently."
-    }
+            return data
 
-    result = generate_content(sample_article)
+        except Exception as e:
 
-    print("\nFINAL OUTPUT:\n")
-    print(json.dumps(result, indent=2))
+            print(f"\nModel failed: {model}")
+            print(str(e))
+
+            last_error = e
+
+            time.sleep(5)
+
+    raise last_error
