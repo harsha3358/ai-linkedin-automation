@@ -1,5 +1,6 @@
 import os
 import json
+import random
 import time
 
 from openai import OpenAI
@@ -22,6 +23,32 @@ MODELS = [
     "meta-llama/llama-3-8b-instruct"
 ]
 
+HOOKS = [
+    "Most people are underestimating this AI shift.",
+    "This AI update could quietly reshape entire industries.",
+    "Founders should pay attention to this carefully.",
+    "This is where AI becomes economically dangerous.",
+    "AI companies are moving faster than regulators can react.",
+    "The gap between AI-native companies and traditional companies is widening.",
+    "This might become one of the biggest AI shifts of the year."
+]
+
+CTAS = [
+    "Would you trust AI systems with critical business decisions?",
+    "What part of your workflow has AI already replaced?",
+    "Do you think companies are adopting AI too aggressively?",
+    "Would you use this technology inside your company?",
+    "Which industry gets disrupted first by this?"
+]
+
+CONTROVERSIAL_ANGLES = [
+    "AI may reduce the need for large operational teams.",
+    "Many current white-collar workflows may disappear within this decade.",
+    "AI-native startups could outperform traditional enterprises with much smaller teams.",
+    "Companies refusing AI adoption may struggle to compete globally.",
+    "The future workforce may value adaptability over specialization."
+]
+
 
 def safe_json_parse(text):
 
@@ -38,59 +65,144 @@ def safe_json_parse(text):
 
 def fallback_content(article):
 
+    hook = random.choice(HOOKS)
+    cta = random.choice(CTAS)
+    controversial = random.choice(CONTROVERSIAL_ANGLES)
+
     return {
         "linkedin_post": f"""
-AI startups are moving differently now.
+{hook}
+
+Today’s AI update:
 
 {article['title']}
 
-The biggest shift?
+What is happening?
 
-Small teams now have enterprise-level leverage using AI.
+{article['description']}
 
-The next generation of founders won't build bigger teams.
+Why does this matter?
 
-They'll build smarter systems.
+AI systems are increasingly becoming operational infrastructure instead of optional tools.
 
-We're entering the AI-native era.
+Real-world uses:
+• Workflow automation
+• Faster product execution
+• Customer support scaling
+• Research acceleration
+• Internal productivity systems
 
-What workflow has AI replaced for you recently?
+Pros:
+• Faster execution
+• Lower costs
+• Better scalability
+• Smaller but stronger teams
 
-#AI #Startups #ArtificialIntelligence #FutureOfWork #Automation
+Cons:
+• Job displacement concerns
+• Data privacy risks
+• AI hallucinations
+• Overdependence on automation
+
+Founder perspective:
+
+{controversial}
+
+Real-world impact:
+
+Businesses adopting AI early are building operational leverage much faster than traditional companies.
+
+The next generation of companies may look fundamentally different from today's enterprises.
+
+{cta}
+
+#AI #ArtificialIntelligence #Technology #Startups #FutureOfWork
 """,
 
         "image_prompt": """
-futuristic AI startup workspace,
-cyberpunk founder aesthetics,
-Gen Z startup energy,
-cinematic neon lighting,
+futuristic AI startup environment,
+modern founder workspace,
+cinematic lighting,
 hyper realistic,
-ultra detailed,
-AI-native future world,
-professional LinkedIn visual
-"""
+minimal but futuristic aesthetics,
+AI systems integrated into human workflows,
+professional LinkedIn visual,
+high-detail technology scene
+""",
+
+        "carousel_ideas": [
+            "Slide 1: Hook",
+            "Slide 2: What happened",
+            "Slide 3: Why it matters",
+            "Slide 4: Pros",
+            "Slide 5: Cons",
+            "Slide 6: Founder perspective",
+            "Slide 7: Real-world impact",
+            "Slide 8: CTA"
+        ],
+
+        "meme_idea": "AI replacing 20 tabs, 4 interns, and 3 meetings with one prompt.",
+
+        "trend_score": random.randint(7, 10)
     }
 
 
 def generate_content(article):
 
-    prompt = f"""
-You are a viral AI founder creating LinkedIn content.
+    hook = random.choice(HOOKS)
+    cta = random.choice(CTAS)
+    controversial = random.choice(CONTROVERSIAL_ANGLES)
 
-Audience:
+    prompt = f"""
+You are an elite AI founder and viral LinkedIn strategist.
+
+Your audience:
 - Gen Z
 - Gen Alpha
 - startup founders
 - AI builders
+- tech professionals
 
-STYLE:
-- futuristic
-- bold
+NEVER use the emoji 🚀.
+
+Write content that feels:
+- intelligent
+- modern
+- sharp
+- high signal
 - internet-native
-- concise
-- emotional
-- viral
-- highly engaging
+- founder-level
+- emotionally engaging
+
+AVOID:
+- cringe startup fluff
+- generic motivational language
+- corporate jargon
+
+POST STRUCTURE:
+
+1. Strong hook
+2. Explain WHAT happened
+3. Explain USES
+4. Explain PROS
+5. Explain CONS
+6. Founder perspective
+7. Real-world impact
+8. Engagement CTA
+
+Include:
+- one controversial insight
+- one future prediction
+- one strong founder observation
+
+HOOK:
+{hook}
+
+CTA:
+{cta}
+
+CONTROVERSIAL ANGLE:
+{controversial}
 
 NEWS TITLE:
 {article['title']}
@@ -103,7 +215,10 @@ Return ONLY valid JSON.
 FORMAT:
 {{
   "linkedin_post": "...",
-  "image_prompt": "..."
+  "image_prompt": "...",
+  "carousel_ideas": ["..."],
+  "meme_idea": "...",
+  "trend_score": 9
 }}
 """
 

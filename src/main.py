@@ -25,17 +25,25 @@ def run_pipeline():
     linkedin_post = content["linkedin_post"]
     image_prompt = content["image_prompt"]
 
+    print("Trend Score:", content.get("trend_score"))
+
+    print("Carousel Ideas:")
+    print(content.get("carousel_ideas"))
+
+    print("Meme Idea:")
+    print(content.get("meme_idea"))
+
     print(linkedin_post)
 
     print("Generating image...")
 
-    generate_image(image_prompt)
+    image_path = generate_image(image_prompt)
 
     print("Posting to LinkedIn...")
 
-    post_to_linkedin(linkedin_post)
+    post_to_linkedin(linkedin_post, image_path)
 
-    print("DONE 🚀")
+    print("DONE")
 
 
 if __name__ == "__main__":
