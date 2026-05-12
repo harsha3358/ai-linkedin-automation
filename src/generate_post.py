@@ -108,6 +108,10 @@ Founder perspective:
 
 {controversial}
 
+Funny observation:
+
+Some startups now have more AI agents than actual employees.
+
 Real-world impact:
 
 Businesses adopting AI early are building operational leverage much faster than traditional companies.
@@ -120,25 +124,40 @@ The next generation of companies may look fundamentally different from today's e
 """,
 
         "image_prompt": """
-futuristic AI startup environment,
-modern founder workspace,
-cinematic lighting,
-hyper realistic,
-minimal but futuristic aesthetics,
-AI systems integrated into human workflows,
-professional LinkedIn visual,
-high-detail technology scene
+funny sarcastic AI meme scene,
+Gen Z internet humor,
+light pastel color palette,
+soft neon aesthetic,
+minimal clean background,
+modern startup chaos,
+sleep deprived founders,
+AI replacing entire departments humorously,
+cinematic but funny,
+viral social media style,
+high engagement visual,
+Twitter meme energy,
+LinkedIn friendly humor,
+ultra detailed,
+high quality,
+internet-native aesthetic,
+light colors,
+soft blue,
+soft purple,
+soft pink,
+modern meme composition,
+funny but professional
 """,
 
         "carousel_ideas": [
-            "Slide 1: Hook",
+            "Slide 1: Strong Hook",
             "Slide 2: What happened",
             "Slide 3: Why it matters",
-            "Slide 4: Pros",
-            "Slide 5: Cons",
-            "Slide 6: Founder perspective",
-            "Slide 7: Real-world impact",
-            "Slide 8: CTA"
+            "Slide 4: Real-world uses",
+            "Slide 5: Pros",
+            "Slide 6: Cons",
+            "Slide 7: Founder perspective",
+            "Slide 8: Funny observation",
+            "Slide 9: CTA"
         ],
 
         "meme_idea": "AI replacing 20 tabs, 4 interns, and 3 meetings with one prompt.",
@@ -167,17 +186,31 @@ NEVER use the emoji 🚀.
 
 Write content that feels:
 - intelligent
-- modern
-- sharp
-- high signal
+- funny
+- sarcastic
 - internet-native
+- lightly chaotic
+- Gen Z readable
 - founder-level
 - emotionally engaging
+- meme-aware
+- highly shareable
 
-AVOID:
-- cringe startup fluff
-- generic motivational language
-- corporate jargon
+The humor should feel subtle and smart.
+
+Do NOT sound cringe.
+
+Use:
+- sarcastic observations
+- funny founder pain points
+- internet humor
+- modern startup culture references
+
+Avoid:
+- boomer humor
+- excessive emojis
+- childish jokes
+- corporate tone
 
 POST STRUCTURE:
 
@@ -189,6 +222,7 @@ POST STRUCTURE:
 6. Founder perspective
 7. Real-world impact
 8. Engagement CTA
+9. Include one funny/sarcastic observation
 
 Include:
 - one controversial insight
