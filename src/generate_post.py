@@ -1,6 +1,5 @@
 import os
 import json
-import random
 import time
 
 from openai import OpenAI
@@ -23,15 +22,6 @@ MODELS = [
     "meta-llama/llama-3-8b-instruct"
 ]
 
-FUNNY_LINES = [
-    "Some companies now have more AI agents than employees.",
-    "At this point the intern is just supervising AI tools.",
-    "Half the startup ecosystem is now basically prompt engineering with caffeine.",
-    "Traditional workflows are slowly becoming historical artifacts.",
-    "People spent years learning Excel just for AI to press tab once.",
-    "Meetings are becoming expensive compared to one good AI workflow."
-]
-
 
 def safe_json_parse(text):
 
@@ -48,140 +38,138 @@ def safe_json_parse(text):
 
 def fallback_content(article):
 
-    funny_line = random.choice(FUNNY_LINES)
-
     return {
         "linkedin_post": f"""
-Today’s AI update:
+Google was behind in AI for years.
+
+Now they're suddenly shipping models every week.
+
+Today's example?
 
 {article['title']}
 
-What happened?
+Here’s what’s happening.
 
 {article['description']}
 
-Why this matters:
+This is important because AI companies are no longer competing on:
+• model quality only
 
-AI companies are no longer competing only on model quality.
-
-They are competing on:
+Now they're competing on:
 • speed
-• distribution
+• ecosystem
 • workflow integration
-• operational leverage
+• distribution
 
-Real-world uses:
-• automating repetitive work
-• faster research
-• content generation
-• customer support
-• software development assistance
-• internal business automation
+And honestly?
 
-Pros:
-• significantly faster execution
-• lower operational costs
-• smaller but more productive teams
-• faster experimentation cycles
+Most companies still think AI means “ChatGPT wrapper + dark mode”.
 
-Cons:
-• AI hallucinations
-• overdependence on automation
-• privacy concerns
-• increasing pressure on traditional jobs
+Meanwhile AI-native startups are building entire workflows with agents.
 
-Founder perspective:
+That changes everything.
 
-The companies learning AI workflows today may operate very differently from companies built even 5 years ago.
+Funny part?
 
-Funny observation:
+Some founders now spend more time talking to AI than their actual employees.
 
-{funny_line}
+The scary part is...
 
-Real-world impact:
+The AI tools are usually faster.
 
-AI is slowly shifting from “tool” to “infrastructure”.
+The next few years won't just change software.
 
-That changes how startups scale, hire, build products, and compete globally.
+They'll change how companies operate entirely.
 
-#AI #ArtificialIntelligence #Technology #Startups #FutureOfWork
+#AI #ArtificialIntelligence #Startups #Technology
 """,
 
         "image_prompt": """
-funny sarcastic AI workplace,
-Gen Z internet humor,
-light pastel aesthetic,
-soft neon colors,
-modern startup meme energy,
-founders overwhelmed by AI tools,
-minimal clean composition,
-cinematic but funny,
+viral Gen Z AI meme visual,
+pastel colors,
+funny startup humor,
+AI replacing interns,
+modern internet culture aesthetic,
+clean cinematic composition,
+soft purple and blue colors,
+founder stress meme,
+AI agents everywhere,
 high engagement social media visual,
-professional but sarcastic,
-soft blue and purple tones,
-modern internet-native visual style
+minimal but emotional,
+ultra modern aesthetic,
+tech meme energy,
+professional but funny,
+high-detail digital art
 """
     }
 
 
 def generate_content(article):
 
-    funny_line = random.choice(FUNNY_LINES)
-
     prompt = f"""
-You are a highly intelligent AI founder writing informative LinkedIn posts.
+You are writing LinkedIn posts EXACTLY in this style:
 
-IMPORTANT:
+- Vaibhav Sisinty
+- viral founder creators
+- internet-native storytelling
+- Gen Z formatting
+- short punchy lines
+- conversational pacing
+- dramatic curiosity
+- smart sarcasm
+- emotional momentum
 
-The post MUST:
-- explain the AI news clearly
-- explain what the technology/model/company does
-- explain real-world uses
-- explain pros and cons
-- explain real-world impact
-- include one subtle sarcastic/funny observation
-- sound modern and intelligent
-- avoid cringe engagement bait
-- avoid fake motivational content
-- avoid random unrelated statements
-- avoid excessive emojis
-- NEVER use the 🚀 emoji
+VERY IMPORTANT:
 
-The humor should feel:
-- subtle
-- internet-native
-- founder humor
-- slightly sarcastic
-- smart
+The post should NOT feel like:
+- an article
+- a blog
+- a report
+- AI summary
+- corporate analysis
 
-NOT:
-- childish
-- meme spam
-- corporate
-- exaggerated
+It should feel like:
+- a founder talking naturally
+- a viral AI knowledge pill
+- internet-native storytelling
+- high-retention content
 
-POST STRUCTURE:
+STYLE RULES:
 
-1. Explain the AI update/topic first
-2. Explain what it actually does
-3. Explain real-world uses
-4. Explain pros
-5. Explain cons
-6. Explain founder/business impact
-7. Add one funny observation naturally
-8. End professionally
+- short lines only
+- 1 sentence paragraphs
+- high readability
+- suspense pacing
+- curiosity loops
+- founder commentary
+- subtle sarcasm
+- emotional flow
+- highly shareable
 
-IMPORTANT:
-The post must feel educational and insightful first.
-Humor is secondary.
+AVOID:
+- huge paragraphs
+- corporate tone
+- cringe motivation
+- excessive hashtags
+- excessive emojis
+- generic summaries
 
-FUNNY OBSERVATION:
-{funny_line}
+IMPORTANT STRUCTURE:
 
-NEWS TITLE:
+1. Strong hook
+2. Explain WHAT happened
+3. Explain WHY it's important
+4. Explain REAL-WORLD IMPACT
+5. Add one funny/sarcastic founder observation
+6. End with an interesting thought/question
+
+The content should feel like:
+"daily AI knowledge pill for founders"
+
+TOPIC:
 {article['title']}
 
-NEWS DESCRIPTION:
+DESCRIPTION:
 {article['description']}
 
 Return ONLY valid JSON.
