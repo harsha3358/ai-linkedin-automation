@@ -52,8 +52,7 @@ Here’s what’s happening.
 
 {article['description']}
 
-This is important because AI companies are no longer competing on:
-• model quality only
+This matters because AI companies are no longer competing only on model quality.
 
 Now they're competing on:
 • speed
@@ -61,27 +60,29 @@ Now they're competing on:
 • workflow integration
 • distribution
 
-And honestly?
+Which changes everything.
 
-Most companies still think AI means “ChatGPT wrapper + dark mode”.
+Most companies still think AI means:
+“ChatGPT + dark mode + productivity tweet.”
 
-Meanwhile AI-native startups are building entire workflows with agents.
-
-That changes everything.
+Meanwhile AI-native startups are building full workflows with agents.
 
 Funny part?
 
-Some founders now spend more time talking to AI than their actual employees.
+Some startups now spend enough on GPU compute to qualify as climate influencers.
 
-The scary part is...
+Real-world impact?
 
-The AI tools are usually faster.
+The companies learning AI workflows today may operate completely differently from traditional companies within a few years.
 
-The next few years won't just change software.
+AI is slowly shifting from:
+tool → infrastructure.
 
-They'll change how companies operate entirely.
+And that changes how businesses scale.
 
-#AI #ArtificialIntelligence #Startups #Technology
+Curious to see how founders like Sam Altman and Sundar Pichai push this even further.
+
+#AI #ArtificialIntelligence #Startups #Technology #FutureOfWork
 """,
 
         "image_prompt": """
@@ -99,7 +100,10 @@ minimal but emotional,
 ultra modern aesthetic,
 tech meme energy,
 professional but funny,
-high-detail digital art
+high-detail digital art,
+eco-friendly futuristic office,
+light colors,
+sarcastic startup energy
 """
     }
 
@@ -152,7 +156,6 @@ AVOID:
 - cringe motivation
 - excessive hashtags
 - excessive emojis
-- generic summaries
 
 IMPORTANT STRUCTURE:
 
@@ -161,7 +164,30 @@ IMPORTANT STRUCTURE:
 3. Explain WHY it's important
 4. Explain REAL-WORLD IMPACT
 5. Add one funny/sarcastic founder observation
-6. End with an interesting thought/question
+6. Mention relevant founders naturally
+7. End with an interesting thought/question
+8. Add domain-specific hashtags
+
+IMPORTANT:
+
+The humor should feel:
+- playful
+- founder-native
+- internet-smart
+- environmentally aware
+- lightly sarcastic
+- socially aware
+
+Examples:
+- "Some startups now consume enough GPU power to heat small countries."
+- "AI agents are becoming cheaper than SaaS subscriptions."
+- "Carbon emissions are rising but at least the pitch decks look futuristic."
+
+Avoid:
+- offensive humor
+- insulting founders personally
+- cringe meme spam
+- edgy jokes
 
 The content should feel like:
 "daily AI knowledge pill for founders"
@@ -171,6 +197,17 @@ TOPIC:
 
 DESCRIPTION:
 {article['description']}
+
+Also include:
+- relevant founder mentions if applicable
+- company mentions naturally
+- domain-specific hashtags
+
+Examples:
+- OpenAI news → Sam Altman
+- Google AI → Sundar Pichai
+- Anthropic → Dario Amodei
+- Meta AI → Mark Zuckerberg
 
 Return ONLY valid JSON.
 
