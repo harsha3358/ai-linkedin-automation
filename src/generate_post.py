@@ -40,70 +40,61 @@ def fallback_content(article):
 
     return {
         "linkedin_post": f"""
-Google was behind in AI for years.
+Google was behind on AI for years.
 
-Now they're suddenly shipping models every week.
+Now they’re shipping models every few weeks.
 
-Today's example?
+Today’s example?
 
 {article['title']}
 
-Here’s what’s happening.
+Here’s why this matters.
 
-{article['description']}
+AI companies are no longer competing only on:
+• model quality
 
-This matters because AI companies are no longer competing only on model quality.
-
-Now they're competing on:
+Now they compete on:
 • speed
 • ecosystem
 • workflow integration
 • distribution
 
-Which changes everything.
+That changes everything.
 
-Most companies still think AI means:
-“ChatGPT + dark mode + productivity tweet.”
+Most startups still use AI like:
+“write me a caption”.
 
-Meanwhile AI-native startups are building full workflows with agents.
+Meanwhile AI-native companies are replacing entire workflows with agents.
 
 Funny part?
 
-Some startups now spend enough on GPU compute to qualify as climate influencers.
+Some founders now spend more time talking to AI than their own teams.
 
-Real-world impact?
+And honestly...
 
-The companies learning AI workflows today may operate completely differently from traditional companies within a few years.
+the AI replies faster.
 
-AI is slowly shifting from:
-tool → infrastructure.
+The next few years won’t just change software.
 
-And that changes how businesses scale.
+They’ll change how companies operate entirely.
 
-Curious to see how founders like Sam Altman and Sundar Pichai push this even further.
-
-#AI #ArtificialIntelligence #Startups #Technology #FutureOfWork
+#AI #ArtificialIntelligence #Startups #Technology
 """,
 
         "image_prompt": """
-viral Gen Z AI meme visual,
-pastel colors,
-funny startup humor,
-AI replacing interns,
-modern internet culture aesthetic,
-clean cinematic composition,
-soft purple and blue colors,
-founder stress meme,
-AI agents everywhere,
-high engagement social media visual,
-minimal but emotional,
-ultra modern aesthetic,
-tech meme energy,
+funny AI startup meme,
+Gen Z internet humor,
+light pastel colors,
+soft blue and purple aesthetic,
+founders overwhelmed by AI tools,
+cinematic meme composition,
+internet-native humor,
+AI replacing traditional workflows,
+minimal clean visual,
+high engagement social media image,
+modern startup culture,
 professional but funny,
-high-detail digital art,
-eco-friendly futuristic office,
-light colors,
-sarcastic startup energy
+viral AI visual
 """
     }
 
@@ -111,103 +102,77 @@ sarcastic startup energy
 def generate_content(article):
 
     prompt = f"""
-You are writing LinkedIn posts EXACTLY in this style:
+You are writing viral LinkedIn posts EXACTLY like top AI creator founders.
 
-- Vaibhav Sisinty
-- viral founder creators
-- internet-native storytelling
-- Gen Z formatting
+STYLE REFERENCE:
+- Vaibhav Sisinty style
+- AI insider storytelling
 - short punchy lines
-- conversational pacing
-- dramatic curiosity
-- smart sarcasm
-- emotional momentum
+- dramatic pacing
+- curiosity hooks
+- internet-native formatting
 
 VERY IMPORTANT:
 
-The post should NOT feel like:
-- an article
-- a blog
-- a report
-- AI summary
-- corporate analysis
+DO NOT:
+- sound corporate
+- sound like news summary
+- sound like finance content
+- sound motivational
+- sound like marketing copy
+- write paragraphs
+- use generic engagement bait
 
-It should feel like:
-- a founder talking naturally
-- a viral AI knowledge pill
-- internet-native storytelling
-- high-retention content
+WRITE LIKE:
+- an AI founder
+- someone obsessed with AI
+- internet-native creator
+- modern startup operator
 
-STYLE RULES:
-
+FORMAT RULES:
 - short lines only
-- 1 sentence paragraphs
-- high readability
+- max 1-2 sentences per paragraph
+- easy readability
 - suspense pacing
-- curiosity loops
-- founder commentary
+- emotional momentum
 - subtle sarcasm
-- emotional flow
-- highly shareable
+- smart founder humor
 
-AVOID:
-- huge paragraphs
-- corporate tone
-- cringe motivation
-- excessive hashtags
-- excessive emojis
+VERY IMPORTANT:
 
-IMPORTANT STRUCTURE:
+ONLY talk about:
+- AI
+- startups
+- automation
+- models
+- AI products
+- AI agents
+- AI workflows
+- AI future
 
-1. Strong hook
-2. Explain WHAT happened
-3. Explain WHY it's important
-4. Explain REAL-WORLD IMPACT
-5. Add one funny/sarcastic founder observation
-6. Mention relevant founders naturally
-7. End with an interesting thought/question
-8. Add domain-specific hashtags
+IGNORE:
+- stock market news
+- ETFs
+- investing
+- unrelated finance news
 
-IMPORTANT:
+The post should feel like:
+“daily AI knowledge pill for founders”
 
-The humor should feel:
-- playful
-- founder-native
-- internet-smart
-- environmentally aware
-- lightly sarcastic
-- socially aware
+POST STRUCTURE:
 
-Examples:
-- "Some startups now consume enough GPU power to heat small countries."
-- "AI agents are becoming cheaper than SaaS subscriptions."
-- "Carbon emissions are rising but at least the pitch decks look futuristic."
-
-Avoid:
-- offensive humor
-- insulting founders personally
-- cringe meme spam
-- edgy jokes
-
-The content should feel like:
-"daily AI knowledge pill for founders"
+1. strong hook
+2. explain what happened
+3. explain why it matters
+4. explain real-world impact
+5. funny founder observation
+6. interesting ending thought
 
 TOPIC:
 {article['title']}
 
 DESCRIPTION:
 {article['description']}
-
-Also include:
-- relevant founder mentions if applicable
-- company mentions naturally
-- domain-specific hashtags
-
-Examples:
-- OpenAI news → Sam Altman
-- Google AI → Sundar Pichai
-- Anthropic → Dario Amodei
-- Meta AI → Mark Zuckerberg
 
 Return ONLY valid JSON.
 
