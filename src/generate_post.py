@@ -9,9 +9,6 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
 
-if not API_KEY:
-    raise ValueError("OPENROUTER_API_KEY missing")
-
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=API_KEY,
@@ -36,137 +33,61 @@ def safe_json_parse(text):
     return json.loads(text)
 
 
-def fallback_content(article):
-
-    return {
-        "linkedin_post": f"""
-Google was behind on AI for years.
-
-Now they’re shipping models every few weeks.
-
-Today’s example?
-
-{article['title']}
-
-Here’s why this matters.
-
-AI companies are no longer competing only on:
-• model quality
-
-Now they compete on:
-• speed
-• ecosystem
-• workflow integration
-• distribution
-
-That changes everything.
-
-Most startups still use AI like:
-“write me a caption”.
-
-Meanwhile AI-native companies are replacing entire workflows with agents.
-
-Funny part?
-
-Some founders now spend more time talking to AI than their own teams.
-
-And honestly...
-
-the AI replies faster.
-
-The next few years won’t just change software.
-
-They’ll change how companies operate entirely.
-
-#AI #ArtificialIntelligence #Startups #Technology
-""",
-
-        "image_prompt": """
-funny AI startup meme,
-Gen Z internet humor,
-light pastel colors,
-soft blue and purple aesthetic,
-founders overwhelmed by AI tools,
-cinematic meme composition,
-internet-native humor,
-AI replacing traditional workflows,
-minimal clean visual,
-high engagement social media image,
-modern startup culture,
-professional but funny,
-viral AI visual
-"""
-    }
-
-
 def generate_content(article):
 
     prompt = f"""
-You are writing viral LinkedIn posts EXACTLY like top AI creator founders.
+You are an elite AI creator writing viral founder-style LinkedIn posts.
 
-STYLE REFERENCE:
-- Vaibhav Sisinty style
-- AI insider storytelling
-- short punchy lines
-- dramatic pacing
+STYLE:
+- Vaibhav Sisinty
+- Gen Z founder energy
+- internet-native storytelling
 - curiosity hooks
-- internet-native formatting
+- short punchy lines
+- emotional pacing
+- smart sarcasm
+- highly readable
+- modern startup humor
 
 VERY IMPORTANT:
+
+The post MUST:
+- explain the AI update clearly
+- explain why it matters
+- explain real-world impact
+- feel like insider AI commentary
+- feel creator-native
+- feel modern and human
 
 DO NOT:
 - sound corporate
-- sound like news summary
-- sound like finance content
-- sound motivational
-- sound like marketing copy
-- write paragraphs
-- use generic engagement bait
+- sound like a blog
+- sound like finance news
+- sound like ChatGPT summaries
+- write long paragraphs
+- use cringe engagement bait
 
 WRITE LIKE:
-- an AI founder
-- someone obsessed with AI
-- internet-native creator
-- modern startup operator
-
-FORMAT RULES:
-- short lines only
-- max 1-2 sentences per paragraph
-- easy readability
-- suspense pacing
-- emotional momentum
-- subtle sarcasm
-- smart founder humor
+- a founder obsessed with AI
+- someone explaining the future casually
+- internet-native AI storytelling
 
 VERY IMPORTANT:
 
-ONLY talk about:
-- AI
-- startups
-- automation
-- models
-- AI products
-- AI agents
-- AI workflows
-- AI future
+Generate BOTH:
+1. the LinkedIn post
+2. the cinematic image concept
 
-IGNORE:
-- stock market news
-- ETFs
-- investing
-- unrelated finance news
-
-The post should feel like:
-“daily AI knowledge pill for founders”
-
-POST STRUCTURE:
-
-1. strong hook
-2. explain what happened
-3. explain why it matters
-4. explain real-world impact
-5. funny founder observation
-6. interesting ending thought
+The IMAGE PROMPT should:
+- match the emotional tone of the post
+- feel cinematic
+- feel Gen Z
+- feel internet-native
+- feel funny/sarcastic
+- use pastel colors
+- feel modern
+- feel highly shareable
+- NOT feel generic cyberpunk
 
 TOPIC:
 {article['title']}
@@ -174,20 +95,18 @@ TOPIC:
 DESCRIPTION:
 {article['description']}
 
-Return ONLY valid JSON.
+RETURN JSON ONLY
 
 FORMAT:
 {{
-  "linkedin_post": "...",
-  "image_prompt": "..."
+    "linkedin_post": "...",
+    "image_prompt": "..."
 }}
 """
 
     for model in MODELS:
 
         try:
-
-            print(f"Trying model: {model}")
 
             response = client.chat.completions.create(
                 model=model,
@@ -202,17 +121,38 @@ FORMAT:
 
             text = response.choices[0].message.content
 
-            data = safe_json_parse(text)
-
-            return data
+            return safe_json_parse(text)
 
         except Exception as e:
 
-            print(f"Model failed: {model}")
             print(str(e))
 
-            time.sleep(10)
+            time.sleep(5)
 
-    print("Using fallback content generator...")
+    return {
+        "linkedin_post": f"""
+AI companies are moving insanely fast right now.
 
-    return fallback_content(article)
+{article['title']}
+
+Most people still think AI is just:
+“chatbot + productivity.”
+
+Meanwhile startups are replacing entire workflows with agents.
+
+That changes everything.
+""",
+
+        "image_prompt": """
+funny AI startup meme,
+pastel aesthetic,
+Gen Z humor,
+modern founder chaos,
+light colors,
+soft purple tones,
+internet-native visual,
+cinematic but funny,
+AI workflow overload,
+minimal clean composition
+"""
+    }
