@@ -7,9 +7,6 @@ load_dotenv()
 
 HF_TOKEN = os.getenv("HF_TOKEN", "").strip()
 
-if not HF_TOKEN:
-    raise ValueError("HF_TOKEN missing")
-
 client = InferenceClient(
     provider="hf-inference",
     api_key=HF_TOKEN,
@@ -18,10 +15,31 @@ client = InferenceClient(
 
 def generate_image(prompt):
 
+    enhanced_prompt = f"""
+{prompt}
+
+STYLE REQUIREMENTS:
+- Gen Z aesthetic
+- pastel colors
+- soft lighting
+- modern meme culture
+- cinematic composition
+- emotionally expressive
+- startup founder energy
+- internet-native humor
+- minimal clean design
+- high engagement social media style
+- highly detailed
+- modern visual storytelling
+- soft blue and purple palette
+- NOT dark cyberpunk
+- NOT generic AI art
+"""
+
     try:
 
         image = client.text_to_image(
-            prompt,
+            enhanced_prompt,
             model="black-forest-labs/FLUX.1-schnell",
         )
 
