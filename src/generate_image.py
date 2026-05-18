@@ -1,59 +1,77 @@
 import os
+import base64
 
+from openai import OpenAI
 from dotenv import load_dotenv
-from huggingface_hub import InferenceClient
 
 load_dotenv()
 
-HF_TOKEN = os.getenv("HF_TOKEN", "").strip()
+API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
 
-client = InferenceClient(
-    provider="hf-inference",
-    api_key=HF_TOKEN,
+client = OpenAI(
+    api_key=API_KEY
 )
 
 
 def generate_image(prompt):
 
     enhanced_prompt = f"""
-{prompt}
+Create a highly engaging LinkedIn visual.
 
-STYLE REQUIREMENTS:
-- Gen Z aesthetic
-- pastel colors
-- soft lighting
-- modern meme culture
+STYLE:
+- modern startup creator aesthetic
+- Gen Z internet-native humor
 - cinematic composition
-- emotionally expressive
-- startup founder energy
-- internet-native humor
+- soft pastel colors
 - minimal clean design
-- high engagement social media style
-- highly detailed
-- modern visual storytelling
-- soft blue and purple palette
-- NOT dark cyberpunk
+- emotionally expressive
+- modern founder culture
+- meme-aware visual storytelling
+- subtle sarcasm
+- highly shareable
 - NOT generic AI art
+- NOT cyberpunk
+- NOT dark
+
+VISUAL REQUIREMENTS:
+- visually attractive
+- social media optimized
+- creator-style image
+- modern internet aesthetic
+- highly detailed
+- professional but funny
+- startup culture energy
+
+SCENE:
+{prompt}
 """
 
     try:
 
-        image = client.text_to_image(
-            enhanced_prompt,
-            model="black-forest-labs/FLUX.1-schnell",
+        response = client.images.generate(
+            model="gpt-image-1",
+            prompt=enhanced_prompt,
+            size="1024x1024"
         )
+
+        image_base64 = response.data[0].b64_json
+
+        image_bytes = base64.b64decode(image_base64)
 
         os.makedirs("assets", exist_ok=True)
 
         image_path = "assets/post.png"
 
-        image.save(image_path)
+        with open(image_path, "wb") as f:
+            f.write(image_bytes)
+
+        print("Image generated successfully")
 
         return image_path
 
     except Exception as e:
 
-        print("Image generation failed")
+        print("GPT Image generation failed")
         print(str(e))
 
         return None
