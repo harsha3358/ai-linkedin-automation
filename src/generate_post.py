@@ -1,5 +1,6 @@
 import os
 import json
+import random
 import time
 
 from openai import OpenAI
@@ -19,6 +20,23 @@ MODELS = [
     "meta-llama/llama-3-8b-instruct"
 ]
 
+HOOKS = [
+    "Most founders waste years before realizing this.",
+    "Your positioning decides your startup’s growth speed.",
+    "Most startups don’t fail because of product.",
+    "The market usually rewards clarity before innovation.",
+    "Broad positioning quietly kills early-stage startups.",
+    "Most AI startups are accidentally becoming feature lists.",
+]
+
+SARCASTIC_LINES = [
+    "Some startups now have 14 AI features and still no clear customer.",
+    "Apparently adding 'AI-powered' to the homepage is still considered strategy.",
+    "Half the startup ecosystem is now just workflow automation wearing sneakers.",
+    "Many founders are scaling confusion faster than product-market fit.",
+    "Some startups pivot so often the landing page needs version control."
+]
+
 
 def safe_json_parse(text):
 
@@ -35,59 +53,89 @@ def safe_json_parse(text):
 
 def generate_content(article):
 
+    hook = random.choice(HOOKS)
+    sarcastic_line = random.choice(SARCASTIC_LINES)
+
     prompt = f"""
-You are an elite AI creator writing viral founder-style LinkedIn posts.
+You are writing elite LinkedIn content for startup founders.
 
-STYLE:
-- Vaibhav Sisinty
-- Gen Z founder energy
+Your style is a combination of:
+- founder/operator thinking
 - internet-native storytelling
-- curiosity hooks
-- short punchy lines
-- emotional pacing
-- smart sarcasm
+- tactical startup insight
+- modern creator pacing
+- subtle sarcasm
+- high-retention formatting
+
+The writing should feel:
+- direct
+- intelligent
+- experience-led
+- practical
+- creator-native
+- emotionally engaging
 - highly readable
-- modern startup humor
 
-VERY IMPORTANT:
+NOT:
+- motivational
+- corporate
+- generic
+- AI-generated
+- robotic
+- blog-style
 
-The post MUST:
-- explain the AI update clearly
-- explain why it matters
-- explain real-world impact
-- feel like insider AI commentary
-- feel creator-native
-- feel modern and human
+IMPORTANT:
+
+This should feel like:
+"a founder explaining something important after learning it the hard way."
+
+The content must:
+- sound human
+- feel natural
+- create curiosity
+- use punchy short paragraphs
+- use emotional pacing
+- create tension
+- explain real startup implications
+- feel highly shareable
 
 DO NOT:
-- sound corporate
-- sound like a blog
-- sound like finance news
-- sound like ChatGPT summaries
-- write long paragraphs
-- use cringe engagement bait
+- summarize news mechanically
+- explain everything academically
+- use generic engagement bait
+- use huge paragraphs
+- use excessive emojis
+- sound like ChatGPT
 
-WRITE LIKE:
-- a founder obsessed with AI
-- someone explaining the future casually
-- internet-native AI storytelling
+STYLE RULES:
+- one sentence paragraphs preferred
+- maximum readability
+- conversational flow
+- suspense pacing
+- tactical insights
+- subtle founder humor
+
+CONTENT FLOW:
+
+1. Start with a powerful hook
+2. Explain the real strategic insight
+3. Explain why most founders miss this
+4. Explain real-world startup implications
+5. Add one subtle sarcastic observation naturally
+6. End with a strong founder takeaway
 
 VERY IMPORTANT:
 
-Generate BOTH:
-1. the LinkedIn post
-2. the cinematic image concept
+The post should feel like:
+- insider founder knowledge
+- startup pattern recognition
+- creator-style storytelling
+- practical strategic thinking
 
-The IMAGE PROMPT should:
-- match the emotional tone of the post
-- feel cinematic
-- feel Gen Z
-- feel internet-native
-- feel funny/sarcastic
-- use pastel colors
-- feel modern
-- feel highly shareable
-- NOT feel generic cyberpunk
+NOT:
+- generic advice
+- motivational fluff
+- startup clichés
 
 TOPIC:
 {article['title']}
@@ -95,7 +143,17 @@ TOPIC:
 DESCRIPTION:
 {article['description']}
 
-RETURN JSON ONLY
+HOOK:
+{hook}
+
+SARCASTIC OBSERVATION:
+{sarcastic_line}
+
+Think step by step before writing.
+
+Write a LinkedIn post under 2200 characters.
+
+Return ONLY valid JSON.
 
 FORMAT:
 {{
@@ -126,33 +184,62 @@ FORMAT:
         except Exception as e:
 
             print(str(e))
-
             time.sleep(5)
 
     return {
         "linkedin_post": f"""
-AI companies are moving insanely fast right now.
+{hook}
 
-{article['title']}
+Most founders think growth problems are marketing problems.
 
-Most people still think AI is just:
-“chatbot + productivity.”
+They’re usually positioning problems.
 
-Meanwhile startups are replacing entire workflows with agents.
+Especially in AI.
 
-That changes everything.
+Early-stage startups often try to target:
+• everyone
+• every workflow
+• every industry
+
+Which sounds ambitious.
+
+But usually creates invisible companies.
+
+The fastest-growing startups usually dominate:
+• one painful problem
+• one user type
+• one workflow
+
+before expanding.
+
+That’s how markets remember them.
+
+Funny part?
+
+{sarcastic_line}
+
+Clarity compounds faster than complexity.
+
+Especially in crowded AI markets.
+
+#Startups #AI #Founders
 """,
 
         "image_prompt": """
-funny AI startup meme,
-pastel aesthetic,
-Gen Z humor,
-modern founder chaos,
+modern AI startup founder,
+minimal workspace,
+Gen Z founder aesthetic,
+pastel colors,
+cinematic lighting,
+internet-native startup humor,
+founder stress energy,
+subtle sarcastic visual storytelling,
+modern clean composition,
+soft purple and blue palette,
+highly shareable social media image,
+professional but relatable,
+startup chaos aesthetic,
 light colors,
-soft purple tones,
-internet-native visual,
-cinematic but funny,
-AI workflow overload,
-minimal clean composition
+modern creator-style visual
 """
     }
