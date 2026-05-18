@@ -6,6 +6,13 @@ import time
 from openai import OpenAI
 from dotenv import load_dotenv
 
+from validation import (
+    validate_post,
+    ensure_not_paragraph_heavy,
+    has_good_spacing,
+    final_cleanup
+)
+
 load_dotenv()
 
 API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
@@ -22,20 +29,59 @@ MODELS = [
 
 HOOKS = [
     "Most founders waste years before realizing this.",
-    "Your positioning decides your startup’s growth speed.",
-    "Most startups don’t fail because of product.",
-    "The market usually rewards clarity before innovation.",
-    "Broad positioning quietly kills early-stage startups.",
+    "AI startups are making the same mistake SaaS startups made in 2018.",
+    "The market rewards clarity more than complexity.",
     "Most AI startups are accidentally becoming feature lists.",
+    "AI is changing how companies operate much faster than people realize.",
+    "The next generation of startups will look operationally different.",
+    "Most founders still underestimate workflow automation.",
+    "AI-native startups are scaling differently already.",
+    "The real AI disruption is operational, not visual.",
+    "Most companies still use AI like a toy."
 ]
 
 SARCASTIC_LINES = [
-    "Some startups now have 14 AI features and still no clear customer.",
+    "Some startups now have more AI tools than paying customers.",
     "Apparently adding 'AI-powered' to the homepage is still considered strategy.",
-    "Half the startup ecosystem is now just workflow automation wearing sneakers.",
-    "Many founders are scaling confusion faster than product-market fit.",
-    "Some startups pivot so often the landing page needs version control."
+    "Half the startup ecosystem is now workflow automation wearing sneakers.",
+    "Some founders pivot so often their landing page needs version control.",
+    "Many startups now spend more money on GPUs than marketing.",
+    "The AI agents are starting to sound more organized than the teams using them.",
+    "Some companies automated everything except decision making.",
+    "AI is removing repetitive work faster than meetings.",
+    "Startups are discovering automation after hiring 14 dashboards.",
+    "Some founders are scaling confusion faster than product-market fit."
 ]
+
+MEMORY_FILE = "src/content_memory.json"
+
+
+def load_memory():
+
+    with open(MEMORY_FILE, "r") as file:
+        return json.load(file)
+
+
+def save_memory(memory):
+
+    with open(MEMORY_FILE, "w") as file:
+        json.dump(memory, file, indent=2)
+
+
+def get_unique_item(items, used_items):
+
+    available = [
+        item for item in items
+        if item not in used_items
+    ]
+
+    if not available:
+
+        used_items.clear()
+
+        available = items.copy()
+
+    return random.choice(available)
 
 
 def safe_json_parse(text):
@@ -53,89 +99,77 @@ def safe_json_parse(text):
 
 def generate_content(article):
 
-    hook = random.choice(HOOKS)
-    sarcastic_line = random.choice(SARCASTIC_LINES)
+    memory = load_memory()
+
+    hook = get_unique_item(
+        HOOKS,
+        memory["used_hooks"]
+    )
+
+    sarcastic_line = get_unique_item(
+        SARCASTIC_LINES,
+        memory["used_jokes"]
+    )
+
+    memory["used_hooks"].append(hook)
+    memory["used_jokes"].append(sarcastic_line)
+
+    save_memory(memory)
 
     prompt = f"""
-You are writing elite LinkedIn content for startup founders.
+You are an elite LinkedIn founder creator.
 
-Your style is a combination of:
-- founder/operator thinking
-- internet-native storytelling
-- tactical startup insight
-- modern creator pacing
-- subtle sarcasm
-- high-retention formatting
+Write EXACTLY like:
+- founder creators
+- startup operators
+- internet-native builders
 
 The writing should feel:
 - direct
-- intelligent
-- experience-led
-- practical
+- smart
+- tactical
 - creator-native
-- emotionally engaging
+- human
 - highly readable
-
-NOT:
-- motivational
-- corporate
-- generic
-- AI-generated
-- robotic
-- blog-style
-
-IMPORTANT:
-
-This should feel like:
-"a founder explaining something important after learning it the hard way."
-
-The content must:
-- sound human
-- feel natural
-- create curiosity
-- use punchy short paragraphs
-- use emotional pacing
-- create tension
-- explain real startup implications
-- feel highly shareable
+- emotionally engaging
 
 DO NOT:
-- summarize news mechanically
-- explain everything academically
-- use generic engagement bait
-- use huge paragraphs
-- use excessive emojis
-- sound like ChatGPT
+- sound corporate
+- sound robotic
+- summarize mechanically
+- write huge paragraphs
+- sound motivational
+- use cringe engagement bait
 
-STYLE RULES:
-- one sentence paragraphs preferred
+IMPORTANT FORMATTING RULES:
+
+- short paragraphs only
 - maximum readability
+- breathing space between thoughts
+- one idea per paragraph
+- short punchy pacing
 - conversational flow
-- suspense pacing
-- tactical insights
-- subtle founder humor
-
-CONTENT FLOW:
-
-1. Start with a powerful hook
-2. Explain the real strategic insight
-3. Explain why most founders miss this
-4. Explain real-world startup implications
-5. Add one subtle sarcastic observation naturally
-6. End with a strong founder takeaway
 
 VERY IMPORTANT:
 
-The post should feel like:
-- insider founder knowledge
-- startup pattern recognition
-- creator-style storytelling
-- practical strategic thinking
+The post should:
+- feel creator-native
+- feel insightful
+- feel like insider founder commentary
+- explain ONE important strategic insight
+- create curiosity
+- create retention
 
-NOT:
-- generic advice
-- motivational fluff
-- startup clichés
+The post MUST look visually beautiful on LinkedIn.
+
+Add spacing naturally.
+
+Add subtle sarcasm naturally.
+
+DO NOT:
+- overuse hashtags
+- overuse emojis
+- use walls of text
 
 TOPIC:
 {article['title']}
@@ -150,8 +184,6 @@ SARCASTIC OBSERVATION:
 {sarcastic_line}
 
 Think step by step before writing.
-
-Write a LinkedIn post under 2200 characters.
 
 Return ONLY valid JSON.
 
@@ -179,67 +211,76 @@ FORMAT:
 
             text = response.choices[0].message.content
 
-            return safe_json_parse(text)
+            data = safe_json_parse(text)
+
+            post = final_cleanup(
+                data["linkedin_post"]
+            )
+
+            valid = (
+                validate_post(post)
+                and ensure_not_paragraph_heavy(post)
+                and has_good_spacing(post)
+            )
+
+            if valid:
+
+                data["linkedin_post"] = post
+
+                return data
 
         except Exception as e:
 
             print(str(e))
+
             time.sleep(5)
 
     return {
         "linkedin_post": f"""
 {hook}
 
-Most founders think growth problems are marketing problems.
+Most startups think AI gives them leverage.
 
-They’re usually positioning problems.
+Sometimes it just gives them more noise.
 
-Especially in AI.
+The real advantage isn’t:
+using AI.
 
-Early-stage startups often try to target:
-• everyone
-• every workflow
-• every industry
+It’s building workflows around it.
 
-Which sounds ambitious.
+That’s the shift most companies still miss.
 
-But usually creates invisible companies.
+AI-native startups are operating differently already.
 
-The fastest-growing startups usually dominate:
-• one painful problem
-• one user type
-• one workflow
+Smaller teams.
 
-before expanding.
+Faster execution.
 
-That’s how markets remember them.
+Less operational drag.
 
 Funny part?
 
 {sarcastic_line}
 
-Clarity compounds faster than complexity.
+The companies learning this early will move differently over the next few years.
 
-Especially in crowded AI markets.
+That’s the real disruption.
 
-#Startups #AI #Founders
+#AI #Startups #Founders
 """,
 
         "image_prompt": """
-modern AI startup founder,
-minimal workspace,
-Gen Z founder aesthetic,
-pastel colors,
-cinematic lighting,
-internet-native startup humor,
-founder stress energy,
-subtle sarcastic visual storytelling,
-modern clean composition,
-soft purple and blue palette,
-highly shareable social media image,
-professional but relatable,
-startup chaos aesthetic,
-light colors,
-modern creator-style visual
+modern AI founder workspace,
+Gen Z startup aesthetic,
+light pastel colors,
+cinematic but funny,
+internet-native visual storytelling,
+soft blue and purple palette,
+modern creator energy,
+highly shareable social media visual,
+minimal clean composition,
+subtle startup sarcasm,
+founder chaos aesthetic,
+professional but relatable
 """
     }
