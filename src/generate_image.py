@@ -1,65 +1,126 @@
 import os
-import base64
-
-from openai import OpenAI
-from dotenv import load_dotenv
-
-load_dotenv()
-
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
-
-client = OpenAI(
-    api_key=OPENAI_API_KEY
-)
+import time
+import random
+import requests
+import urllib.parse
 
 
-def generate_image(prompt):
+VISUAL_STYLES = [
+    "modern startup meme aesthetic",
+    "Gen Z creator visual",
+    "internet-native startup storytelling",
+    "viral LinkedIn creator image",
+    "minimal founder aesthetic",
+    "soft cinematic startup visual",
+    "AI startup culture meme",
+    "modern creator economy visual",
+    "high-retention social media visual",
+    "pastel creator-style composition"
+]
+
+VISUAL_MOODS = [
+    "soft purple and blue tones",
+    "light pastel colors",
+    "clean cinematic lighting",
+    "minimal clean composition",
+    "emotionally expressive",
+    "modern internet aesthetic",
+    "professional but funny",
+    "subtle sarcasm energy",
+    "startup founder chaos",
+    "highly shareable social media design"
+]
+
+
+def build_prompt(prompt):
+
+    style = random.choice(VISUAL_STYLES)
+
+    mood = random.choice(VISUAL_MOODS)
 
     enhanced_prompt = f"""
-Create a viral LinkedIn creator-style image.
+{style},
+{mood},
 
-STYLE:
-- Gen Z founder aesthetic
-- cinematic composition
-- pastel colors
-- startup meme energy
-- subtle sarcasm
-- modern internet-native design
-- highly shareable
-- minimal clean composition
-- NOT cyberpunk
+Create a visually attractive creator-style image.
+
+IMPORTANT:
 - NOT generic AI art
+- NOT cyberpunk
+- NOT dark
+- NOT futuristic city posters
+- NOT random robots
+
+The image should feel:
+- modern
+- startup-native
+- internet-native
+- emotionally engaging
+- creator economy aesthetic
+- LinkedIn creator visual
+- Gen Z startup culture
+
+The composition should:
+- look clean
+- look premium
+- look social-media optimized
+- feel highly shareable
 
 SCENE:
 {prompt}
 """
 
+    return enhanced_prompt
+
+
+def generate_image(prompt):
+
     try:
 
-        response = client.images.generate(
-            model="gpt-image-1",
-            prompt=enhanced_prompt,
-            size="1024x1024"
+        enhanced_prompt = build_prompt(prompt)
+
+        encoded_prompt = urllib.parse.quote(
+            enhanced_prompt
         )
 
-        image_base64 = response.data[0].b64_json
+        seed = random.randint(1, 999999)
 
-        image_bytes = base64.b64decode(image_base64)
+        image_url = (
+            f"https://image.pollinations.ai/prompt/"
+            f"{encoded_prompt}"
+            f"?width=1024"
+            f"&height=1024"
+            f"&seed={seed}"
+            f"&model=flux"
+        )
 
-        os.makedirs("assets", exist_ok=True)
+        print("Generating creator-style image...")
 
-        image_path = "assets/post.png"
+        response = requests.get(
+            image_url,
+            timeout=90
+        )
 
-        with open(image_path, "wb") as f:
-            f.write(image_bytes)
+        if response.status_code == 200:
 
-        print("Image generated successfully")
+            os.makedirs("assets", exist_ok=True)
 
-        return image_path
+            image_path = "assets/post.png"
+
+            with open(image_path, "wb") as f:
+                f.write(response.content)
+
+            print("Image generated successfully")
+
+            return image_path
+
+        print("Failed to generate image")
+
+        return None
 
     except Exception as e:
 
-        print("GPT image generation failed")
+        print("Image generation failed")
         print(str(e))
 
         return None
