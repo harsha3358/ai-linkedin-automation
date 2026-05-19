@@ -1,19 +1,55 @@
-import requests
 import os
+import requests
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
+AI_KEYWORDS = [
+    "AI",
+    "OpenAI",
+    "Gemini",
+    "Anthropic",
+    "Claude",
+    "GPT",
+    "LLM",
+    "AI startup",
+    "AI agents",
+    "artificial intelligence",
+    "machine learning",
+    "automation",
+    "Cursor",
+    "Perplexity",
+    "DeepMind",
+    "Midjourney"
+]
+
+
+def is_ai_article(article):
+
+    combined_text = f"""
+    {article.get('title', '')}
+    {article.get('description', '')}
+    """
+
+    combined_text = combined_text.lower()
+
+    return any(
+        keyword.lower() in combined_text
+        for keyword in AI_KEYWORDS
+    )
+
+
 def fetch_ai_news():
 
     url = (
-        f"https://newsapi.org/v2/everything?"
-        f"q=OpenAI OR Anthropic OR Gemini OR AI agents OR AI startup OR artificial intelligence"
-        f"&language=en"
-        f"&sortBy=publishedAt"
-        f"&pageSize=10"
+        "https://newsapi.org/v2/everything?"
+        "q=AI OR OpenAI OR Gemini OR Anthropic OR GPT"
+        "&language=en"
+        "&sortBy=publishedAt"
+        "&pageSize=25"
         f"&apiKey={NEWS_API_KEY}"
     )
 
@@ -21,14 +57,12 @@ def fetch_ai_news():
 
     data = response.json()
 
-    articles = []
+    articles = data.get("articles", [])
 
-    for article in data["articles"]:
+    filtered_articles = [
+        article
+        for article in articles
+        if is_ai_article(article)
+    ]
 
-        articles.append({
-            "title": article["title"],
-            "description": article["description"],
-            "url": article["url"]
-        })
-
-    return articles
+    return filtered_articles[:10]
