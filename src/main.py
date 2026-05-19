@@ -11,6 +11,11 @@ def run_pipeline():
 
     articles = fetch_ai_news()
 
+    if not articles:
+
+        print("No AI articles found.")
+        return
+
     print("Ranking news...")
 
     best_article = rank_articles(articles)
@@ -18,32 +23,35 @@ def run_pipeline():
     print("Best Article:")
     print(best_article)
 
-    print("Generating AI content...")
+    print("Generating AI creator-style content...")
 
     content = generate_content(best_article)
 
     linkedin_post = content["linkedin_post"]
+
     image_prompt = content["image_prompt"]
 
-    print("Trend Score:", content.get("trend_score"))
-
-    print("Carousel Ideas:")
-    print(content.get("carousel_ideas"))
-
-    print("Meme Idea:")
-    print(content.get("meme_idea"))
-
+    print("\nGenerated LinkedIn Post:\n")
     print(linkedin_post)
 
-    print("Generating image...")
+    print("\nGenerating image...\n")
 
     image_path = generate_image(image_prompt)
 
-    print("Posting to LinkedIn...")
+    if image_path:
 
-    post_to_linkedin(linkedin_post, image_path)
+        print("Posting to LinkedIn...\n")
 
-    print("DONE")
+        post_to_linkedin(
+            linkedin_post,
+            image_path
+        )
+
+        print("LinkedIn post published successfully.")
+
+    else:
+
+        print("Skipping LinkedIn post because image generation failed.")
 
 
 if __name__ == "__main__":
