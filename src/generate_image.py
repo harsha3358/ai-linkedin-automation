@@ -6,41 +6,29 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("OPENROUTER_API_KEY", "").strip()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 
 client = OpenAI(
-    api_key=API_KEY
+    api_key=OPENAI_API_KEY
 )
 
 
 def generate_image(prompt):
 
     enhanced_prompt = f"""
-Create a highly engaging LinkedIn visual.
+Create a viral LinkedIn creator-style image.
 
 STYLE:
-- modern startup creator aesthetic
-- Gen Z internet-native humor
+- Gen Z founder aesthetic
 - cinematic composition
-- soft pastel colors
-- minimal clean design
-- emotionally expressive
-- modern founder culture
-- meme-aware visual storytelling
+- pastel colors
+- startup meme energy
 - subtle sarcasm
+- modern internet-native design
 - highly shareable
-- NOT generic AI art
+- minimal clean composition
 - NOT cyberpunk
-- NOT dark
-
-VISUAL REQUIREMENTS:
-- visually attractive
-- social media optimized
-- creator-style image
-- modern internet aesthetic
-- highly detailed
-- professional but funny
-- startup culture energy
+- NOT generic AI art
 
 SCENE:
 {prompt}
@@ -71,7 +59,7 @@ SCENE:
 
     except Exception as e:
 
-        print("GPT Image generation failed")
+        print("GPT image generation failed")
         print(str(e))
 
         return None
