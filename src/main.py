@@ -23,24 +23,51 @@ def run_pipeline():
     print("Best Article:")
     print(best_article)
 
-    print("Generating AI creator-style content...")
+    print("Generating creator-style content...")
 
     content = generate_content(best_article)
 
     linkedin_post = content["linkedin_post"]
 
-    image_prompt = content["image_prompt"]
+    visual_scene = content.get(
+        "visual_scene",
+        ""
+    )
 
-    print("\nGenerated LinkedIn Post:\n")
+    visual_emotion = content.get(
+        "visual_emotion",
+        ""
+    )
+
+    visual_style = content.get(
+        "visual_style",
+        ""
+    )
+
+    image_prompt = f"""
+SCENE:
+{visual_scene}
+
+EMOTION:
+{visual_emotion}
+
+STYLE:
+{visual_style}
+
+BASE PROMPT:
+{content['image_prompt']}
+"""
+
+    print("\nGenerated Post:\n")
     print(linkedin_post)
 
-    print("\nGenerating image...\n")
+    print("\nGenerating creator-style image...\n")
 
     image_path = generate_image(image_prompt)
 
     if image_path:
 
-        print("Posting to LinkedIn...\n")
+        print("Posting with image...\n")
 
         post_to_linkedin(
             linkedin_post,
@@ -51,7 +78,15 @@ def run_pipeline():
 
     else:
 
-        print("Skipping LinkedIn post because image generation failed.")
+        print("Image generation failed.")
+
+        print("Posting text-only content...\n")
+
+        post_to_linkedin(
+            linkedin_post
+        )
+
+        print("LinkedIn text post published successfully.")
 
 
 if __name__ == "__main__":
