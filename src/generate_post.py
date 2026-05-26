@@ -28,29 +28,29 @@ MODELS = [
 ]
 
 HOOKS = [
-    "Most founders waste years before realizing this.",
-    "AI startups are making the same mistake SaaS startups made in 2018.",
-    "The market rewards clarity more than complexity.",
-    "Most AI startups are accidentally becoming feature lists.",
-    "AI is changing how companies operate much faster than people realize.",
-    "The next generation of startups will look operationally different.",
-    "Most founders still underestimate workflow automation.",
-    "AI-native startups are scaling differently already.",
-    "The real AI disruption is operational, not visual.",
-    "Most companies still use AI like a toy."
+    "Most people still don’t understand what AI is actually changing.",
+    "The biggest AI shift is not what most founders think.",
+    "AI is changing how companies work faster than people realize.",
+    "Most startups are using AI completely wrong.",
+    "The next generation of companies will operate very differently.",
+    "Most people think AI is just another tool.",
+    "The scary part about AI is not the models.",
+    "Most companies are still treating AI like a side feature.",
+    "The AI companies winning right now are doing one thing differently.",
+    "AI is quietly changing how work happens."
 ]
 
 SARCASTIC_LINES = [
-    "Some startups now have more AI tools than paying customers.",
+    "Some startups now have more AI tools than actual workflows.",
     "Apparently adding 'AI-powered' to the homepage is still considered strategy.",
-    "Half the startup ecosystem is now workflow automation wearing sneakers.",
-    "Some founders pivot so often their landing page needs version control.",
-    "Many startups now spend more money on GPUs than marketing.",
-    "The AI agents are starting to sound more organized than the teams using them.",
-    "Some companies automated everything except decision making.",
-    "AI is removing repetitive work faster than meetings.",
-    "Startups are discovering automation after hiring 14 dashboards.",
-    "Some founders are scaling confusion faster than product-market fit."
+    "Some founders automate everything except decision making.",
+    "A lot of companies bought AI tools before fixing basic operations.",
+    "Some startups now spend more on dashboards than product clarity.",
+    "Half the startup ecosystem is workflow automation wearing sneakers.",
+    "Some companies now use AI to summarize meetings that should not have existed.",
+    "Many teams are moving faster now. Not always in the correct direction.",
+    "Some founders are scaling confusion faster than product-market fit.",
+    "AI agents are starting to sound more organized than some teams."
 ]
 
 MEMORY_FILE = "src/content_memory.json"
@@ -117,59 +117,70 @@ def generate_content(article):
     save_memory(memory)
 
     prompt = f"""
-You are an elite LinkedIn founder creator.
+You are an elite LinkedIn creator writing for:
+- students
+- startup founders
+- workers
+- developers
+- internet-native people
 
-Write EXACTLY like:
-- founder creators
-- startup operators
-- internet-native builders
-
-The writing should feel:
-- direct
+The writing MUST feel:
+- simple
 - smart
-- tactical
-- creator-native
-- human
+- easy to understand
+- emotional
 - highly readable
-- emotionally engaging
-
-DO NOT:
-- sound corporate
-- sound robotic
-- summarize mechanically
-- write huge paragraphs
-- sound motivational
-- use cringe engagement bait
-
-IMPORTANT FORMATTING RULES:
-
-- short paragraphs only
-- maximum readability
-- breathing space between thoughts
-- one idea per paragraph
-- short punchy pacing
-- conversational flow
+- modern
+- creator-native
 
 VERY IMPORTANT:
 
 The post should:
-- feel creator-native
-- feel insightful
-- feel like insider founder commentary
-- explain ONE important strategic insight
-- create curiosity
-- create retention
+- NOT feel corporate
+- NOT feel robotic
+- NOT feel AI-generated
+- NOT feel text-heavy
+- NOT feel like an article
 
-The post MUST look visually beautiful on LinkedIn.
+The post SHOULD:
+- feel like a creator explaining something important
+- use short paragraphs
+- use spacing beautifully
+- use emotional pacing
+- use conversational language
+- be easy enough for anyone to understand
 
-Add spacing naturally.
+IMPORTANT STRUCTURE:
 
-Add subtle sarcasm naturally.
+1. Strong hook
+2. Explain what happened
+3. Explain why it matters
+4. Explain real-world impact
+5. Add one subtle funny observation
+6. End with an interesting thought
 
-DO NOT:
-- overuse hashtags
-- overuse emojis
-- use walls of text
+VERY IMPORTANT:
+
+The post should:
+- feel human
+- feel modern
+- feel emotionally engaging
+- feel visually beautiful on LinkedIn
+
+WORD COUNT:
+- minimum 200 words
+- maximum 350 words
+
+VERY IMPORTANT FOR VISUALS:
+
+Generate:
+- visual_scene
+- visual_emotion
+- visual_style
+- image_prompt
+
+The image should feel like:
+"a visual extension of the post"
 
 TOPIC:
 {article['title']}
@@ -180,7 +191,7 @@ DESCRIPTION:
 HOOK:
 {hook}
 
-SARCASTIC OBSERVATION:
+FUNNY OBSERVATION:
 {sarcastic_line}
 
 Think step by step before writing.
@@ -190,6 +201,9 @@ Return ONLY valid JSON.
 FORMAT:
 {{
     "linkedin_post": "...",
+    "visual_scene": "...",
+    "visual_emotion": "...",
+    "visual_style": "...",
     "image_prompt": "..."
 }}
 """
@@ -239,48 +253,65 @@ FORMAT:
         "linkedin_post": f"""
 {hook}
 
-Most startups think AI gives them leverage.
+Most people think AI is replacing jobs.
 
-Sometimes it just gives them more noise.
+That’s not the real shift.
 
-The real advantage isn’t:
-using AI.
+AI is replacing:
+slow workflows.
 
-It’s building workflows around it.
+That changes how companies operate.
 
-That’s the shift most companies still miss.
+Small teams can now do work that previously needed:
+• bigger teams
+• more meetings
+• more manual operations
 
-AI-native startups are operating differently already.
+This is why AI-native startups are growing differently.
 
-Smaller teams.
+They move faster.
 
-Faster execution.
+They test ideas faster.
 
-Less operational drag.
+They automate repetitive work earlier.
 
 Funny part?
 
 {sarcastic_line}
 
-The companies learning this early will move differently over the next few years.
+The companies learning this shift early will probably operate very differently over the next few years.
 
-That’s the real disruption.
+That’s the real AI disruption.
 
-#AI #Startups #Founders
+#AI #Startups #Technology
+""",
+
+        "visual_scene": """
+small startup team using AI systems,
+modern workspace,
+people working with AI tools,
+startup founder energy
+""",
+
+        "visual_emotion": """
+modern,
+exciting,
+slightly chaotic,
+internet-native,
+emotionally engaging
+""",
+
+        "visual_style": """
+cinematic creator thumbnail,
+Gen Z startup aesthetic,
+pastel colors,
+minimal clean composition
 """,
 
         "image_prompt": """
-modern AI founder workspace,
-Gen Z startup aesthetic,
-light pastel colors,
-cinematic but funny,
-internet-native visual storytelling,
-soft blue and purple palette,
-modern creator energy,
-highly shareable social media visual,
-minimal clean composition,
-subtle startup sarcasm,
-founder chaos aesthetic,
-professional but relatable
+AI startup workflow automation,
+modern creator-style social visual,
+startup founder culture,
+internet-native storytelling
 """
     }
