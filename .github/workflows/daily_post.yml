@@ -1,19 +1,26 @@
-name: AI LinkedIn Automation
+name: AI LinkedIn Growth Engine
 
 on:
   workflow_dispatch:
 
   schedule:
-    - cron: "0 4 * * *"
+    # 07:30 AM IST Daily
+    # GitHub Actions uses UTC
+    # 02:00 UTC = 07:30 IST
+    - cron: "0 2 * * *"
 
 jobs:
-  linkedin-post:
+  linkedin-growth-engine:
+
     runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
+    timeout-minutes: 30
+
     steps:
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -22,18 +29,40 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Dependencies
+      - name: Upgrade Pip
         run: |
           python -m pip install --upgrade pip
+
+      - name: Install Dependencies
+        run: |
           pip install -r requirements.txt
 
-      - name: Create Data Directories
+      - name: Create Required Directories
         run: |
           mkdir -p src/data
           mkdir -p src/outputs
 
-      - name: Run LinkedIn Automation
+      - name: Create Memory Files If Missing
+        run: |
+
+          if [ ! -f src/data/history.json ]; then
+            echo '{
+              "posts": [],
+              "topics": [],
+              "signatures": [],
+              "cta_history": [],
+              "voice_history": [],
+              "image_styles": []
+            }' > src/data/history.json
+          fi
+
+          if [ ! -f src/data/runs.json ]; then
+            echo '[]' > src/data/runs.json
+          fi
+
+      - name: Run AI LinkedIn Automation
         env:
+
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -52,19 +81,40 @@ jobs:
           IMAGE_PROVIDER: hf
 
           TEXT_MODEL: gemini-2.5-flash
+
           IMAGE_MODEL: black-forest-labs/FLUX.1-schnell
+
+          RESEARCH_MODEL: gemini-2.5-flash
+          WRITER_MODEL: gemini-2.5-flash
+          CRITIC_MODEL: gemini-2.5-flash
 
         run: |
           cd src
           python main.py
 
-      - name: Commit History Updates
+      - name: Upload Generated Outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkedin-run-output
+          path: |
+            src/outputs
+            src/data/history.json
+            src/data/runs.json
+
+      - name: Commit Learning Updates
+        if: always()
         run: |
+
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add .
+          git add src/data/history.json
+          git add src/data/runs.json
 
           git diff --cached --quiet || git commit -m "update automation memory"
 
+      - name: Push Changes
+        if: always()
+        run: |
           git push

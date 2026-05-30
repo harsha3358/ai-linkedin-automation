@@ -181,17 +181,39 @@ def build_text_prompt(brief: PostBrief) -> str:
     cta_line = random.choice(CTA_LIBRARY[brief.cta_type])
     hook_style = _pick(HOOК_STYLES, f"{brief.topic}|hook")
     format_instruction = {
-        "contrarian take": "write a crisp contrarian LinkedIn post",
-        "myth-busting perspective": "write a myth-busting LinkedIn post",
-        "lesson from a failure": "write a reflective but practical LinkedIn post",
-        "tool or workflow comparison": "write a comparison LinkedIn post",
-        "trend breakdown": "write a trend breakdown LinkedIn post",
-        "beginner mistake to avoid": "write a cautionary LinkedIn post",
-        "practical tutorial": "write a practical how-to LinkedIn post",
-        "future prediction": "write a prediction LinkedIn post",
-        "case study": "write a concise case study LinkedIn post",
-        "one-chart explanation": "write an explanation post that could accompany a chart",
-    }[brief.post_type]
+    "contrarian insight":
+        "write a contrarian LinkedIn post",
+
+    "myth vs reality":
+        "write a myth-busting LinkedIn post",
+
+    "lesson from failure":
+        "write a reflective LinkedIn post about lessons learned",
+
+    "tool comparison":
+        "write a tool comparison LinkedIn post",
+
+    "trend breakdown":
+        "write a trend analysis LinkedIn post",
+
+    "beginner mistake":
+        "write a beginner mistake LinkedIn post",
+
+    "practical tutorial":
+        "write a practical tutorial LinkedIn post",
+
+    "future prediction":
+        "write a future prediction LinkedIn post",
+
+    "case study":
+        "write a concise case study LinkedIn post",
+
+    "one-chart explanation":
+        "write a post explaining a chart or visualization",
+}.get(
+    brief.post_type,
+    "write a professional LinkedIn post"
+)
 
     return f"""
 You are writing for LinkedIn.
