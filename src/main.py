@@ -1,93 +1,49 @@
-from scrape_news import fetch_ai_news
-from rank_news import rank_articles
-from generate_post import generate_content
-from generate_image import generate_image
-from post_linkedin import post_to_linkedin
+import time
+import traceback
+from pipeline import run
 
 
-def run_pipeline():
+def main():
+    start_time = time.time()
 
-    print("Fetching latest AI news...")
+    try:
+        print("=" * 60)
+        print("AI LinkedIn Growth Engine")
+        print("=" * 60)
 
-    articles = fetch_ai_news()
+        result = run(dry_run=False)
 
-    if not articles:
+        if result.get("ok"):
 
-        print("No AI articles found.")
-        return
+            print("\nSUCCESS")
 
-    print("Ranking news...")
+            print(f"Topic: {result.get('topic')}")
+            print(f"Score: {result.get('final_score')}")
+            print(f"Published: {result.get('published')}")
 
-    best_article = rank_articles(articles)
+            if result.get("image_path"):
+                print(f"Image: {result.get('image_path')}")
 
-    print("Best Article:")
-    print(best_article)
+        else:
 
-    print("Generating creator-style content...")
+            print("\nFAILED")
+            print(result.get("reason", "Unknown error"))
 
-    content = generate_content(best_article)
+    except Exception as e:
 
-    linkedin_post = content["linkedin_post"]
+        print("\nCRITICAL ERROR")
+        print(str(e))
+        traceback.print_exc()
 
-    visual_scene = content.get(
-        "visual_scene",
-        ""
-    )
+        raise
 
-    visual_emotion = content.get(
-        "visual_emotion",
-        ""
-    )
+    finally:
 
-    visual_style = content.get(
-        "visual_style",
-        ""
-    )
+        elapsed = round(time.time() - start_time, 2)
 
-    image_prompt = f"""
-SCENE:
-{visual_scene}
-
-EMOTION:
-{visual_emotion}
-
-STYLE:
-{visual_style}
-
-BASE PROMPT:
-{content['image_prompt']}
-"""
-
-    print("\nGenerated Post:\n")
-    print(linkedin_post)
-
-    print("\nGenerating creator-style image...\n")
-
-    image_path = generate_image(image_prompt)
-
-    if image_path:
-
-        print("Posting with image...\n")
-
-        post_to_linkedin(
-            linkedin_post,
-            image_path
-        )
-
-        print("LinkedIn post published successfully.")
-
-    else:
-
-        print("Image generation failed.")
-
-        print("Posting text-only content...\n")
-
-        post_to_linkedin(
-            linkedin_post
-        )
-
-        print("LinkedIn text post published successfully.")
+        print("\nExecution Time:", elapsed, "seconds")
+        print("=" * 60)
 
 
 if __name__ == "__main__":
-    run_pipeline()
+    main()

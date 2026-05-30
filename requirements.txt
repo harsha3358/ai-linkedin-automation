@@ -1,5 +1,10 @@
-requests
-python-dotenv
-openai
-huggingface_hub
-Pillow
+requests>=2.31.0
+Pillow>=10.0.0
+numpy>=1.26.0
+transformers>=4.43.0
+torch>=2.2.0
+diffusers>=0.30.0
+accelerate>=0.33.0
+safetensors>=0.4.3
+huggingface_hub>=0.24.0
+python-dotenv>=1.0.1

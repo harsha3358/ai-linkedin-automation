@@ -1,0 +1,70 @@
+name: AI LinkedIn Automation
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 4 * * *"
+
+jobs:
+  linkedin-post:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Create Data Directories
+        run: |
+          mkdir -p src/data
+          mkdir -p src/outputs
+
+      - name: Run LinkedIn Automation
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_API_KEY: ${{ secrets.HF_API_KEY }}
+
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
+
+          LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
+          LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
+
+          MODEL_PROVIDER: gemini
+          IMAGE_PROVIDER: hf
+
+          TEXT_MODEL: gemini-2.5-flash
+          IMAGE_MODEL: black-forest-labs/FLUX.1-schnell
+
+        run: |
+          cd src
+          python main.py
+
+      - name: Commit History Updates
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+          git add .
+
+          git diff --cached --quiet || git commit -m "update automation memory"
+
+          git push
