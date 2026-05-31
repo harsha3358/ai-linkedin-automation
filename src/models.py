@@ -19,7 +19,7 @@ class TrendItem:
 
 
 # ============================================================
-# Knowledge Extraction Models
+# Knowledge Models
 # ============================================================
 
 @dataclass
@@ -33,7 +33,7 @@ class KnowledgePack:
 
 
 # ============================================================
-# Content Planning Models
+# Content Planning
 # ============================================================
 
 @dataclass
@@ -55,7 +55,35 @@ class PostBrief:
 
 
 # ============================================================
-# Generated Candidate
+# Draft Variant
+# ============================================================
+
+@dataclass
+class DraftVariant:
+    text: str
+    audience: str = ""
+    voice: str = ""
+    score: float = 0.0
+    feedback: str = ""
+
+
+# ============================================================
+# Candidate Pair
+# ============================================================
+
+@dataclass
+class CandidatePair:
+    text: str
+    image_path: str
+
+    text_metrics: Dict = field(default_factory=dict)
+    image_metrics: Dict = field(default_factory=dict)
+
+    total_score: float = 0.0
+
+
+# ============================================================
+# Generic Candidate
 # ============================================================
 
 @dataclass
@@ -67,6 +95,28 @@ class Candidate:
     image_metrics: Dict = field(default_factory=dict)
 
     total_score: float = 0.0
+
+
+# ============================================================
+# Run Record
+# ============================================================
+
+@dataclass
+class RunRecord:
+    timestamp: str = ""
+
+    topic: str = ""
+    audience: str = ""
+
+    score: float = 0.0
+
+    text: str = ""
+    image_path: str = ""
+
+    metrics: Dict = field(default_factory=dict)
+
+    published: bool = False
+    publish_url: str = ""
 
 
 # ============================================================
@@ -82,7 +132,7 @@ class PublishResult:
 
 
 # ============================================================
-# Learning Models
+# Learning
 # ============================================================
 
 @dataclass
