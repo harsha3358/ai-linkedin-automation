@@ -1,50 +1,7 @@
 {
-  "posts": [
-    {
-      "created_at": "2026-05-31T11:06:54.306980+00:00",
-      "topic": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
-      "audience": "ai engineers",
-      "voice": "research analyst",
-      "post_type": "lesson from failure",
-      "image_style": "realistic future scene",
-      "cta_type": "follow",
-      "text": "I keep seeing the same mistake around Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching.\n\nHere is the practical truth: the people who learn systems will outperform people who only learn tools.\n\n2) Reuse what works and discard repetitive patterns.\n2) Use a repeatable process, not a repeated template.\n3) Score the output before it goes live.\n\nFollow for more practical AI/ML systems.",
-      "image_path": "/home/runner/work/ai-linkedin-automation/ai-linkedin-automation/src/outputs/20260531_110554/efficient_test_time_finetuning_of_llms_via_convex_reconstruction_and_gradient_ca.png",
-      "scores": {
-        "text_quality": 80.08,
-        "hook_strength": 60.0,
-        "clarity": 100.0,
-        "utility": 75.0,
-        "novelty": 100.0,
-        "audience_match": 36,
-        "cta_strength": 100.0,
-        "profile_visit_probability": 75.97999999999999,
-        "follow_probability": 82.941,
-        "save_probability": 90.0,
-        "share_probability": 84.0,
-        "comment_probability": 50.4,
-        "follower_score": 79.5173,
-        "clip": 60.18035039305687,
-        "final_score": 75.64043503930569,
-        "repetition_similarity": 0.0,
-        "publish_ready": 1.0
-      },
-      "final_score": 75.64043503930569,
-      "publish_result": {
-        "published": true,
-        "status_code": 201,
-        "response_text": "{\"id\":\"urn:li:share:7466807413917134848\"}",
-        "post_urn": "urn:li:share:7466807413917134848",
-        "asset_urn": "urn:li:digitalmediaAsset:D5622AQH2HGzMUv1uCQ",
-        "post_url": "",
-        "error": ""
-      }
-    }
-  ],
+  "posts": [],
   "topics": [],
-  "signatures": [
-    "ef3858ce1794a56207cb81436dffa3a767f9bdb1387139a79b47f592238780a0"
-  ],
+  "signatures": [],
   "cta_history": [],
   "voice_history": [],
   "image_styles": []

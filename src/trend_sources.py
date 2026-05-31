@@ -1,30 +1,29 @@
 from __future__ import annotations
 
-import re
-import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
-from typing import List, Dict, Any
+from typing import List
 from urllib.parse import quote_plus
+import xml.etree.ElementTree as ET
 
 import requests
 
+from config import settings
 from models import TrendItem
 from scoring import score_trend_item
 from storage import dedupe_keep_order
 
-
 UA = {
-    "User-Agent": "Mozilla/5.0 (compatible; ai-linkedin-automation/2.0; +https://github.com/harsha3358/ai-linkedin-automation)"
+    "User-Agent": "Mozilla/5.0 (compatible; ai-linkedin-automation/3.0; +https://github.com/harsha3358/ai-linkedin-automation)"
 }
-
-
-def _parse_dt(value: str) -> str:
-    return value or ""
 
 
 def fetch_hackernews_ai(limit: int = 10) -> List[TrendItem]:
     url = "https://hn.algolia.com/api/v1/search?query=AI%20OR%20machine%20learning%20OR%20llm&tags=story&hitsPerPage=20"
-    data = requests.get(url, headers=UA, timeout=20).json()
+    try:
+        data = requests.get(url, headers=UA, timeout=20).json()
+    except Exception:
+        return []
+
     items: List[TrendItem] = []
     for hit in data.get("hits", [])[:limit]:
         title = hit.get("title") or ""
@@ -50,8 +49,12 @@ def fetch_arxiv_ai(limit: int = 10) -> List[TrendItem]:
         "http://export.arxiv.org/api/query?"
         f"search_query={quote_plus(query)}&start=0&max_results={limit}&sortBy=submittedDate&sortOrder=descending"
     )
-    xml = requests.get(url, headers=UA, timeout=20).text
-    root = ET.fromstring(xml)
+    try:
+        xml = requests.get(url, headers=UA, timeout=20).text
+        root = ET.fromstring(xml)
+    except Exception:
+        return []
+
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     items: List[TrendItem] = []
     for entry in root.findall("atom:entry", ns)[:limit]:
@@ -85,6 +88,7 @@ def fetch_reddit_ai(limit: int = 10) -> List[TrendItem]:
             data = requests.get(url, headers=UA, timeout=20).json()
         except Exception:
             continue
+
         for child in data.get("data", {}).get("children", []):
             d = child.get("data", {})
             title = d.get("title", "")
@@ -105,21 +109,66 @@ def fetch_reddit_ai(limit: int = 10) -> List[TrendItem]:
 
 
 def fetch_github_ai(limit: int = 10) -> List[TrendItem]:
-    url = "https://api.github.com/search/repositories?q=topic:machine-learning+OR+topic:artificial-intelligence&sort=stars&order=desc&per_page=10"
+    queries = [
+        "topic:machine-learning",
+        "topic:artificial-intelligence",
+        "topic:llm",
+    ]
+    items: List[TrendItem] = []
+    for q in queries:
+        url = f"https://api.github.com/search/repositories?q={quote_plus(q)}&sort=stars&order=desc&per_page=10"
+        try:
+            data = requests.get(url, headers=UA, timeout=20).json()
+        except Exception:
+            continue
+
+        for repo in data.get("items", [])[:limit]:
+            items.append(
+                TrendItem(
+                    title=repo.get("full_name", ""),
+                    source="github",
+                    url=repo.get("html_url", ""),
+                    summary=repo.get("description", "") or "",
+                    published_at=repo.get("created_at", "") or "",
+                    metadata={"stars": repo.get("stargazers_count", 0), "forks": repo.get("forks_count", 0)},
+                )
+            )
+    return items[:limit]
+
+
+def fetch_newsapi_ai(limit: int = 10) -> List[TrendItem]:
+    if not settings.news_api_key:
+        return []
+
+    url = (
+        "https://newsapi.org/v2/everything?"
+        "q=AI OR OpenAI OR Gemini OR Anthropic OR GPT OR LLM"
+        "&language=en"
+        "&sortBy=publishedAt"
+        "&pageSize=25"
+        f"&apiKey={settings.news_api_key}"
+    )
+
     try:
-        data = requests.get(url, headers=UA, timeout=20).json()
+        data = requests.get(url, timeout=20).json()
     except Exception:
         return []
+
+    articles = data.get("articles", [])
     items: List[TrendItem] = []
-    for repo in data.get("items", [])[:limit]:
+    for article in articles[:limit]:
+        title = article.get("title") or ""
+        url = article.get("url") or ""
+        if not title or not url:
+            continue
         items.append(
             TrendItem(
-                title=repo.get("full_name", ""),
-                source="github",
-                url=repo.get("html_url", ""),
-                summary=repo.get("description", "") or "",
-                published_at=repo.get("created_at", "") or "",
-                metadata={"stars": repo.get("stargazers_count", 0), "forks": repo.get("forks_count", 0)},
+                title=title,
+                source="newsapi",
+                url=url,
+                summary=article.get("description", "") or "",
+                published_at=article.get("publishedAt", "") or "",
+                metadata={"source_name": article.get("source", {}).get("name", "")},
             )
         )
     return items
@@ -131,8 +180,8 @@ def fetch_trends(limit: int = 20) -> List[TrendItem]:
     items.extend(fetch_arxiv_ai(limit=limit))
     items.extend(fetch_reddit_ai(limit=limit))
     items.extend(fetch_github_ai(limit=limit))
+    items.extend(fetch_newsapi_ai(limit=limit))
 
-    # Score and dedupe
     scored: List[TrendItem] = []
     for item in items:
         item.score = score_trend_item(item)

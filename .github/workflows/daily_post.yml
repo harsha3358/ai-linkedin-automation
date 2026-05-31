@@ -2,25 +2,18 @@ name: AI LinkedIn Growth Engine
 
 on:
   workflow_dispatch:
-
   schedule:
-    # 07:30 AM IST Daily
-    # GitHub Actions uses UTC
-    # 02:00 UTC = 07:30 IST
-    - cron: "0 2 * * *"
+    # 6:00 AM IST = 00:30 UTC
+    - cron: "30 0 * * *"
 
 jobs:
   linkedin-growth-engine:
-
     runs-on: ubuntu-latest
-
+    timeout-minutes: 60
     permissions:
       contents: write
 
-    timeout-minutes: 30
-
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -29,13 +22,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Upgrade Pip
-        run: |
-          python -m pip install --upgrade pip
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
 
       - name: Install Dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Create Required Directories
         run: |
@@ -44,16 +35,17 @@ jobs:
 
       - name: Create Memory Files If Missing
         run: |
-
           if [ ! -f src/data/history.json ]; then
-            echo '{
-              "posts": [],
-              "topics": [],
-              "signatures": [],
-              "cta_history": [],
-              "voice_history": [],
-              "image_styles": []
-            }' > src/data/history.json
+            cat > src/data/history.json <<'EOF'
+          {
+            "posts": [],
+            "topics": [],
+            "signatures": [],
+            "cta_history": [],
+            "voice_history": [],
+            "image_styles": []
+          }
+          EOF
           fi
 
           if [ ! -f src/data/runs.json ]; then
@@ -62,32 +54,23 @@ jobs:
 
       - name: Run AI LinkedIn Automation
         env:
-
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_API_KEY: ${{ secrets.HF_API_KEY }}
-
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_URN: ${{ secrets.LINKEDIN_PERSON_URN }}
-
           LINKEDIN_CLIENT_ID: ${{ secrets.LINKEDIN_CLIENT_ID }}
           LINKEDIN_CLIENT_SECRET: ${{ secrets.LINKEDIN_CLIENT_SECRET }}
-
           MODEL_PROVIDER: gemini
           IMAGE_PROVIDER: hf
-
           TEXT_MODEL: gemini-2.5-flash
-
           IMAGE_MODEL: black-forest-labs/FLUX.1-schnell
-
           RESEARCH_MODEL: gemini-2.5-flash
           WRITER_MODEL: gemini-2.5-flash
           CRITIC_MODEL: gemini-2.5-flash
-
         run: |
           cd src
           python main.py
@@ -105,16 +88,10 @@ jobs:
       - name: Commit Learning Updates
         if: always()
         run: |
-
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-
-          git add src/data/history.json
-          git add src/data/runs.json
-
-          git diff --cached --quiet || git commit -m "update automation memory"
-
-      - name: Push Changes
-        if: always()
-        run: |
-          git push
+          git add src/data/history.json src/data/runs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "update automation memory"
+            git push origin main || true
+          fi

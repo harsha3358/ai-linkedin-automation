@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from pathlib import Path
 from typing import Dict, Optional, Tuple
 
@@ -8,7 +7,6 @@ import requests
 
 from config import settings
 from models import PublishResult
-
 
 LINKEDIN_API = "https://api.linkedin.com/v2"
 
