@@ -1,1 +1,107 @@
-[]
+[
+  {
+    "run_id": "20260531_110554",
+    "created_at": "2026-05-31T11:06:54.307635+00:00",
+    "trend": {
+      "topic": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+      "audience": "ai engineers",
+      "voice": "research analyst",
+      "post_type": "lesson from failure",
+      "angle": "lesson from failure for ai engineers",
+      "belief": "the people who learn systems will outperform people who only learn tools",
+      "cta_type": "follow",
+      "image_style": "realistic future scene",
+      "source_title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+      "source_url": "https://arxiv.org/abs/2605.30337v1",
+      "source_summary": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a ge"
+    },
+    "brief": {
+      "topic": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+      "audience": "ai engineers",
+      "voice": "research analyst",
+      "post_type": "lesson from failure",
+      "angle": "lesson from failure for ai engineers",
+      "belief": "the people who learn systems will outperform people who only learn tools",
+      "cta_type": "follow",
+      "image_style": "realistic future scene",
+      "source_title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+      "source_url": "https://arxiv.org/abs/2605.30337v1",
+      "source_summary": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a ge"
+    },
+    "best_candidate": {
+      "brief": {
+        "topic": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+        "audience": "ai engineers",
+        "voice": "research analyst",
+        "post_type": "lesson from failure",
+        "angle": "lesson from failure for ai engineers",
+        "belief": "the people who learn systems will outperform people who only learn tools",
+        "cta_type": "follow",
+        "image_style": "realistic future scene",
+        "source_title": "Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching",
+        "source_url": "https://arxiv.org/abs/2605.30337v1",
+        "source_summary": "Test-time finetuning (TTFT) is a rapidly evolving paradigm that adapts a language model to each prompt by retrieving related sequences, updating the model on them, and then evaluating the prompt. However, TTFT is only practical if it is fast: selection and finetuning both happen per query, making each a direct bottleneck. Existing methods trade speed for quality: fast retrieval is often redundant, while stronger diversity-aware selection adds prohibitive per-query cost. We introduce HullFT, a ge"
+      },
+      "draft": {
+        "text": "I keep seeing the same mistake around Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching.\n\nHere is the practical truth: the people who learn systems will outperform people who only learn tools.\n\n2) Reuse what works and discard repetitive patterns.\n2) Use a repeatable process, not a repeated template.\n3) Score the output before it goes live.\n\nFollow for more practical AI/ML systems.",
+        "prompt": "You are writing for LinkedIn.\n\nAudience: ai engineers\nVoice: research analyst\nPost type: lesson from failure\nAngle: lesson from failure for ai engineers\nBelief to reinforce: the people who learn systems will outperform people who only learn tools\nHook style: surprise\n\nWrite write a reflective LinkedIn post about lessons learned about: Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching\n\nHard requirements:\n- 110 to 180 words.\n- Strong first line with a clear attention hook.\n- No generic intro like \"In today's world\".\n- One concrete insight that is useful immediately.\n- One short example or consequence.\n- Short paragraphs with line breaks for LinkedIn readability.\n- Keep it human, sharp, and specific.\n- Do not repeat the topic title verbatim more than once.\n- No hashtags unless they are truly necessary. Max 2.\n- End with this CTA style: Follow for practical AI/ML systems, not noise.\n\nThe post must feel like a top creator wrote it, not a template.",
+        "score": 75.64043503930569,
+        "metrics": {
+          "text_quality": 80.08,
+          "hook_strength": 60.0,
+          "clarity": 100.0,
+          "utility": 75.0,
+          "novelty": 100.0,
+          "audience_match": 36,
+          "cta_strength": 100.0,
+          "profile_visit_probability": 75.97999999999999,
+          "follow_probability": 82.941,
+          "save_probability": 90.0,
+          "share_probability": 84.0,
+          "comment_probability": 50.4,
+          "follower_score": 79.5173,
+          "clip": 60.18035039305687,
+          "final_score": 75.64043503930569,
+          "repetition_similarity": 0.0,
+          "publish_ready": 1.0
+        },
+        "image_path": "/home/runner/work/ai-linkedin-automation/ai-linkedin-automation/src/outputs/20260531_110554/efficient_test_time_finetuning_of_llms_via_convex_reconstruction_and_gradient_ca.png",
+        "image_prompt": "realistic future workplace, professionals using AI systems, cinematic photography, natural lighting, no text, no watermark\n\nScene direction:\n- Topic: Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching\n- Audience: ai engineers\n- Emotional tone: curiosity, authority, clarity\n- Visual story: show the real-world implication of the post\n- Composition: one dominant subject, strong negative space, premium LinkedIn thumbnail energy\n- Quality: ultra-detailed, realistic, editorial, not cartoonish\n- Avoid: robots, neon brains, abstract nonsense, text overlays, watermarks, clutter\n- Match this post:\nI keep seeing the same mistake around Efficient Test-Time Finetuning of LLMs via Convex Reconstruction and Gradient Caching.\n\nHere is the practical truth: the people who learn systems will outperform people who only learn tools.\n\n2) Reuse what works and discard repetitive patterns.\n2) Use a repeatable process, not a repeated template.\n3) Score the output before it goes live.\n\nFollow for more practical AI/ML systems.",
+        "clip_score": 60.18035039305687,
+        "follower_score": 79.5173,
+        "profile_visit_probability": 75.97999999999999,
+        "follow_probability": 82.941
+      },
+      "final_score": 75.64043503930569
+    },
+    "publish_result": {
+      "published": true,
+      "status_code": 201,
+      "response_text": "{\"id\":\"urn:li:share:7466807413917134848\"}",
+      "post_urn": "urn:li:share:7466807413917134848",
+      "asset_urn": "urn:li:digitalmediaAsset:D5622AQH2HGzMUv1uCQ",
+      "post_url": "",
+      "error": ""
+    },
+    "metrics": {
+      "text_quality": 80.08,
+      "hook_strength": 60.0,
+      "clarity": 100.0,
+      "utility": 75.0,
+      "novelty": 100.0,
+      "audience_match": 36,
+      "cta_strength": 100.0,
+      "profile_visit_probability": 75.97999999999999,
+      "follow_probability": 82.941,
+      "save_probability": 90.0,
+      "share_probability": 84.0,
+      "comment_probability": 50.4,
+      "follower_score": 79.5173,
+      "clip": 60.18035039305687,
+      "final_score": 75.64043503930569,
+      "repetition_similarity": 0.0,
+      "publish_ready": 1.0
+    },
+    "notes": []
+  }
+]
