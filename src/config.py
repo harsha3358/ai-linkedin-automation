@@ -180,7 +180,7 @@ class Settings:
 
     topics_per_run: int = 5
 
-    text_variants_per_topic: int = 5
+    text_variants_per_topic: int = 8
 
     # Reduced from 2 → 1 for GitHub Actions stability
     image_variants_per_text: int = 1
@@ -264,7 +264,11 @@ class Settings:
             "ai founder",
             "future predictor",
             "practical engineer",
-            "industry insider",
+            "industry insider","ceo",
+            "cto",
+            "venture capitalist",
+            "startup founder",
+            "principal engineer",
         ]
     )
 
