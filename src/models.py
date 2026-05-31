@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-from typing import Dict, List, Optional
+from dataclasses import asdict, dataclass, field
+from typing import Any, Dict, List, Optional
 
 
 # ============================================================
-# Trend Models
+# Trend
 # ============================================================
 
 @dataclass
@@ -15,25 +15,30 @@ class TrendItem:
     url: str
     source: str = ""
     score: float = 0.0
-    metadata: Dict = field(default_factory=dict)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
 
 # ============================================================
-# Knowledge Models
+# Knowledge Pack
 # ============================================================
 
 @dataclass
 class KnowledgePack:
-    what_happened: str
-    why_it_matters: str
-    problem_solved: str
-    example: str
-    limitation: str
-    takeaway: str
+    what_happened: str = ""
+    why_it_matters: str = ""
+    problem_solved: str = ""
+    example: str = ""
+    limitation: str = ""
+    takeaway: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
 
 # ============================================================
-# Content Planning
+# Post Brief
 # ============================================================
 
 @dataclass
@@ -53,6 +58,14 @@ class PostBrief:
 
     knowledge: Optional[KnowledgePack] = None
 
+    def to_dict(self) -> Dict[str, Any]:
+        data = asdict(self)
+
+        if self.knowledge:
+            data["knowledge"] = self.knowledge.to_dict()
+
+        return data
+
 
 # ============================================================
 # Draft Variant
@@ -61,10 +74,25 @@ class PostBrief:
 @dataclass
 class DraftVariant:
     text: str
-    audience: str = ""
-    voice: str = ""
+
+    prompt: str = ""
     score: float = 0.0
+
     feedback: str = ""
+
+    metrics: Dict[str, Any] = field(default_factory=dict)
+
+    clip_score: float = 0.0
+    follower_score: float = 0.0
+
+    profile_visit_probability: float = 0.0
+    follow_probability: float = 0.0
+
+    image_path: str = ""
+    image_prompt: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
 
 # ============================================================
@@ -73,28 +101,16 @@ class DraftVariant:
 
 @dataclass
 class CandidatePair:
-    text: str
-    image_path: str
+    brief: PostBrief
+    draft: DraftVariant
+    final_score: float
 
-    text_metrics: Dict = field(default_factory=dict)
-    image_metrics: Dict = field(default_factory=dict)
-
-    total_score: float = 0.0
-
-
-# ============================================================
-# Generic Candidate
-# ============================================================
-
-@dataclass
-class Candidate:
-    text: str
-    image_path: str
-
-    text_metrics: Dict = field(default_factory=dict)
-    image_metrics: Dict = field(default_factory=dict)
-
-    total_score: float = 0.0
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "brief": self.brief.to_dict(),
+            "draft": self.draft.to_dict(),
+            "final_score": self.final_score,
+        }
 
 
 # ============================================================
@@ -103,20 +119,22 @@ class Candidate:
 
 @dataclass
 class RunRecord:
-    timestamp: str = ""
+    run_id: str
+    created_at: str
 
-    topic: str = ""
-    audience: str = ""
+    trend: Dict[str, Any]
+    brief: Dict[str, Any]
 
-    score: float = 0.0
+    best_candidate: Dict[str, Any]
 
-    text: str = ""
-    image_path: str = ""
+    publish_result: Dict[str, Any]
 
-    metrics: Dict = field(default_factory=dict)
+    metrics: Dict[str, Any]
 
-    published: bool = False
-    publish_url: str = ""
+    notes: List[str] = field(default_factory=list)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
 
 # ============================================================
@@ -126,52 +144,11 @@ class RunRecord:
 @dataclass
 class PublishResult:
     success: bool
+
     post_id: Optional[str] = None
     url: Optional[str] = None
+
     message: str = ""
 
-
-# ============================================================
-# Learning
-# ============================================================
-
-@dataclass
-class LearningStats:
-    best_topics: List = field(default_factory=list)
-    best_hooks: List = field(default_factory=list)
-    best_audiences: List = field(default_factory=list)
-    best_ctas: List = field(default_factory=list)
-    best_image_styles: List = field(default_factory=list)
-
-
-# ============================================================
-# Failure Analytics
-# ============================================================
-
-@dataclass
-class FailureRecord:
-    failure_type: str
-    failure_reason: str
-    critic_feedback: str = ""
-    timestamp: str = ""
-
-
-# ============================================================
-# Run Result
-# ============================================================
-
-@dataclass
-class RunResult:
-    ok: bool
-
-    score: float = 0.0
-
-    topic: str = ""
-    audience: str = ""
-
-    text: str = ""
-    image_path: str = ""
-
-    reason: str = ""
-
-    metrics: Dict = field(default_factory=dict)
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
