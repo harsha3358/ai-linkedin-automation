@@ -1,167 +1,127 @@
 from __future__ import annotations
 
-import os
 from dataclasses import dataclass, field
-from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 
-def env(name: str, default: str = "") -> str:
-    value = os.getenv(name, default)
-    return value.strip() if isinstance(value, str) else default
+# ============================================================
+# Trend Models
+# ============================================================
+
+@dataclass
+class TrendItem:
+    title: str
+    summary: str
+    url: str
+    source: str = ""
+    score: float = 0.0
+    metadata: Dict = field(default_factory=dict)
 
 
-@dataclass(frozen=True)
-class Settings:
-    # Paths
-    project_root: Path = field(default_factory=lambda: Path(__file__).resolve().parent)
-    data_dir: Path = field(default_factory=lambda: Path(__file__).resolve().parent / "data")
-    output_dir: Path = field(default_factory=lambda: Path(__file__).resolve().parent / "outputs")
-    history_file: Path = field(default_factory=lambda: Path(__file__).resolve().parent / "data" / "history.json")
-    runs_file: Path = field(default_factory=lambda: Path(__file__).resolve().parent / "data" / "runs.json")
+# ============================================================
+# Knowledge Extraction Models
+# ============================================================
 
-    # Providers
-    model_provider: str = field(default_factory=lambda: env("MODEL_PROVIDER", "gemini"))
-    image_provider: str = field(default_factory=lambda: env("IMAGE_PROVIDER", "hf"))
-
-    # Models
-    text_model: str = field(default_factory=lambda: env("TEXT_MODEL", "gemini-2.5-flash"))
-    fallback_text_model: str = field(default_factory=lambda: env("FALLBACK_TEXT_MODEL", "google/flan-t5-base"))
-    image_model: str = field(default_factory=lambda: env("IMAGE_MODEL", "black-forest-labs/FLUX.1-schnell"))
-    fallback_image_model: str = field(default_factory=lambda: env("FALLBACK_IMAGE_MODEL", "stabilityai/stable-diffusion-xl-base-1.0"))
-
-    # Multi-agent model knobs
-    research_model: str = field(default_factory=lambda: env("RESEARCH_MODEL", "gemini-2.5-flash"))
-    writer_model: str = field(default_factory=lambda: env("WRITER_MODEL", "gemini-2.5-flash"))
-    critic_model: str = field(default_factory=lambda: env("CRITIC_MODEL", "gemini-2.5-flash"))
-
-    # API keys (keep old names too)
-    google_api_key: str = field(default_factory=lambda: env("GEMINI_API_KEY"))
-    huggingface_token: str = field(default_factory=lambda: env("HF_TOKEN") or env("HF_API_KEY") or env("HUGGINGFACE_HUB_TOKEN"))
-    openai_api_key: str = field(default_factory=lambda: env("OPENAI_API_KEY"))
-    openrouter_api_key: str = field(default_factory=lambda: env("OPENROUTER_API_KEY"))
-    news_api_key: str = field(default_factory=lambda: env("NEWS_API_KEY"))
-    linkedin_access_token: str = field(default_factory=lambda: env("LINKEDIN_ACCESS_TOKEN"))
-    linkedin_client_id: str = field(default_factory=lambda: env("LINKEDIN_CLIENT_ID"))
-    linkedin_client_secret: str = field(default_factory=lambda: env("LINKEDIN_CLIENT_SECRET"))
-    linkedin_person_urn: str = field(default_factory=lambda: env("LINKEDIN_PERSON_URN"))
-
-    # Generation settings
-    topics_per_run: int = 5
-    text_variants_per_topic: int = 5
-    image_variants_per_text: int = 1
-    max_text_retries: int = 3
-    max_image_retries: int = 2
-    max_repair_rounds: int = 2
-    max_post_length: int = 180
-    min_post_length: int = 110
-    cta_rotation_window: int = 5
-    recent_post_limit: int = 100
-    recent_topic_limit: int = 100
-
-    # Quality thresholds
-    clip_threshold: float = 0.35
-    publish_threshold: float = 74.0
-    educational_min_score: float = 80.0
-    image_quality_min_score: float = 70.0
-    image_alignment_min_score: float = 55.0
-    real_world_context_min_score: float = 60.0
-    example_min_score: float = 60.0
-    limitation_min_score: float = 55.0
-    challenge_min_score: float = 60.0
-    min_follow_probability: float = 70.0
-    min_profile_visit_probability: float = 68.0
-    max_repetition_similarity: float = 0.70
-
-    # Score weights
-    score_weights: Dict[str, float] = field(default_factory=lambda: {
-        "educational_value": 0.26,
-        "image_quality": 0.15,
-        "image_alignment": 0.10,
-        "practical_usefulness": 0.12,
-        "clarity": 0.08,
-        "technical_accuracy": 0.05,
-        "profile_visit_probability": 0.08,
-        "follow_probability": 0.08,
-        "hook_strength": 0.04,
-        "novelty": 0.02,
-        "cta_strength": 0.01,
-        "audience_match": 0.01,
-    })
-
-    follower_score_weights: Dict[str, float] = field(default_factory=lambda: {
-        "profile_visit_probability": 0.25,
-        "follow_probability": 0.30,
-        "save_probability": 0.20,
-        "share_probability": 0.15,
-        "comment_probability": 0.10,
-    })
-
-    audiences: List[str] = field(default_factory=lambda: [
-        "students",
-        "ai engineers",
-        "ml engineers",
-        "founders",
-        "recruiters",
-        "ctos",
-        "job seekers",
-        "developers",
-    ])
-
-    voices: List[str] = field(default_factory=lambda: [
-        "research analyst",
-        "contrarian builder",
-        "ai founder",
-        "future predictor",
-        "practical engineer",
-        "industry insider",
-        "ceo",
-        "cto",
-        "startup founder",
-        "principal engineer",
-    ])
-
-    post_types: List[str] = field(default_factory=lambda: [
-        "contrarian insight",
-        "myth vs reality",
-        "lesson from failure",
-        "tool comparison",
-        "trend breakdown",
-        "beginner mistake",
-        "practical tutorial",
-        "future prediction",
-        "case study",
-        "one-chart explanation",
-    ])
-
-    cta_types: List[str] = field(default_factory=lambda: [
-        "follow",
-        "profile_visit",
-        "discussion",
-        "resource",
-        "opinion",
-    ])
-
-    image_styles: List[str] = field(default_factory=lambda: [
-        "editorial cover",
-        "magazine style",
-        "product visualization",
-        "technical diagram",
-        "data visualization",
-        "before after comparison",
-        "realistic future scene",
-        "infographic",
-    ])
-
-    trend_sources: List[str] = field(default_factory=lambda: [
-        "hackernews",
-        "arxiv",
-        "reddit",
-        "github",
-        "newsapi",
-    ])
+@dataclass
+class KnowledgePack:
+    what_happened: str
+    why_it_matters: str
+    problem_solved: str
+    example: str
+    limitation: str
+    takeaway: str
 
 
-settings = Settings()
-settings.data_dir.mkdir(parents=True, exist_ok=True)
-settings.output_dir.mkdir(parents=True, exist_ok=True)
+# ============================================================
+# Content Planning Models
+# ============================================================
+
+@dataclass
+class PostBrief:
+    topic: str
+    audience: str
+    voice: str
+    post_type: str
+    angle: str
+    belief: str
+    cta_type: str
+    image_style: str
+
+    source_title: str
+    source_url: str
+    source_summary: str
+
+    knowledge: Optional[KnowledgePack] = None
+
+
+# ============================================================
+# Generated Candidate
+# ============================================================
+
+@dataclass
+class Candidate:
+    text: str
+    image_path: str
+
+    text_metrics: Dict = field(default_factory=dict)
+    image_metrics: Dict = field(default_factory=dict)
+
+    total_score: float = 0.0
+
+
+# ============================================================
+# Publish Result
+# ============================================================
+
+@dataclass
+class PublishResult:
+    success: bool
+    post_id: Optional[str] = None
+    url: Optional[str] = None
+    message: str = ""
+
+
+# ============================================================
+# Learning Models
+# ============================================================
+
+@dataclass
+class LearningStats:
+    best_topics: List = field(default_factory=list)
+    best_hooks: List = field(default_factory=list)
+    best_audiences: List = field(default_factory=list)
+    best_ctas: List = field(default_factory=list)
+    best_image_styles: List = field(default_factory=list)
+
+
+# ============================================================
+# Failure Analytics
+# ============================================================
+
+@dataclass
+class FailureRecord:
+    failure_type: str
+    failure_reason: str
+    critic_feedback: str = ""
+    timestamp: str = ""
+
+
+# ============================================================
+# Run Result
+# ============================================================
+
+@dataclass
+class RunResult:
+    ok: bool
+
+    score: float = 0.0
+
+    topic: str = ""
+    audience: str = ""
+
+    text: str = ""
+    image_path: str = ""
+
+    reason: str = ""
+
+    metrics: Dict = field(default_factory=dict)
