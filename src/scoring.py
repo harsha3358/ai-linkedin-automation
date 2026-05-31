@@ -39,7 +39,7 @@ def _first_line(text: str) -> str:
 def _hook_strength(text: str) -> float:
     first = _first_line(text)
     score = 0.0
-    if len(first) <= 140:
+    if len(first) <= 180:
         score += 25
     if "?" in first:
         score += 18
@@ -83,7 +83,7 @@ def _utility_score(text: str, brief: PostBrief) -> float:
         score += 10
     if _has_number(text):
         score += 10
-    if len(text.split()) >= 90:
+    if len(text.split()) >= 60:
         score += 10
     if _contains_cta(text):
         score += 10
@@ -266,9 +266,16 @@ def score_trend_item(item: TrendItem) -> float:
     return _clamp(score)
 
 
-def score_candidate(text: str, image_path: str, brief: PostBrief, history: Dict) -> Dict[str, float]:
-    text_scores = score_text(text, brief, history)
-    clip = clip_similarity(text, image_path) if image_path else 0.0
+    def score_candidate(text: str, image_path: str, brief: PostBrief, history: Dict) -> Dict[str, float]:
+        text_scores = score_text(text, brief, history)
+        clip = (
+        clip_similarity(
+            brief.topic[:70],
+            image_path
+        )
+        if image_path
+        else 0.0
+    )
 
     final = (
         settings.score_weights["text_quality"] * text_scores["text_quality"]
