@@ -5,7 +5,6 @@ import re
 from functools import lru_cache
 from difflib import SequenceMatcher
 from typing import Dict, List, Tuple
-from scoring import score_candidate
 
 import numpy as np
 from PIL import Image
