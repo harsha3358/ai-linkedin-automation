@@ -5,6 +5,7 @@ import re
 from functools import lru_cache
 from difflib import SequenceMatcher
 from typing import Dict, List, Tuple
+from scoring import score_candidate
 
 import numpy as np
 from PIL import Image
@@ -266,9 +267,20 @@ def score_trend_item(item: TrendItem) -> float:
     return _clamp(score)
 
 
-    def score_candidate(text: str, image_path: str, brief: PostBrief, history: Dict) -> Dict[str, float]:
-        text_scores = score_text(text, brief, history)
-        clip = (
+def score_candidate(
+    text: str,
+    image_path: str,
+    brief: PostBrief,
+    history: Dict
+) -> Dict[str, float]:
+
+    text_scores = score_text(
+        text,
+        brief,
+        history
+    )
+
+    clip = (
         clip_similarity(
             brief.topic[:70],
             image_path
