@@ -201,7 +201,7 @@ class Settings:
 
     clip_threshold: float = 0.35
 
-    publish_threshold: float = 80.0
+    publish_threshold: float = 68.0
 
     min_follow_probability: float = 75.0
 
