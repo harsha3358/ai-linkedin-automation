@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Optional
 
 
 # ============================================================
-# Trend
+# Trend Model
 # ============================================================
 
 @dataclass
@@ -13,15 +13,22 @@ class TrendItem:
     title: str
     summary: str
     url: str
+
     source: str = ""
     score: float = 0.0
+
+    published_at: str = ""
+    author: str = ""
+    category: str = ""
+
+    metadata: Dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
 
 # ============================================================
-# Knowledge Pack
+# Knowledge Extraction
 # ============================================================
 
 @dataclass
@@ -44,11 +51,14 @@ class KnowledgePack:
 @dataclass
 class PostBrief:
     topic: str
+
     audience: str
     voice: str
     post_type: str
+
     angle: str
     belief: str
+
     cta_type: str
     image_style: str
 
@@ -76,9 +86,9 @@ class DraftVariant:
     text: str
 
     prompt: str = ""
-    score: float = 0.0
-
     feedback: str = ""
+
+    score: float = 0.0
 
     metrics: Dict[str, Any] = field(default_factory=dict)
 
@@ -103,7 +113,8 @@ class DraftVariant:
 class CandidatePair:
     brief: PostBrief
     draft: DraftVariant
-    final_score: float
+
+    final_score: float = 0.0
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -111,6 +122,23 @@ class CandidatePair:
             "draft": self.draft.to_dict(),
             "final_score": self.final_score,
         }
+
+
+# ============================================================
+# Publish Result
+# ============================================================
+
+@dataclass
+class PublishResult:
+    success: bool
+
+    post_id: Optional[str] = None
+    url: Optional[str] = None
+
+    message: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
 
 # ============================================================
@@ -128,7 +156,6 @@ class RunRecord:
     best_candidate: Dict[str, Any]
 
     publish_result: Dict[str, Any]
-
     metrics: Dict[str, Any]
 
     notes: List[str] = field(default_factory=list)
@@ -138,17 +165,56 @@ class RunRecord:
 
 
 # ============================================================
-# Publish Result
+# Learning Statistics
 # ============================================================
 
 @dataclass
-class PublishResult:
-    success: bool
+class LearningStats:
+    best_topics: List[Any] = field(default_factory=list)
+    best_hooks: List[Any] = field(default_factory=list)
+    best_audiences: List[Any] = field(default_factory=list)
+    best_ctas: List[Any] = field(default_factory=list)
+    best_image_styles: List[Any] = field(default_factory=list)
 
-    post_id: Optional[str] = None
-    url: Optional[str] = None
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
 
-    message: str = ""
+
+# ============================================================
+# Failure Analytics
+# ============================================================
+
+@dataclass
+class FailureRecord:
+    failure_type: str
+    failure_reason: str
+
+    critic_feedback: str = ""
+    timestamp: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+
+# ============================================================
+# Generic Run Result
+# ============================================================
+
+@dataclass
+class RunResult:
+    ok: bool
+
+    score: float = 0.0
+
+    topic: str = ""
+    audience: str = ""
+
+    text: str = ""
+    image_path: str = ""
+
+    reason: str = ""
+
+    metrics: Dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
