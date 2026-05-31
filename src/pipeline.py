@@ -188,14 +188,19 @@ def run(
             "reason": "No valid candidate produced"
         }
 
-    if best.final_score < settings.publish_threshold:
-        return {
-            "ok": False,
-            "reason": (
-                f"Best candidate score too low "
-                f"({best.final_score})"
-            )
-        }
+    if (
+        best.final_score < settings.publish_threshold
+        and best.draft.follow_probability < 60
+        and best.draft.profile_visit_probability < 60
+    ):
+    return {
+        "ok": False,
+        "reason": (
+            f"Rejected: score={best.final_score}, "
+            f"follow={best.draft.follow_probability}, "
+            f"profile={best.draft.profile_visit_probability}"
+        )
+    }
 
     publish_result = {
         "published": False,
