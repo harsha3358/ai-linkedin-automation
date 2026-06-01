@@ -72,7 +72,7 @@ def _local_generate_image(prompt: str, out_path: Path) -> Optional[str]:
     try:
         image = pipeline(
             prompt=prompt,
-            num_inference_steps=20 if device == "cuda" else 10,
+            num_inference_steps=10 if device == "cuda" else 10,
             guidance_scale=4.0,
         ).images[0]
         image.save(out_path)
