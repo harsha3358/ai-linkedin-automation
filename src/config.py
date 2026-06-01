@@ -47,24 +47,24 @@ class Settings:
     linkedin_person_urn: str = field(default_factory=lambda: env("LINKEDIN_PERSON_URN"))
 
     # Generation settings
-    topics_per_run: int = 5
-    text_variants_per_topic: int = 5
+    topics_per_run: int = 2
+    text_variants_per_topic: int = 2
     image_variants_per_text: int = 1
-    max_text_retries: int = 3
-    max_image_retries: int = 2
-    max_repair_rounds: int = 2
-    max_post_length: int = 180
-    min_post_length: int = 110
+    max_text_retries: int = 1
+    max_image_retries: int = 1
+    max_repair_rounds: int = 1
+    max_post_length: int = 150
+    min_post_length: int = 100
     cta_rotation_window: int = 5
     recent_post_limit: int = 100
     recent_topic_limit: int = 100
 
     # Quality thresholds
     clip_threshold: float = 0.35
-    publish_threshold: float = 80.0
-    educational_min_score: float = 85.0
-    image_quality_min_score: float = 80.0
-    image_alignment_min_score: float = 75.0
+    publish_threshold: float = 74.0
+    educational_min_score: float = 75.0
+    image_quality_min_score: float = 70.0
+    image_alignment_min_score: float = 65.0
     real_world_context_min_score: float = 70.0
     example_min_score: float = 60.0
     limitation_min_score: float = 60.0
