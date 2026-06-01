@@ -17,32 +17,49 @@ def _safe_name(text: str) -> str:
     return text.strip("_")[:80] or "image"
 
 
-def _hf_generate_image(prompt: str, out_path: Path) -> Optional[str]:
+def _hf_generate_image(
+    prompt: str,
+    out_path: Path,
+) -> Optional[str]:
+
     token = settings.huggingface_token
 
     if not token:
+        print("HF_TOKEN not configured")
         return None
 
-    url = f"https://api-inference.huggingface.co/models/{settings.image_model}"
+    url = (
+        f"https://api-inference.huggingface.co/models/"
+        f"{settings.image_model}"
+    )
 
     headers = {
         "Authorization": f"Bearer {token}",
         "Accept": "image/png",
     }
 
+    payload = {
+        "inputs": prompt
+    }
+
     try:
+
         response = requests.post(
             url,
             headers=headers,
-            json={"inputs": prompt},
+            json=payload,
             timeout=45,
         )
 
         if response.status_code >= 400:
-            print("HF image generation failed:", response.status_code)
+            print(
+                f"HF image generation failed: "
+                f"{response.status_code}"
+            )
             return None
 
         if not response.content:
+            print("HF returned empty content")
             return None
 
         out_path.write_bytes(response.content)
@@ -50,7 +67,7 @@ def _hf_generate_image(prompt: str, out_path: Path) -> Optional[str]:
         return str(out_path)
 
     except Exception as exc:
-        print("HF image error:", exc)
+        print(f"HF image error: {exc}")
         return None
 
 
@@ -62,13 +79,16 @@ def generate_image(
     feedback: Optional[str] = None,
 ) -> Optional[str]:
 
-    out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
-    safe = _safe_name(
+    safe_name = _safe_name(
         f"{brief.topic}_{brief.audience}_{seed_tag}"
     )
 
-    out_path = out_dir / f"{safe}.png"
+    out_path = out_dir / f"{safe_name}.png"
 
     prompt = build_image_prompt(
         brief,
@@ -76,7 +96,12 @@ def generate_image(
         feedback=feedback,
     )
 
-    return _hf_generate_image(
+    image_path = _hf_generate_image(
         prompt,
         out_path,
     )
+
+    if image_path:
+        return image_path
+
+    return None
