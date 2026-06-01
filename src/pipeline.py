@@ -311,7 +311,7 @@ def update_history(history: Dict, best: CandidatePair, publish_result: Dict) -> 
 
 def run(dry_run: bool = False) -> Dict:
     history = load_history()
-    trends = fetch_trends(limit=max(10, settings.topics_per_run * 2))
+    trends = fetch_trends(limit=settings.topics_per_run)
     out_dir = settings.output_dir / datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
 
     best = select_best(trends, history, out_dir)
