@@ -311,7 +311,8 @@ def clip_similarity(text: str, image_path: str) -> float:
         import torch
 
         image = Image.open(image_path).convert("RGB")
-        inputs = processor(text=[text[:128]], images=image, return_tensors="pt", padding=True).to(device)
+        clip_text = " ".join(text.split()[:50])  
+        inputs = processor(     text=[clip_text],     images=image,     return_tensors="pt",     padding=True, ).to(device)
         with torch.no_grad():
             outputs = model(**inputs)
             img = outputs.image_embeds
