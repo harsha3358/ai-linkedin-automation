@@ -52,21 +52,80 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-03T13:29:14.638617+00:00",
+      "topic": "f/prompts.chat",
+      "audience": "ml engineers",
+      "voice": "research analyst",
+      "post_type": "one-chart explanation",
+      "image_style": "data visualization",
+      "cta_type": "resource",
+      "text": "The biggest mistake around f/prompts.chat is treating it like a buzzword.\n\nMany builders hit this problem when they try to apply f/prompts.chat in production.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, an ML team could compare this method with a full retrain and see whether the tradeoff is worth it.\n\nThe catch is that better efficiency often comes with a more complicated setup.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: Text: raise educational value; add real-world context; add a limitation or tradeoff. Image: improve image quality and contrast; make the image match the topic better.",
+      "image_path": "",
+      "scores": {
+        "text_quality": 76.07998839233895,
+        "hook_strength": 72.0,
+        "clarity": 95.0,
+        "utility": 65.0,
+        "novelty": 98.14277423099246,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 48,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 85.888,
+        "profile_visit_probability": 73.29141033081834,
+        "follow_probability": 78.85968949506675,
+        "save_probability": 83.94283226929774,
+        "share_probability": 86.89997098084736,
+        "comment_probability": 51.199999999999996,
+        "follower_score": 76.92432153221127,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.55382347069067,
+        "repetition_similarity": 1.8572257690075449,
+        "publish_ready": 1.0
+      },
+      "final_score": 85.55382347069067,
+      "publish_result": {
+        "success": true,
+        "post_id": "urn:li:share:7467930398589616128",
+        "url": null,
+        "message": "Post published successfully"
+      }
     }
   ],
   "topics": [
-    "DT Introduces Launchpad, a Unified Platform for Modern App Distribution"
+    "DT Introduces Launchpad, a Unified Platform for Modern App Distribution",
+    "f/prompts.chat"
   ],
   "signatures": [
-    "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb"
+    "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
+    "66bf80bfbfc040767d3dea22d9a71b6df8ca265025be8852c8cb260b76632b4b"
   ],
   "cta_history": [
+    "resource",
     "resource"
   ],
   "voice_history": [
+    "research analyst",
     "research analyst"
   ],
   "image_styles": [
-    "realistic future scene"
+    "realistic future scene",
+    "data visualization"
   ]
 }
