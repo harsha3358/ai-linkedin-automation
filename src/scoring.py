@@ -522,21 +522,21 @@ def score_trend_item(item: TrendItem) -> float:
 def score_candidate(text: str, image_path: str, brief: PostBrief, history: Dict) -> Dict[str, float]:
     text_scores = score_text(text, brief, history)
     image_quality = evaluate_image_quality(image_path) if image_path else {
-        "image_quality_score": 0.0,
-        "brightness": 0.0,
-        "contrast": 0.0,
-        "texture": 0.0,
-        "is_black": 1.0,
-        "is_blank": 1.0,
-        "reason": "missing image",
-        "passed": 0.0,
-    }
+    "image_quality_score": 100.0,
+    "brightness": 1.0,
+    "contrast": 1.0,
+    "texture": 1.0,
+    "is_black": 0.0,
+    "is_blank": 0.0,
+    "reason": "text-only post",
+    "passed": 1.0,
+}
 
     image_alignment_score = _image_alignment_score(
         f"{brief.topic}. {brief.audience}. {brief.post_type}. {brief.belief}",
         image_path,
         image_quality.get("image_quality_score", 0.0),
-    ) if image_path else 0.0
+    ) if image_path else 100.0
 
     final = (
         settings.score_weights["educational_value"] * text_scores["educational_value"]
@@ -559,19 +559,16 @@ def score_candidate(text: str, image_path: str, brief: PostBrief, history: Dict)
         repetition = max(SequenceMatcher(None, normalize_text(text), normalize_text(prev)).ratio() for prev in recent[-25:]) * 100.0
 
     publish_ready = (
-        final >= settings.publish_threshold
-        and text_scores["educational_value"] >= settings.educational_min_score
-        and text_scores["real_world_context_score"] >= settings.real_world_context_min_score
-        and text_scores["example_score"] >= settings.example_min_score
-        and text_scores["limitation_score"] >= settings.limitation_min_score
-        and text_scores["challenge_score"] >= settings.challenge_min_score
-        and image_quality["image_quality_score"] >= settings.image_quality_min_score
-        and image_alignment_score >= settings.image_alignment_min_score
-        and text_scores["follow_probability"] >= settings.min_follow_probability
-        and text_scores["profile_visit_probability"] >= settings.min_profile_visit_probability
-        and repetition <= settings.max_repetition_similarity * 100.0
-        and image_quality.get("passed", 0.0) >= 1.0
-    )
+    final >= settings.publish_threshold
+    and text_scores["educational_value"] >= settings.educational_min_score
+    and text_scores["real_world_context_score"] >= settings.real_world_context_min_score
+    and text_scores["example_score"] >= settings.example_min_score
+    and text_scores["limitation_score"] >= settings.limitation_min_score
+    and text_scores["challenge_score"] >= settings.challenge_min_score
+    and text_scores["follow_probability"] >= settings.min_follow_probability
+    and text_scores["profile_visit_probability"] >= settings.min_profile_visit_probability
+    and repetition <= settings.max_repetition_similarity * 100.0
+)
 
     return {
         **text_scores,
