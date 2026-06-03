@@ -187,7 +187,7 @@ def build_candidate(trend: TrendItem, history: Dict, out_dir: Path, seed: int) -
     )
 
     if image_path is None:
-    image_path = ""
+        image_path = ""
 
     image_metrics = {
         "passed": 1.0,
