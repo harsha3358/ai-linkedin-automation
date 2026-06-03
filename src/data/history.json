@@ -1,8 +1,72 @@
 {
-  "posts": [],
-  "topics": [],
-  "signatures": [],
-  "cta_history": [],
-  "voice_history": [],
-  "image_styles": []
+  "posts": [
+    {
+      "created_at": "2026-06-03T12:04:38.631887+00:00",
+      "topic": "DT Introduces Launchpad, a Unified Platform for Modern App Distribution",
+      "audience": "ml engineers",
+      "voice": "research analyst",
+      "post_type": "trend breakdown",
+      "image_style": "realistic future scene",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in DT Introduces Launchpad, a Unified Platform for Modern App Distribution. In practice, DT Introduces Launchpad, a Unified Platform for Modern App Distribution shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: Text: make the hook stronger; make the post interesting enough to visit the...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.02,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 100.0,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 100.0,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 92,
+        "practical_usefulness": 85.35,
+        "educational_value": 91.622,
+        "profile_visit_probability": 66.3,
+        "follow_probability": 76.08500000000001,
+        "save_probability": 84.2,
+        "share_probability": 72.5,
+        "comment_probability": 29.0,
+        "follower_score": 70.0155,
+        "image_quality_score": 0.0,
+        "brightness": 0.0,
+        "contrast": 0.0,
+        "texture": 0.0,
+        "is_black": 1.0,
+        "is_blank": 1.0,
+        "reason": "missing image",
+        "passed": 0.0,
+        "image_alignment_score": 0.0,
+        "clip": 0.0,
+        "final_score": 62.17452000000001,
+        "repetition_similarity": 0.0,
+        "publish_ready": 0.0
+      },
+      "final_score": 62.17452000000001,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
+    }
+  ],
+  "topics": [
+    "DT Introduces Launchpad, a Unified Platform for Modern App Distribution"
+  ],
+  "signatures": [
+    "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb"
+  ],
+  "cta_history": [
+    "resource"
+  ],
+  "voice_history": [
+    "research analyst"
+  ],
+  "image_styles": [
+    "realistic future scene"
+  ]
 }
