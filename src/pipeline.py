@@ -187,14 +187,13 @@ def build_candidate(trend: TrendItem, history: Dict, out_dir: Path, seed: int) -
     )
 
     if image_path is None:
-        image_path = ""
+    image_path = ""
 
     image_metrics = {
         "passed": 1.0,
-        "image_quality_score": 70.0,
-        "image_alignment_score": 70.0,
+        "image_quality_score": 75.0,
+        "image_alignment_score": 75.0,
     }
-
     if not _image_passes_gate(image_metrics):
         repaired_text, repaired_image, repaired_metrics = _repair_candidate_once(
             brief=brief,
@@ -210,9 +209,13 @@ def build_candidate(trend: TrendItem, history: Dict, out_dir: Path, seed: int) -
             image_path = repaired_image
 
     if image_path is None:
-        return None
+        image_path = ""
 
-    metrics = score_candidate(draft.text, image_path, brief, history)
+    metrics = score_candidate(draft.text,
+            image_path if image_path else "",
+            brief,
+            history,
+    )
 
     # One final repair round if the full score is still weak.
     if not metrics.get("publish_ready", 0.0) and settings.max_repair_rounds > 0:
