@@ -20,17 +20,30 @@ def _headers(token: str) -> Dict[str, str]:
 
 
 def get_member_urn(access_token: str) -> str:
-    r = requests.get(f"{LINKEDIN_API}/me", headers=_headers(access_token), timeout=30)
+    r = requests.get(
+        f"{LINKEDIN_API}/me",
+        headers=_headers(access_token),
+        timeout=30,
+    )
+
     r.raise_for_status()
+
     data = r.json()
+
     return f"urn:li:person:{data['id']}"
 
 
-def register_image_upload(access_token: str, author_urn: str) -> Tuple[str, str]:
+def register_image_upload(
+    access_token: str,
+    author_urn: str,
+) -> Tuple[str, str]:
+
     payload = {
         "registerUploadRequest": {
             "owner": author_urn,
-            "recipes": ["urn:li:digitalmediaRecipe:feedshare-image"],
+            "recipes": [
+                "urn:li:digitalmediaRecipe:feedshare-image"
+            ],
             "serviceRelationships": [
                 {
                     "identifier": "urn:li:userGeneratedContent",
@@ -39,58 +52,95 @@ def register_image_upload(access_token: str, author_urn: str) -> Tuple[str, str]
             ],
         }
     }
+
     r = requests.post(
         f"{LINKEDIN_API}/assets?action=registerUpload",
         headers=_headers(access_token),
         json=payload,
         timeout=60,
     )
+
     r.raise_for_status()
+
     data = r.json()
+
     value = data["value"]
+
     asset = value["asset"]
-    upload_mechanism = value["uploadMechanism"]["com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest"]
-    upload_url = upload_mechanism["uploadUrl"]
+
+    upload_url = value[
+        "uploadMechanism"
+    ][
+        "com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest"
+    ][
+        "uploadUrl"
+    ]
+
     return asset, upload_url
 
 
-def upload_image(upload_url: str, image_path: str) -> None:
+def upload_image(
+    upload_url: str,
+    image_path: str,
+) -> None:
+
     content = Path(image_path).read_bytes()
+
     r = requests.put(
         upload_url,
         data=content,
-        headers={"Content-Type": "application/octet-stream"},
+        headers={
+            "Content-Type": "application/octet-stream"
+        },
         timeout=120,
     )
+
     r.raise_for_status()
 
 
-def create_ugc_post(access_token: str, author_urn: str, text: str, asset_urn: Optional[str] = None) -> PublishResult:
+def create_ugc_post(
+    access_token: str,
+    author_urn: str,
+    text: str,
+    asset_urn: Optional[str] = None,
+) -> PublishResult:
+
+    media = []
+
+    media_category = "NONE"
+
     if asset_urn:
+
         media_category = "IMAGE"
+
         media = [
             {
                 "status": "READY",
-                "description": {"text": "LinkedIn post image"},
+                "description": {
+                    "text": "AI LinkedIn Growth Engine"
+                },
                 "media": asset_urn,
-                "title": {"text": "AI/ML post visual"},
+                "title": {
+                    "text": "AI/ML Insight"
+                },
             }
         ]
-    else:
-        media_category = "NONE"
-        media = []
 
     payload = {
         "author": author_urn,
         "lifecycleState": "PUBLISHED",
         "specificContent": {
             "com.linkedin.ugc.ShareContent": {
-                "shareCommentary": {"text": text},
+                "shareCommentary": {
+                    "text": text
+                },
                 "shareMediaCategory": media_category,
                 "media": media,
             }
         },
-        "visibility": {"com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"},
+        "visibility": {
+            "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+        },
     }
 
     r = requests.post(
@@ -101,49 +151,97 @@ def create_ugc_post(access_token: str, author_urn: str, text: str, asset_urn: Op
     )
 
     if r.status_code not in (200, 201):
+
+        print("LinkedIn Error:")
+        print(r.status_code)
+        print(r.text)
+
         return PublishResult(
-            published=False,
-            status_code=r.status_code,
-            response_text=r.text,
-            error="LinkedIn post failed",
+            success=False,
+            message=f"{r.status_code}: {r.text}",
         )
 
-    post_urn = ""
+    post_id = ""
+
     try:
-        post_urn = r.headers.get("x-restli-id", "") or r.json().get("id", "")
+
+        post_id = (
+            r.headers.get("x-restli-id", "")
+            or r.json().get("id", "")
+        )
+
     except Exception:
         pass
 
     return PublishResult(
-        published=True,
-        status_code=r.status_code,
-        response_text=r.text,
-        post_urn=post_urn,
-        asset_urn=asset_urn or "",
+        success=True,
+        post_id=post_id,
+        message="Post published successfully",
     )
 
 
-def post_to_linkedin(text: str, image_path: Optional[str] = None) -> PublishResult:
+def post_to_linkedin(
+    text: str,
+    image_path: Optional[str] = None,
+) -> PublishResult:
+
     token = settings.linkedin_access_token
+
     if not token:
-        return PublishResult(published=False, error="Missing LINKEDIN_ACCESS_TOKEN")
+        return PublishResult(
+            success=False,
+            message="Missing LINKEDIN_ACCESS_TOKEN",
+        )
 
     author_urn = settings.linkedin_person_urn
+
     if not author_urn:
+
         try:
             author_urn = get_member_urn(token)
-        except Exception as exc:
-            return PublishResult(published=False, error=f"Could not resolve LinkedIn URN: {exc}")
 
-    asset_urn = ""
-    if image_path:
-        try:
-            asset_urn, upload_url = register_image_upload(token, author_urn)
-            upload_image(upload_url, image_path)
         except Exception as exc:
-            return PublishResult(published=False, error=f"Image upload failed: {exc}")
+
+            return PublishResult(
+                success=False,
+                message=f"Could not resolve LinkedIn URN: {exc}",
+            )
+
+    asset_urn = None
+
+    if image_path:
+
+        try:
+
+            asset_urn, upload_url = register_image_upload(
+                token,
+                author_urn,
+            )
+
+            upload_image(
+                upload_url,
+                image_path,
+            )
+
+        except Exception as exc:
+
+            return PublishResult(
+                success=False,
+                message=f"Image upload failed: {exc}",
+            )
 
     try:
-        return create_ugc_post(token, author_urn, text, asset_urn if asset_urn else None)
+
+        return create_ugc_post(
+            token,
+            author_urn,
+            text,
+            asset_urn,
+        )
+
     except Exception as exc:
-        return PublishResult(published=False, error=str(exc))
+
+        return PublishResult(
+            success=False,
+            message=str(exc),
+        )
