@@ -106,26 +106,85 @@
         "url": null,
         "message": "Post published successfully"
       }
+    },
+    {
+      "created_at": "2026-06-04T05:21:19.596195+00:00",
+      "topic": "STRIDE: Training Data Attribution via Sparse Recovery from Subset Perturbations",
+      "audience": "ml engineers",
+      "voice": "contrarian builder",
+      "post_type": "contrarian insight",
+      "image_style": "technical diagram",
+      "cta_type": "opinion",
+      "text": "The biggest mistake around STRIDE: Training Data Attribution via Sparse Recovery from Subset Perturbations is treating it like a buzzword. Many builders hit this problem when they try to apply STRIDE: Training Data Attribution via Sparse Recovery from Subset Perturbations in production. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, an ML team could compare this method with a full retrain and see whether the tradeoff is worth it. The catch is that better efficiency often comes with a more complicated setup. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: Text: add real-world context; add a limitation or tradeoff. Image: improve image quality and contrast; make...",
+      "image_path": "",
+      "scores": {
+        "text_quality": 69.93670291929021,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 86.2621637092158,
+        "audience_match": 52,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 100.0,
+        "challenge_score": 84,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 85.35,
+        "educational_value": 91.862,
+        "profile_visit_probability": 69.03767601602748,
+        "follow_probability": 74.56938694905553,
+        "save_probability": 80.07864911276474,
+        "share_probability": 67.69175729822553,
+        "comment_probability": 41.8,
+        "follower_score": 69.9797285060103,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 87.77992831139096,
+        "repetition_similarity": 13.737836290784204,
+        "publish_ready": 1.0
+      },
+      "final_score": 87.77992831139096,
+      "publish_result": {
+        "success": true,
+        "post_id": "urn:li:share:7468169997849284608",
+        "url": null,
+        "message": "Post published successfully"
+      }
     }
   ],
   "topics": [
     "DT Introduces Launchpad, a Unified Platform for Modern App Distribution",
-    "f/prompts.chat"
+    "f/prompts.chat",
+    "STRIDE: Training Data Attribution via Sparse Recovery from Subset Perturbations"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
-    "66bf80bfbfc040767d3dea22d9a71b6df8ca265025be8852c8cb260b76632b4b"
+    "66bf80bfbfc040767d3dea22d9a71b6df8ca265025be8852c8cb260b76632b4b",
+    "bf45ea5fda22b52146f5959282427c2d410a3307029a723ca8913ab0cac60153"
   ],
   "cta_history": [
     "resource",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
     "research analyst",
-    "research analyst"
+    "research analyst",
+    "contrarian builder"
   ],
   "image_styles": [
     "realistic future scene",
-    "data visualization"
+    "data visualization",
+    "technical diagram"
   ]
 }
