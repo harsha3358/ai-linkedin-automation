@@ -214,36 +214,94 @@
         "url": null,
         "message": "Post published successfully"
       }
+    },
+    {
+      "created_at": "2026-06-06T04:36:41.667742+00:00",
+      "topic": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "audience": "founders",
+      "voice": "principal engineer",
+      "post_type": "beginner mistake",
+      "image_style": "infographic",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers.\n\nIn practice, HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.42496124031008,
+        "hook_strength": 35.0,
+        "clarity": 92.0,
+        "utility": 65.0,
+        "novelty": 84.60686600221484,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.348,
+        "profile_visit_probability": 65.79351052048726,
+        "follow_probability": 72.77845293466224,
+        "save_probability": 78.98205980066444,
+        "share_probability": 66.6124031007752,
+        "comment_probability": 35.4,
+        "follower_score": 67.61018593576965,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.13637439645626,
+        "repetition_similarity": 15.39313399778516,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.13637439645626,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
     "DT Introduces Launchpad, a Unified Platform for Modern App Distribution",
     "f/prompts.chat",
     "STRIDE: Training Data Attribution via Sparse Recovery from Subset Perturbations",
-    "f/prompts.chat"
+    "f/prompts.chat",
+    "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
     "66bf80bfbfc040767d3dea22d9a71b6df8ca265025be8852c8cb260b76632b4b",
     "bf45ea5fda22b52146f5959282427c2d410a3307029a723ca8913ab0cac60153",
-    "634e75e4ce6082c6908dc429c38c33245bfa10a5f811014b1b007423b0cf2505"
+    "634e75e4ce6082c6908dc429c38c33245bfa10a5f811014b1b007423b0cf2505",
+    "5a86eb997daa3d3f3e782140a92fa0a2e9d8d3877a4705f69f4d29bf38d0c67b"
   ],
   "cta_history": [
     "resource",
     "resource",
     "opinion",
-    "discussion"
+    "discussion",
+    "profile_visit"
   ],
   "voice_history": [
     "research analyst",
     "research analyst",
     "contrarian builder",
-    "ai founder"
+    "ai founder",
+    "principal engineer"
   ],
   "image_styles": [
     "realistic future scene",
     "data visualization",
     "technical diagram",
-    "product visualization"
+    "product visualization",
+    "infographic"
   ]
 }
