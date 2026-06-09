@@ -373,6 +373,60 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-09T04:45:21.641022+00:00",
+      "topic": "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
+      "audience": "ctos",
+      "voice": "research analyst",
+      "post_type": "tool comparison",
+      "image_style": "magazine style",
+      "cta_type": "opinion",
+      "text": "The biggest mistake around OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics is treating it like a buzzword. Many builders hit this problem when they try to apply OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics in production. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, an ML team could compare this method with a full retrain and see whether the tradeoff is worth it. The catch is that better efficiency often comes with a more complicated setup. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: Text: raise educational value; add real-world context; add a limitation or tradeoff...",
+      "image_path": "",
+      "scores": {
+        "text_quality": 71.92656126482214,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 84.18972332015811,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 85.39999999999999,
+        "educational_value": 89.788,
+        "profile_visit_probability": 69.50173913043479,
+        "follow_probability": 76.86372727272727,
+        "save_probability": 83.45691699604744,
+        "share_probability": 70.96640316205534,
+        "comment_probability": 41.4,
+        "follower_score": 71.91089683794468,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 87.66591177865612,
+        "repetition_similarity": 15.810276679841898,
+        "publish_ready": 1.0
+      },
+      "final_score": 87.66591177865612,
+      "publish_result": {
+        "success": true,
+        "post_id": "urn:li:share:7469972886179565568",
+        "url": null,
+        "message": "Post published successfully"
+      }
     }
   ],
   "topics": [
@@ -382,7 +436,8 @@
     "f/prompts.chat",
     "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
     "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
-    "How reliable are LLMs when it comes to playing dice?"
+    "How reliable are LLMs when it comes to playing dice?",
+    "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -391,27 +446,28 @@
     "634e75e4ce6082c6908dc429c38c33245bfa10a5f811014b1b007423b0cf2505",
     "5a86eb997daa3d3f3e782140a92fa0a2e9d8d3877a4705f69f4d29bf38d0c67b",
     "5a86eb997daa3d3f3e782140a92fa0a2e9d8d3877a4705f69f4d29bf38d0c67b",
-    "40b5ee6c1d9c8eb1869fc841dc746bb9eb621b9fbddd58a4fbad33aa7bed8ca7"
+    "40b5ee6c1d9c8eb1869fc841dc746bb9eb621b9fbddd58a4fbad33aa7bed8ca7",
+    "9526541ce5920e7aa15c0460c4bb4f36e6b40c19d53f832caedfd9fe77cfba5c"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "profile_visit",
     "resource",
-    "discussion"
+    "discussion",
+    "opinion"
   ],
   "voice_history": [
-    "contrarian builder",
     "ai founder",
     "principal engineer",
     "startup founder",
-    "contrarian builder"
+    "contrarian builder",
+    "research analyst"
   ],
   "image_styles": [
-    "technical diagram",
     "product visualization",
     "infographic",
     "realistic future scene",
-    "product visualization"
+    "product visualization",
+    "magazine style"
   ]
 }
