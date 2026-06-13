@@ -586,6 +586,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-13T05:00:39.017036+00:00",
+      "topic": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "audience": "founders",
+      "voice": "future predictor",
+      "post_type": "myth vs reality",
+      "image_style": "realistic future scene",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments. In practice, EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; improve the follow reason; make the post...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.97993344425957,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 71.71381031613977,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.94800000000001,
+        "profile_visit_probability": 62.95703826955075,
+        "follow_probability": 68.9234292845258,
+        "save_probability": 75.71414309484193,
+        "share_probability": 62.599833610648915,
+        "comment_probability": 35.4,
+        "follower_score": 64.48909201331115,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.65919361064893,
+        "repetition_similarity": 28.286189683860236,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.65919361064893,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -599,6 +652,7 @@
     "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
     "Paytm plans 10% staff increase in AI pivot, to lay off 400",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
     "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments"
   ],
   "signatures": [
@@ -612,27 +666,28 @@
     "9526541ce5920e7aa15c0460c4bb4f36e6b40c19d53f832caedfd9fe77cfba5c",
     "342a3fab03742274d328c30133e4e0667b0f5c607d73ebf006d585e6a954b4b5",
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
-    "d0cde721474d8da4f3707c9c8d47758b9734fd0ee5cdd68337b45bac7d7b685e"
+    "d0cde721474d8da4f3707c9c8d47758b9734fd0ee5cdd68337b45bac7d7b685e",
+    "f39931ba7e734ab22f7e4c8308a220eb59c01c4ea71cf119a7a60fedb33b980d"
   ],
   "cta_history": [
-    "discussion",
     "opinion",
     "profile_visit",
     "resource",
-    "discussion"
+    "discussion",
+    "profile_visit"
   ],
   "voice_history": [
-    "contrarian builder",
     "research analyst",
     "industry insider",
     "principal engineer",
-    "ai founder"
+    "ai founder",
+    "future predictor"
   ],
   "image_styles": [
-    "product visualization",
     "magazine style",
     "realistic future scene",
     "product visualization",
-    "infographic"
+    "infographic",
+    "realistic future scene"
   ]
 }
