@@ -639,6 +639,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-14T05:16:30.557954+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. A common situation is a product team trying to use Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.18949015063731,
+        "hook_strength": 45.0,
+        "clarity": 94.5,
+        "utility": 75.0,
+        "novelty": 70.56778679026652,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 81.1,
+        "educational_value": 86.242,
+        "profile_visit_probability": 63.62491309385864,
+        "follow_probability": 71.4947682502897,
+        "save_probability": 79.52033603707994,
+        "share_probability": 66.32372537659327,
+        "comment_probability": 35.0,
+        "follower_score": 66.70728476245655,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.9358502433372,
+        "repetition_similarity": 29.432213209733487,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.9358502433372,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -653,7 +706,8 @@
     "Paytm plans 10% staff increase in AI pivot, to lay off 400",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
-    "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments"
+    "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -667,27 +721,28 @@
     "342a3fab03742274d328c30133e4e0667b0f5c607d73ebf006d585e6a954b4b5",
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
     "d0cde721474d8da4f3707c9c8d47758b9734fd0ee5cdd68337b45bac7d7b685e",
-    "f39931ba7e734ab22f7e4c8308a220eb59c01c4ea71cf119a7a60fedb33b980d"
+    "f39931ba7e734ab22f7e4c8308a220eb59c01c4ea71cf119a7a60fedb33b980d",
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
   ],
   "cta_history": [
-    "opinion",
     "profile_visit",
     "resource",
     "discussion",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "research analyst",
     "industry insider",
     "principal engineer",
     "ai founder",
-    "future predictor"
+    "future predictor",
+    "principal engineer"
   ],
   "image_styles": [
-    "magazine style",
     "realistic future scene",
     "product visualization",
     "infographic",
-    "realistic future scene"
+    "realistic future scene",
+    "magazine style"
   ]
 }
