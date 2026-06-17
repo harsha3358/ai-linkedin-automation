@@ -798,6 +798,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-17T05:25:15.992001+00:00",
+      "topic": "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
+      "audience": "founders",
+      "voice": "ai founder",
+      "post_type": "trend breakdown",
+      "image_style": "infographic",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement.\n\nThis week, a real-world team could run into Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.54187737384699,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 84.15626695604992,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.54400000000001,
+        "profile_visit_probability": 65.69437873033098,
+        "follow_probability": 72.64372381985893,
+        "save_probability": 79.14688008681497,
+        "share_probability": 66.70469343461747,
+        "comment_probability": 35.4,
+        "follower_score": 67.59179186109604,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.3356135431362,
+        "repetition_similarity": 15.843733043950081,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.3356135431362,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -815,7 +868,8 @@
     "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -832,27 +886,28 @@
     "f39931ba7e734ab22f7e4c8308a220eb59c01c4ea71cf119a7a60fedb33b980d",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "9c836d7b47261047470b1dd79bc87f5cb7e1efed3fc5f707d1f19a6083ed749c"
   ],
   "cta_history": [
-    "discussion",
     "profile_visit",
     "opinion",
     "resource",
-    "discussion"
+    "discussion",
+    "profile_visit"
   ],
   "voice_history": [
-    "ai founder",
     "future predictor",
     "principal engineer",
     "startup founder",
-    "cto"
+    "cto",
+    "ai founder"
   ],
   "image_styles": [
-    "infographic",
     "realistic future scene",
     "magazine style",
     "product visualization",
-    "technical diagram"
+    "technical diagram",
+    "infographic"
   ]
 }
