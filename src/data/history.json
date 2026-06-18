@@ -851,6 +851,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-18T05:16:28.850925+00:00",
+      "topic": "Shield AI, EFA GROUP partner on autonomous defense systems",
+      "audience": "job seekers",
+      "voice": "contrarian builder",
+      "post_type": "beginner mistake",
+      "image_style": "data visualization",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Shield AI, EFA GROUP partner on autonomous defense systems. In practice, Shield AI, EFA GROUP partner on autonomous defense systems shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; improve the follow reason; make the post interesting enough to visit...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 55.917614892379284,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 13.554392088423505,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 96,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.62800000000001,
+        "profile_visit_probability": 47.28196625945317,
+        "follow_probability": 50.23776323443863,
+        "save_probability": 58.266317626527055,
+        "share_probability": 42.24403723094822,
+        "comment_probability": 29.0,
+        "follower_score": 47.78168964514253,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 81.30394620127981,
+        "repetition_similarity": 86.44560791157649,
+        "publish_ready": 0.0
+      },
+      "final_score": 81.30394620127981,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -869,7 +922,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement"
+    "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
+    "Shield AI, EFA GROUP partner on autonomous defense systems"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -887,27 +941,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "9c836d7b47261047470b1dd79bc87f5cb7e1efed3fc5f707d1f19a6083ed749c"
+    "9c836d7b47261047470b1dd79bc87f5cb7e1efed3fc5f707d1f19a6083ed749c",
+    "2593f8b64de66da51b590cc758151b61160e424084e944e8042be94e5a180fdd"
   ],
   "cta_history": [
-    "profile_visit",
     "opinion",
     "resource",
     "discussion",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "future predictor",
     "principal engineer",
     "startup founder",
     "cto",
-    "ai founder"
+    "ai founder",
+    "contrarian builder"
   ],
   "image_styles": [
-    "realistic future scene",
     "magazine style",
     "product visualization",
     "technical diagram",
-    "infographic"
+    "infographic",
+    "data visualization"
   ]
 }
