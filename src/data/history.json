@@ -1010,6 +1010,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-21T05:26:09.922957+00:00",
+      "topic": "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
+      "audience": "ai engineers",
+      "voice": "ai founder",
+      "post_type": "contrarian insight",
+      "image_style": "before after comparison",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning.\n\nIn practice, UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.40029719317556,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 81.28783709411117,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.548,
+        "profile_visit_probability": 62.18332416070446,
+        "follow_probability": 70.49006329113924,
+        "save_probability": 78.58635112823336,
+        "share_probability": 65.9507429829389,
+        "comment_probability": 29.0,
+        "follower_score": 65.2027317006054,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.65010773802973,
+        "repetition_similarity": 18.712162905888828,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.65010773802973,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -1031,7 +1084,8 @@
     "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
     "Shield AI, EFA GROUP partner on autonomous defense systems",
     "Two techies from India and Pakistan built an AI startup - Now both are billionaires thanks to Elon Musk. Here's all about Aman Sanger and Sualeh Asif",
-    "Barret Zoph is out at OpenAI again after just five months"
+    "Barret Zoph is out at OpenAI again after just five months",
+    "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -1052,27 +1106,28 @@
     "9c836d7b47261047470b1dd79bc87f5cb7e1efed3fc5f707d1f19a6083ed749c",
     "2593f8b64de66da51b590cc758151b61160e424084e944e8042be94e5a180fdd",
     "5888b3baa2c05d29b3a1a7ab76a5442f60c31a98b699b7321d097dda97517ecc",
-    "d0abf1d9b76252bea00471a8733f804bb76b468ad4b3d9a3f23e712f92d990b3"
+    "d0abf1d9b76252bea00471a8733f804bb76b468ad4b3d9a3f23e712f92d990b3",
+    "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23"
   ],
   "cta_history": [
-    "discussion",
     "profile_visit",
     "opinion",
     "follow",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
-    "cto",
     "ai founder",
     "contrarian builder",
     "startup founder",
-    "future predictor"
+    "future predictor",
+    "ai founder"
   ],
   "image_styles": [
-    "technical diagram",
     "infographic",
     "data visualization",
     "realistic future scene",
-    "magazine style"
+    "magazine style",
+    "before after comparison"
   ]
 }
