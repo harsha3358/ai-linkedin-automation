@@ -1116,6 +1116,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-23T04:42:17.285463+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "resource",
+      "text": "The future of reliable AI isn't just about building LLM applications; it's about *guaranteeing* their quality",
+      "image_path": null,
+      "scores": {
+        "text_quality": 44.19936073059361,
+        "hook_strength": 47.0,
+        "clarity": 90.0,
+        "utility": 0.0,
+        "novelty": 78.99543378995433,
+        "audience_match": 20,
+        "cta_strength": 30.0,
+        "real_world_context_score": 50,
+        "example_score": 20,
+        "limitation_score": 15,
+        "challenge_score": 20,
+        "simple_language_score": 86.57142857142857,
+        "technical_accuracy": 24,
+        "practical_usefulness": 22.75,
+        "educational_value": 37.575714285714284,
+        "profile_visit_probability": 43.978995433789954,
+        "follow_probability": 35.589634703196346,
+        "save_probability": 50.698630136986296,
+        "share_probability": 68.94840182648402,
+        "comment_probability": 36.2,
+        "follower_score": 45.773625570776254,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 56.225084801043714,
+        "repetition_similarity": 21.00456621004566,
+        "publish_ready": 0.0
+      },
+      "final_score": 56.225084801043714,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -1139,7 +1192,8 @@
     "Two techies from India and Pakistan built an AI startup - Now both are billionaires thanks to Elon Musk. Here's all about Aman Sanger and Sualeh Asif",
     "Barret Zoph is out at OpenAI again after just five months",
     "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
-    "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning"
+    "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -1162,27 +1216,28 @@
     "5888b3baa2c05d29b3a1a7ab76a5442f60c31a98b699b7321d097dda97517ecc",
     "d0abf1d9b76252bea00471a8733f804bb76b468ad4b3d9a3f23e712f92d990b3",
     "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23",
-    "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23"
+    "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23",
+    "1c43e6924c10bd56e70203d3b62d34d9ac1c52d6a04b54db0b20292a4071cc47"
   ],
   "cta_history": [
-    "opinion",
     "follow",
     "resource",
     "opinion",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "contrarian builder",
     "startup founder",
     "future predictor",
     "ai founder",
-    "practical engineer"
+    "practical engineer",
+    "principal engineer"
   ],
   "image_styles": [
-    "data visualization",
     "realistic future scene",
     "magazine style",
     "before after comparison",
-    "realistic future scene"
+    "realistic future scene",
+    "magazine style"
   ]
 }
