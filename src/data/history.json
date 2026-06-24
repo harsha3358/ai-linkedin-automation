@@ -1169,6 +1169,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-24T04:47:10.068414+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "startup founder",
+      "post_type": "future prediction",
+      "image_style": "product visualization",
+      "cta_type": "opinion",
+      "text": "Imagine a future where your LLM-powered product scales, and you *never* have to guess if its quality is holding up.",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.12086455331412,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.72046109510086,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.14999999999999,
+        "educational_value": 86.13799999999999,
+        "profile_visit_probability": 63.65850144092219,
+        "follow_probability": 71.54041786743517,
+        "save_probability": 79.41613832853025,
+        "share_probability": 66.2521613832853,
+        "comment_probability": 35.0,
+        "follower_score": 66.69780259365994,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.0042027665706,
+        "repetition_similarity": 29.279538904899134,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.0042027665706,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -1193,6 +1246,7 @@
     "Barret Zoph is out at OpenAI again after just five months",
     "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
     "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
@@ -1217,27 +1271,28 @@
     "d0abf1d9b76252bea00471a8733f804bb76b468ad4b3d9a3f23e712f92d990b3",
     "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23",
     "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23",
-    "1c43e6924c10bd56e70203d3b62d34d9ac1c52d6a04b54db0b20292a4071cc47"
+    "1c43e6924c10bd56e70203d3b62d34d9ac1c52d6a04b54db0b20292a4071cc47",
+    "4a826cdbd80e90be55f29e8995fce9b8ee370779a373c39f1df116bcd357828b"
   ],
   "cta_history": [
-    "follow",
     "resource",
     "opinion",
     "discussion",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
-    "startup founder",
     "future predictor",
     "ai founder",
     "practical engineer",
-    "principal engineer"
+    "principal engineer",
+    "startup founder"
   ],
   "image_styles": [
-    "realistic future scene",
     "magazine style",
     "before after comparison",
     "realistic future scene",
-    "magazine style"
+    "magazine style",
+    "product visualization"
   ]
 }
