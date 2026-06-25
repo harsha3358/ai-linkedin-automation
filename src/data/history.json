@@ -1222,6 +1222,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-25T04:45:25.092936+00:00",
+      "topic": "trinity-agent 1.0.36",
+      "audience": "developers",
+      "voice": "industry insider",
+      "post_type": "lesson from failure",
+      "image_style": "editorial cover",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in trinity-agent 1.0.36.\n\nThis week, a real-world team could run into trinity-agent 1.0.36 while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: improve the follow reason; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 70.84294184720639,
+        "hook_strength": 82.0,
+        "clarity": 95.0,
+        "utility": 75.0,
+        "novelty": 3.3067274800456126,
+        "audience_match": 52,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 60,
+        "practical_usefulness": 82.2,
+        "educational_value": 84.784,
+        "profile_visit_probability": 61.987480045610035,
+        "follow_probability": 57.305711516533634,
+        "save_probability": 59.492018244013686,
+        "share_probability": 57.70735461801597,
+        "comment_probability": 70.0,
+        "follower_score": 60.24309030786774,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 81.91742987457242,
+        "repetition_similarity": 96.69327251995439,
+        "publish_ready": 0.0
+      },
+      "final_score": 81.91742987457242,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -1247,7 +1300,8 @@
     "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
     "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "trinity-agent 1.0.36"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -1272,27 +1326,28 @@
     "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23",
     "6c04876fe8a972d5172289633386c20af4c091de807d925f418920bf7f349b23",
     "1c43e6924c10bd56e70203d3b62d34d9ac1c52d6a04b54db0b20292a4071cc47",
-    "4a826cdbd80e90be55f29e8995fce9b8ee370779a373c39f1df116bcd357828b"
+    "4a826cdbd80e90be55f29e8995fce9b8ee370779a373c39f1df116bcd357828b",
+    "dbdced9ef9438690f05840010cccb7cdcb23dcd3d178a7e22da0fa36255fb298"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "discussion",
     "resource",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "future predictor",
     "ai founder",
     "practical engineer",
     "principal engineer",
-    "startup founder"
+    "startup founder",
+    "industry insider"
   ],
   "image_styles": [
-    "magazine style",
     "before after comparison",
     "realistic future scene",
     "magazine style",
-    "product visualization"
+    "product visualization",
+    "editorial cover"
   ]
 }
