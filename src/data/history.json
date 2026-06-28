@@ -1381,6 +1381,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-06-28T05:00:16.174291+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "cto",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. A common situation is a product team trying to use Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.18949015063731,
+        "hook_strength": 45.0,
+        "clarity": 94.5,
+        "utility": 75.0,
+        "novelty": 70.56778679026652,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 81.1,
+        "educational_value": 86.242,
+        "profile_visit_probability": 63.62491309385864,
+        "follow_probability": 71.4947682502897,
+        "save_probability": 79.52033603707994,
+        "share_probability": 66.32372537659327,
+        "comment_probability": 35.0,
+        "follower_score": 66.70728476245655,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.9358502433372,
+        "repetition_similarity": 29.432213209733487,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.9358502433372,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -1408,6 +1461,7 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "trinity-agent 1.0.36",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
@@ -1437,27 +1491,28 @@
     "4a826cdbd80e90be55f29e8995fce9b8ee370779a373c39f1df116bcd357828b",
     "dbdced9ef9438690f05840010cccb7cdcb23dcd3d178a7e22da0fa36255fb298",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "fee05c24c081698386f221531c7c353c82e049dadad471db3fb6da7ab95fe38d"
+    "fee05c24c081698386f221531c7c353c82e049dadad471db3fb6da7ab95fe38d",
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "discussion",
     "resource",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "industry insider",
     "principal engineer",
-    "startup founder"
+    "startup founder",
+    "cto"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "editorial cover",
     "technical diagram",
-    "product visualization"
+    "product visualization",
+    "magazine style"
   ]
 }
