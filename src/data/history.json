@@ -1646,6 +1646,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-03T04:25:59.192483+00:00",
+      "topic": "Distributed Attacks in Persistent-State AI Control",
+      "audience": "ctos",
+      "voice": "research analyst",
+      "post_type": "case study",
+      "image_style": "product visualization",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Distributed Attacks in Persistent-State AI Control.\n\nIn practice, Distributed Attacks in Persistent-State AI Control shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: improve the follow reason; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.10274509803922,
+        "hook_strength": 60.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 26.162464985994394,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 100.0,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 80,
+        "practical_usefulness": 85.35,
+        "educational_value": 90.662,
+        "profile_visit_probability": 57.93574229691877,
+        "follow_probability": 57.55357703081232,
+        "save_probability": 62.04873949579832,
+        "share_probability": 56.65686274509804,
+        "comment_probability": 50.4,
+        "follower_score": 57.69828599439776,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 83.85651484593839,
+        "repetition_similarity": 73.83753501400561,
+        "publish_ready": 0.0
+      },
+      "final_score": 83.85651484593839,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -1679,7 +1732,8 @@
     "openagentd 1.77.0",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training"
+    "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+    "Distributed Attacks in Persistent-State AI Control"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -1712,27 +1766,28 @@
     "7ab05f5cbe04a3d35a248131592d39326194ec0613c02493178a7a5ebc4489f7",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "e7654cc4eb100c871f3b683752ed659d367c44b8b2afa7f760798dcdd3eb05e0",
-    "1b47b810ae5e9e5be2088ee84e68f683fb0f518591d2914e7e3f56b25cc55ab3"
+    "1b47b810ae5e9e5be2088ee84e68f683fb0f518591d2914e7e3f56b25cc55ab3",
+    "e00b83ac7d859f645de1158ff1008e44a1c7a33e4ed27019ab41fa30ccedb4e3"
   ],
   "cta_history": [
-    "discussion",
     "profile_visit",
     "opinion",
     "resource",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "cto",
     "research analyst",
     "principal engineer",
     "startup founder",
-    "ceo"
+    "ceo",
+    "research analyst"
   ],
   "image_styles": [
-    "magazine style",
     "realistic future scene",
     "product visualization",
     "magazine style",
-    "data visualization"
+    "data visualization",
+    "product visualization"
   ]
 }
