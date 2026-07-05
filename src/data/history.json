@@ -1752,6 +1752,60 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-05T04:39:57.083141+00:00",
+      "topic": "Distributed Attacks in Persistent-State AI Control",
+      "audience": "ctos",
+      "voice": "contrarian builder",
+      "post_type": "case study",
+      "image_style": "magazine style",
+      "cta_type": "resource",
+      "text": "The biggest mistake around Distributed Attacks in Persistent-State AI Control is treating it like a buzzword.\n\nMany builders hit this problem when they try to apply Distributed Attacks in Persistent-State AI Control in production.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, an ML team could compare this method with a full retrain and see whether the tradeoff is worth it.\n\nThe catch is that better efficiency often comes with a more complicated setup.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: Text: add real-world context; add a limitation or tradeoff. Image: improve image quality and contrast; make the image match the topic better.",
+      "image_path": "",
+      "scores": {
+        "text_quality": 72.69028058361393,
+        "hook_strength": 60.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 80.3591470258137,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 100.0,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 80,
+        "practical_usefulness": 85.35,
+        "educational_value": 90.662,
+        "profile_visit_probability": 69.859012345679,
+        "follow_probability": 73.7583849607183,
+        "save_probability": 78.30774410774411,
+        "share_probability": 75.62570145903479,
+        "comment_probability": 50.4,
+        "follower_score": 71.63767261503928,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 87.19069472502807,
+        "repetition_similarity": 19.640852974186306,
+        "publish_ready": 1.0
+      },
+      "final_score": 87.19069472502807,
+      "publish_result": {
+        "success": true,
+        "post_id": "urn:li:share:7479393609369145345",
+        "url": null,
+        "message": "Post published successfully"
+      }
     }
   ],
   "topics": [
@@ -1787,7 +1841,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
     "Distributed Attacks in Persistent-State AI Control",
-    "Rabby Wallet integrates Robinhood Chain for enhanced access to onchain finance"
+    "Rabby Wallet integrates Robinhood Chain for enhanced access to onchain finance",
+    "Distributed Attacks in Persistent-State AI Control"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -1822,27 +1877,28 @@
     "e7654cc4eb100c871f3b683752ed659d367c44b8b2afa7f760798dcdd3eb05e0",
     "1b47b810ae5e9e5be2088ee84e68f683fb0f518591d2914e7e3f56b25cc55ab3",
     "e00b83ac7d859f645de1158ff1008e44a1c7a33e4ed27019ab41fa30ccedb4e3",
-    "12f05cf2d5074905c537c855663fbb5bec0c6c9370aad7b1caca0a00d7f2d690"
+    "12f05cf2d5074905c537c855663fbb5bec0c6c9370aad7b1caca0a00d7f2d690",
+    "89b4a35a2697d76c4bda2285892c4ae3d9547db2589588d426466143f3c16e06"
   ],
   "cta_history": [
-    "opinion",
     "resource",
     "profile_visit",
     "opinion",
-    "follow"
+    "follow",
+    "resource"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "ceo",
     "research analyst",
-    "cto"
+    "cto",
+    "contrarian builder"
   ],
   "image_styles": [
-    "product visualization",
     "magazine style",
     "data visualization",
     "product visualization",
-    "technical diagram"
+    "technical diagram",
+    "magazine style"
   ]
 }
