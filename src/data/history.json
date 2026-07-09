@@ -1965,6 +1965,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-09T04:30:35.386125+00:00",
+      "topic": "AI servers squeeze MOSFET supply while PC slump tests power component pricing power",
+      "audience": "students",
+      "voice": "research analyst",
+      "post_type": "contrarian insight",
+      "image_style": "product visualization",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in AI servers squeeze MOSFET supply while PC slump tests power component pricing power. In practice, AI servers squeeze MOSFET supply while PC slump tests power component pricing power shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make the post...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.831623246493,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 84.36873747494991,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 86.6,
+        "educational_value": 92.25200000000001,
+        "profile_visit_probability": 62.86112224448898,
+        "follow_probability": 71.41125250501003,
+        "save_probability": 79.51062124248497,
+        "share_probability": 67.02905811623246,
+        "comment_probability": 29.0,
+        "follower_score": 65.99513927855712,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.92668472945893,
+        "repetition_similarity": 15.631262525050099,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.92668472945893,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2004,7 +2057,8 @@
     "Distributed Attacks in Persistent-State AI Control",
     "Distributed Attacks in Persistent-State AI Control",
     "Use, Misuse and Abuse: What should AI do for a researcher?",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "AI servers squeeze MOSFET supply while PC slump tests power component pricing power"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2043,27 +2097,28 @@
     "89b4a35a2697d76c4bda2285892c4ae3d9547db2589588d426466143f3c16e06",
     "e00b83ac7d859f645de1158ff1008e44a1c7a33e4ed27019ab41fa30ccedb4e3",
     "d343296a69de37bcf2a9c3f9b7557f47ed5713d9a7f0b65d27046e1967e7367e",
-    "474cbb5536eb85bb57237c339372db68ff5a00714d69a1d95aefbcc0497e2bcd"
+    "474cbb5536eb85bb57237c339372db68ff5a00714d69a1d95aefbcc0497e2bcd",
+    "f73054b9895df550f4d90450f1e982bc2864e291e779a7852c2500be9841a3ab"
   ],
   "cta_history": [
-    "follow",
     "resource",
     "opinion",
     "follow",
-    "resource"
+    "resource",
+    "discussion"
   ],
   "voice_history": [
-    "cto",
     "contrarian builder",
     "research analyst",
     "industry insider",
-    "principal engineer"
+    "principal engineer",
+    "research analyst"
   ],
   "image_styles": [
-    "technical diagram",
     "magazine style",
     "product visualization",
     "editorial cover",
-    "technical diagram"
+    "technical diagram",
+    "product visualization"
   ]
 }
