@@ -2018,6 +2018,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-10T04:33:05.070491+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "startup founder",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. A common situation is a product team trying to use Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make the post interesting...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.13935483870968,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.85253456221199,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.14999999999999,
+        "educational_value": 86.13799999999999,
+        "profile_visit_probability": 63.687557603686635,
+        "follow_probability": 71.57990783410139,
+        "save_probability": 79.45576036866359,
+        "share_probability": 66.29838709677419,
+        "comment_probability": 35.0,
+        "follower_score": 66.73177188940093,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.01232792626728,
+        "repetition_similarity": 29.147465437788018,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.01232792626728,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2058,7 +2111,8 @@
     "Distributed Attacks in Persistent-State AI Control",
     "Use, Misuse and Abuse: What should AI do for a researcher?",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "AI servers squeeze MOSFET supply while PC slump tests power component pricing power"
+    "AI servers squeeze MOSFET supply while PC slump tests power component pricing power",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2098,27 +2152,28 @@
     "e00b83ac7d859f645de1158ff1008e44a1c7a33e4ed27019ab41fa30ccedb4e3",
     "d343296a69de37bcf2a9c3f9b7557f47ed5713d9a7f0b65d27046e1967e7367e",
     "474cbb5536eb85bb57237c339372db68ff5a00714d69a1d95aefbcc0497e2bcd",
-    "f73054b9895df550f4d90450f1e982bc2864e291e779a7852c2500be9841a3ab"
+    "f73054b9895df550f4d90450f1e982bc2864e291e779a7852c2500be9841a3ab",
+    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "follow",
     "resource",
-    "discussion"
+    "discussion",
+    "opinion"
   ],
   "voice_history": [
-    "contrarian builder",
     "research analyst",
     "industry insider",
     "principal engineer",
-    "research analyst"
+    "research analyst",
+    "startup founder"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "editorial cover",
     "technical diagram",
-    "product visualization"
+    "product visualization",
+    "magazine style"
   ]
 }
