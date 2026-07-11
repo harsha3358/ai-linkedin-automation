@@ -2071,6 +2071,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-11T03:52:04.462033+00:00",
+      "topic": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "audience": "job seekers",
+      "voice": "industry insider",
+      "post_type": "beginner mistake",
+      "image_style": "technical diagram",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks.\n\nIn practice, UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.82818897637796,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 85.62992125984252,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.848,
+        "profile_visit_probability": 63.13858267716536,
+        "follow_probability": 71.78834645669292,
+        "save_probability": 79.58897637795275,
+        "share_probability": 67.22047244094487,
+        "comment_probability": 29.0,
+        "follower_score": 66.2220157480315,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.9152327559055,
+        "repetition_similarity": 14.37007874015748,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.9152327559055,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2112,7 +2165,8 @@
     "Use, Misuse and Abuse: What should AI do for a researcher?",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "AI servers squeeze MOSFET supply while PC slump tests power component pricing power",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2153,27 +2207,28 @@
     "d343296a69de37bcf2a9c3f9b7557f47ed5713d9a7f0b65d27046e1967e7367e",
     "474cbb5536eb85bb57237c339372db68ff5a00714d69a1d95aefbcc0497e2bcd",
     "f73054b9895df550f4d90450f1e982bc2864e291e779a7852c2500be9841a3ab",
-    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58"
+    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
+    "6db4e7450f70c1ec71c6676a472fe43ef213bea1cc547efafb0419dd16806c92"
   ],
   "cta_history": [
-    "opinion",
     "follow",
     "resource",
     "discussion",
-    "opinion"
+    "opinion",
+    "profile_visit"
   ],
   "voice_history": [
-    "research analyst",
     "industry insider",
     "principal engineer",
     "research analyst",
-    "startup founder"
+    "startup founder",
+    "industry insider"
   ],
   "image_styles": [
-    "product visualization",
     "editorial cover",
     "technical diagram",
     "product visualization",
-    "magazine style"
+    "magazine style",
+    "technical diagram"
   ]
 }
