@@ -2230,6 +2230,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-14T03:45:12.794148+00:00",
+      "topic": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+      "audience": "ml engineers",
+      "voice": "future predictor",
+      "post_type": "one-chart explanation",
+      "image_style": "technical diagram",
+      "cta_type": "profile_visit",
+      "text": "**Stop celebrating LLM \"intelligence.\" It's a facade.** Until these models can *think about their own thinking*,",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.86782941498086,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 70.91306724986332,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 90.0,
+        "technical_accuracy": 96,
+        "practical_usefulness": 80.2,
+        "educational_value": 86.524,
+        "profile_visit_probability": 62.78087479496993,
+        "follow_probability": 68.68400710770914,
+        "save_probability": 75.473920174959,
+        "share_probability": 62.31957353745216,
+        "comment_probability": 35.4,
+        "follower_score": 64.28314089666485,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.13569189721159,
+        "repetition_similarity": 29.086932750136686,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.13569189721159,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2274,7 +2327,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Scalable Visual Pretraining for Language Intelligence"
+    "Scalable Visual Pretraining for Language Intelligence",
+    "Metacognition in LLMs: Foundations, Progress, and Opportunities"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2318,27 +2372,28 @@
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
     "6db4e7450f70c1ec71c6676a472fe43ef213bea1cc547efafb0419dd16806c92",
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
-    "bbdd2ecccd9c469eaedf614cc80a07948b28356a087c828cd4605dca0e9a4a32"
+    "bbdd2ecccd9c469eaedf614cc80a07948b28356a087c828cd4605dca0e9a4a32",
+    "4d19f179b8e1f2b83adfc17496967f01de7694ea69f3ab5597364f2ccfa5a89b"
   ],
   "cta_history": [
-    "discussion",
     "opinion",
     "profile_visit",
     "resource",
-    "opinion"
+    "opinion",
+    "profile_visit"
   ],
   "voice_history": [
-    "research analyst",
     "startup founder",
     "industry insider",
     "principal engineer",
-    "ceo"
+    "ceo",
+    "future predictor"
   ],
   "image_styles": [
-    "product visualization",
     "magazine style",
     "technical diagram",
     "product visualization",
-    "data visualization"
+    "data visualization",
+    "technical diagram"
   ]
 }
