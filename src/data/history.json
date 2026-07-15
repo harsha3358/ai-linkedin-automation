@@ -2283,6 +2283,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-15T03:45:26.504969+00:00",
+      "topic": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+      "audience": "ml engineers",
+      "voice": "ai founder",
+      "post_type": "beginner mistake",
+      "image_style": "infographic",
+      "cta_type": "follow",
+      "text": "Most people miss the real lesson in Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution. In practice, Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 69.69127972819932,
+        "hook_strength": 53.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 84.93771234428085,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.69999999999999,
+        "educational_value": 86.64399999999999,
+        "profile_visit_probability": 66.58629671574178,
+        "follow_probability": 73.20137599093998,
+        "save_probability": 79.38131370328425,
+        "share_probability": 74.1781993204983,
+        "comment_probability": 44.8,
+        "follower_score": 70.08997961494904,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.85320806342015,
+        "repetition_similarity": 15.062287655719139,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.85320806342015,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2328,7 +2381,8 @@
     "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Scalable Visual Pretraining for Language Intelligence",
-    "Metacognition in LLMs: Foundations, Progress, and Opportunities"
+    "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+    "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2373,27 +2427,28 @@
     "6db4e7450f70c1ec71c6676a472fe43ef213bea1cc547efafb0419dd16806c92",
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
     "bbdd2ecccd9c469eaedf614cc80a07948b28356a087c828cd4605dca0e9a4a32",
-    "4d19f179b8e1f2b83adfc17496967f01de7694ea69f3ab5597364f2ccfa5a89b"
+    "4d19f179b8e1f2b83adfc17496967f01de7694ea69f3ab5597364f2ccfa5a89b",
+    "f134b521a7856e4f8b6382818096cbb3ea2482f5a1593c721a8e323bf16163a4"
   ],
   "cta_history": [
-    "opinion",
     "profile_visit",
     "resource",
     "opinion",
-    "profile_visit"
+    "profile_visit",
+    "follow"
   ],
   "voice_history": [
-    "startup founder",
     "industry insider",
     "principal engineer",
     "ceo",
-    "future predictor"
+    "future predictor",
+    "ai founder"
   ],
   "image_styles": [
-    "magazine style",
     "technical diagram",
     "product visualization",
     "data visualization",
-    "technical diagram"
+    "technical diagram",
+    "infographic"
   ]
 }
