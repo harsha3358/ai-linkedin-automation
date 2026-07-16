@@ -2336,6 +2336,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-16T03:47:40.041128+00:00",
+      "topic": "Linear Independent Component Analysis via Optimal Transport",
+      "audience": "ml engineers",
+      "voice": "ceo",
+      "post_type": "one-chart explanation",
+      "image_style": "before after comparison",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Linear Independent Component Analysis via Optimal Transport.\n\nThis week, a real-world team could run into Linear Independent Component Analysis via Optimal Transport while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.7211320754717,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 84.15094339622642,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.644,
+        "profile_visit_probability": 65.6932075471698,
+        "follow_probability": 72.6421320754717,
+        "save_probability": 79.44528301886793,
+        "share_probability": 66.95283018867924,
+        "comment_probability": 35.4,
+        "follower_score": 67.68792264150943,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.44128603773586,
+        "repetition_similarity": 15.849056603773585,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.44128603773586,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2382,7 +2435,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Scalable Visual Pretraining for Language Intelligence",
     "Metacognition in LLMs: Foundations, Progress, and Opportunities",
-    "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution"
+    "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+    "Linear Independent Component Analysis via Optimal Transport"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2428,27 +2482,28 @@
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
     "bbdd2ecccd9c469eaedf614cc80a07948b28356a087c828cd4605dca0e9a4a32",
     "4d19f179b8e1f2b83adfc17496967f01de7694ea69f3ab5597364f2ccfa5a89b",
-    "f134b521a7856e4f8b6382818096cbb3ea2482f5a1593c721a8e323bf16163a4"
+    "f134b521a7856e4f8b6382818096cbb3ea2482f5a1593c721a8e323bf16163a4",
+    "330dc8892a7e45ed9f71a3a9c5f0ee6074e3b9c84b1532110569927f6a6354d4"
   ],
   "cta_history": [
-    "profile_visit",
     "resource",
     "opinion",
     "profile_visit",
-    "follow"
+    "follow",
+    "opinion"
   ],
   "voice_history": [
-    "industry insider",
     "principal engineer",
     "ceo",
     "future predictor",
-    "ai founder"
+    "ai founder",
+    "ceo"
   ],
   "image_styles": [
-    "technical diagram",
     "product visualization",
     "data visualization",
     "technical diagram",
-    "infographic"
+    "infographic",
+    "before after comparison"
   ]
 }
