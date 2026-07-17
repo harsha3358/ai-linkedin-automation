@@ -2389,6 +2389,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-17T03:47:03.679179+00:00",
+      "topic": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+      "audience": "ai engineers",
+      "voice": "future predictor",
+      "post_type": "practical tutorial",
+      "image_style": "data visualization",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models.\n\nThis week, a real-world team could run into Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.64751488900922,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 71.19653492149432,
+        "audience_match": 52,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.54400000000001,
+        "profile_visit_probability": 65.72323768272875,
+        "follow_probability": 70.0647639415268,
+        "save_probability": 75.2589604764483,
+        "share_probability": 62.16878722252301,
+        "comment_probability": 41.8,
+        "follower_score": 66.00734878180833,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.03241082837035,
+        "repetition_similarity": 28.803465078505685,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.03241082837035,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2436,7 +2489,8 @@
     "Scalable Visual Pretraining for Language Intelligence",
     "Metacognition in LLMs: Foundations, Progress, and Opportunities",
     "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
-    "Linear Independent Component Analysis via Optimal Transport"
+    "Linear Independent Component Analysis via Optimal Transport",
+    "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2483,27 +2537,28 @@
     "bbdd2ecccd9c469eaedf614cc80a07948b28356a087c828cd4605dca0e9a4a32",
     "4d19f179b8e1f2b83adfc17496967f01de7694ea69f3ab5597364f2ccfa5a89b",
     "f134b521a7856e4f8b6382818096cbb3ea2482f5a1593c721a8e323bf16163a4",
-    "330dc8892a7e45ed9f71a3a9c5f0ee6074e3b9c84b1532110569927f6a6354d4"
+    "330dc8892a7e45ed9f71a3a9c5f0ee6074e3b9c84b1532110569927f6a6354d4",
+    "1eed86743feb4cc7e00f2f442fb1ded11f4cb22916dee8ed26a7e2e22f55791c"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "profile_visit",
     "follow",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "principal engineer",
     "ceo",
     "future predictor",
     "ai founder",
-    "ceo"
+    "ceo",
+    "future predictor"
   ],
   "image_styles": [
-    "product visualization",
     "data visualization",
     "technical diagram",
     "infographic",
-    "before after comparison"
+    "before after comparison",
+    "data visualization"
   ]
 }
