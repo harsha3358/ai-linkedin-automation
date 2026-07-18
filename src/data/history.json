@@ -2442,6 +2442,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-18T03:42:22.049220+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "resource",
+      "text": "Imagine a future where your LLM-powered agents silently drift, delivering inconsistent or even hallucinated responses, and you only discover it through customer",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.12086455331412,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.72046109510086,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.14999999999999,
+        "educational_value": 86.13799999999999,
+        "profile_visit_probability": 63.65850144092219,
+        "follow_probability": 71.54041786743517,
+        "save_probability": 79.41613832853025,
+        "share_probability": 66.2521613832853,
+        "comment_probability": 35.0,
+        "follower_score": 66.69780259365994,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.0042027665706,
+        "repetition_similarity": 29.279538904899134,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.0042027665706,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2490,7 +2543,8 @@
     "Metacognition in LLMs: Foundations, Progress, and Opportunities",
     "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
     "Linear Independent Component Analysis via Optimal Transport",
-    "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models"
+    "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2538,27 +2592,28 @@
     "4d19f179b8e1f2b83adfc17496967f01de7694ea69f3ab5597364f2ccfa5a89b",
     "f134b521a7856e4f8b6382818096cbb3ea2482f5a1593c721a8e323bf16163a4",
     "330dc8892a7e45ed9f71a3a9c5f0ee6074e3b9c84b1532110569927f6a6354d4",
-    "1eed86743feb4cc7e00f2f442fb1ded11f4cb22916dee8ed26a7e2e22f55791c"
+    "1eed86743feb4cc7e00f2f442fb1ded11f4cb22916dee8ed26a7e2e22f55791c",
+    "80bff576cf7a7506832bd082204475545330b24b7ef572aab5a00a9542887a69"
   ],
   "cta_history": [
-    "opinion",
     "profile_visit",
     "follow",
     "opinion",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "ceo",
     "future predictor",
     "ai founder",
     "ceo",
-    "future predictor"
+    "future predictor",
+    "principal engineer"
   ],
   "image_styles": [
-    "data visualization",
     "technical diagram",
     "infographic",
     "before after comparison",
-    "data visualization"
+    "data visualization",
+    "magazine style"
   ]
 }
