@@ -2495,6 +2495,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-19T04:04:33.774045+00:00",
+      "topic": "IRGC Wipes out US Drone-Boat Depot in Bahrain",
+      "audience": "founders",
+      "voice": "industry insider",
+      "post_type": "trend breakdown",
+      "image_style": "realistic future scene",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in IRGC Wipes out US Drone-Boat Depot in Bahrain. This week, a real-world team could run into IRGC Wipes out US Drone-Boat Depot in Bahrain while trying to ship faster without losing quality. The technical point is that the system tries to adapt better without adding unnecessary complexity. That matters because a small technical improvement can make the whole system more usable. For example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model. The tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain. Challenge: audit one process today and find one place where you can simplify it without losing quality. Follow for clear AI/ML lessons without the fluff. Note: make the hook stronger; improve the follow reason; make the post interesting enough to visit...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.59678032420346,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 70.26271660145332,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.54400000000001,
+        "profile_visit_probability": 62.63779765231973,
+        "follow_probability": 68.48955226383455,
+        "save_probability": 74.978814980436,
+        "share_probability": 61.84195081050866,
+        "comment_probability": 35.4,
+        "follower_score": 64.0183707098938,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.48088232532143,
+        "repetition_similarity": 29.737283398546676,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.48088232532143,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2544,7 +2597,8 @@
     "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
     "Linear Independent Component Analysis via Optimal Transport",
     "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "IRGC Wipes out US Drone-Boat Depot in Bahrain"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2593,27 +2647,28 @@
     "f134b521a7856e4f8b6382818096cbb3ea2482f5a1593c721a8e323bf16163a4",
     "330dc8892a7e45ed9f71a3a9c5f0ee6074e3b9c84b1532110569927f6a6354d4",
     "1eed86743feb4cc7e00f2f442fb1ded11f4cb22916dee8ed26a7e2e22f55791c",
-    "80bff576cf7a7506832bd082204475545330b24b7ef572aab5a00a9542887a69"
+    "80bff576cf7a7506832bd082204475545330b24b7ef572aab5a00a9542887a69",
+    "01464595ee8a489218161c3c5c08a4bb63be8f164ab8654951444d55e7bf61fe"
   ],
   "cta_history": [
-    "profile_visit",
     "follow",
     "opinion",
     "discussion",
-    "resource"
+    "resource",
+    "profile_visit"
   ],
   "voice_history": [
-    "future predictor",
     "ai founder",
     "ceo",
     "future predictor",
-    "principal engineer"
+    "principal engineer",
+    "industry insider"
   ],
   "image_styles": [
-    "technical diagram",
     "infographic",
     "before after comparison",
     "data visualization",
-    "magazine style"
+    "magazine style",
+    "realistic future scene"
   ]
 }
