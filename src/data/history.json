@@ -2601,6 +2601,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-21T03:55:55.580261+00:00",
+      "topic": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
+      "audience": "founders",
+      "voice": "practical engineer",
+      "post_type": "case study",
+      "image_style": "data visualization",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric. In practice, The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make the post interesting enough to visit...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.0232768361582,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 80.45197740112995,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.848,
+        "profile_visit_probability": 64.8794350282486,
+        "follow_probability": 71.53614124293786,
+        "save_probability": 78.03559322033898,
+        "share_probability": 65.40819209039549,
+        "comment_probability": 35.4,
+        "follower_score": 66.63904858757063,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.09076564971751,
+        "repetition_similarity": 19.54802259887006,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.09076564971751,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2652,7 +2705,8 @@
     "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "IRGC Wipes out US Drone-Boat Depot in Bahrain",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2703,27 +2757,28 @@
     "1eed86743feb4cc7e00f2f442fb1ded11f4cb22916dee8ed26a7e2e22f55791c",
     "80bff576cf7a7506832bd082204475545330b24b7ef572aab5a00a9542887a69",
     "01464595ee8a489218161c3c5c08a4bb63be8f164ab8654951444d55e7bf61fe",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "5ed34fb9e3431947f80140dd3808c575b4161b1b30f373a3e4ffa695281cc9b3"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "resource",
     "profile_visit",
-    "opinion"
+    "opinion",
+    "resource"
   ],
   "voice_history": [
-    "ceo",
     "future predictor",
     "principal engineer",
     "industry insider",
-    "startup founder"
+    "startup founder",
+    "practical engineer"
   ],
   "image_styles": [
-    "before after comparison",
     "data visualization",
     "magazine style",
     "realistic future scene",
-    "product visualization"
+    "product visualization",
+    "data visualization"
   ]
 }
