@@ -2707,6 +2707,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-23T03:54:27.281218+00:00",
+      "topic": "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
+      "audience": "ai engineers",
+      "voice": "cto",
+      "post_type": "contrarian insight",
+      "image_style": "infographic",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in LKValues: Aligning Large Language Models with Sri Lankan Societal Values.\n\nIn practice, LKValues: Aligning Large Language Models with Sri Lankan Societal Values shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.21252252252252,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 80.51801801801801,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.94800000000001,
+        "profile_visit_probability": 64.89396396396396,
+        "follow_probability": 71.55588738738739,
+        "save_probability": 78.3554054054054,
+        "share_probability": 65.6813063063063,
+        "comment_probability": 35.4,
+        "follower_score": 66.75353423423424,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.20082846846847,
+        "repetition_similarity": 19.48198198198198,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.20082846846847,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2760,7 +2813,8 @@
     "IRGC Wipes out US Drone-Boat Depot in Bahrain",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "LKValues: Aligning Large Language Models with Sri Lankan Societal Values"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2813,27 +2867,28 @@
     "01464595ee8a489218161c3c5c08a4bb63be8f164ab8654951444d55e7bf61fe",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "5ed34fb9e3431947f80140dd3808c575b4161b1b30f373a3e4ffa695281cc9b3",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "88dea252cfc5fb4f5b7fa324127877571e817107fed2c948b50aca1a02872c06"
   ],
   "cta_history": [
-    "resource",
     "profile_visit",
     "opinion",
     "resource",
-    "discussion"
+    "discussion",
+    "profile_visit"
   ],
   "voice_history": [
-    "principal engineer",
     "industry insider",
     "startup founder",
     "practical engineer",
-    "principal engineer"
+    "principal engineer",
+    "cto"
   ],
   "image_styles": [
-    "magazine style",
     "realistic future scene",
     "product visualization",
     "data visualization",
-    "magazine style"
+    "magazine style",
+    "infographic"
   ]
 }
