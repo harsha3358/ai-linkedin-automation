@@ -2760,6 +2760,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-24T03:53:41.935047+00:00",
+      "topic": "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be",
+      "audience": "developers",
+      "voice": "startup founder",
+      "post_type": "tool comparison",
+      "image_style": "data visualization",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be. This week, a real-world team could run into Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be while trying to ship faster without losing quality. The technical point is that the system tries to adapt better without adding unnecessary complexity. That matters because a small technical improvement can make the whole system more usable. For example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model. The tradeoff...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 70.89757816941444,
+        "hook_strength": 35.0,
+        "clarity": 99.0,
+        "utility": 65.0,
+        "novelty": 86.69698692438885,
+        "audience_match": 52,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 100.0,
+        "limitation_score": 51,
+        "challenge_score": 20,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 60.9,
+        "educational_value": 71.46799999999999,
+        "profile_visit_probability": 69.13333712336555,
+        "follow_probability": 74.69939909039226,
+        "save_probability": 81.70909607731666,
+        "share_probability": 69.0939454235361,
+        "comment_probability": 41.8,
+        "follower_score": 70.57906503695281,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 79.9702386355884,
+        "repetition_similarity": 13.303013075611142,
+        "publish_ready": 0.0
+      },
+      "final_score": 79.9702386355884,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2814,7 +2867,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "LKValues: Aligning Large Language Models with Sri Lankan Societal Values"
+    "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
+    "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2868,27 +2922,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "5ed34fb9e3431947f80140dd3808c575b4161b1b30f373a3e4ffa695281cc9b3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "88dea252cfc5fb4f5b7fa324127877571e817107fed2c948b50aca1a02872c06"
+    "88dea252cfc5fb4f5b7fa324127877571e817107fed2c948b50aca1a02872c06",
+    "52e4da7cd666ffff7ace6e53e8275941a90d516316be1e6500f5dc27d77d581c"
   ],
   "cta_history": [
-    "profile_visit",
     "opinion",
     "resource",
     "discussion",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "industry insider",
     "startup founder",
     "practical engineer",
     "principal engineer",
-    "cto"
+    "cto",
+    "startup founder"
   ],
   "image_styles": [
-    "realistic future scene",
     "product visualization",
     "data visualization",
     "magazine style",
-    "infographic"
+    "infographic",
+    "data visualization"
   ]
 }
