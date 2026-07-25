@@ -2813,6 +2813,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-25T03:47:54.346204+00:00",
+      "topic": "3D-Aware VLMs with Implicit and Explicit Geometries",
+      "audience": "job seekers",
+      "voice": "contrarian builder",
+      "post_type": "tool comparison",
+      "image_style": "technical diagram",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in 3D-Aware VLMs with Implicit and Explicit Geometries.\n\nThis week, a real-world team could run into 3D-Aware VLMs with Implicit and Explicit Geometries while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 69.77781456953643,
+        "hook_strength": 45.0,
+        "clarity": 92.5,
+        "utility": 75.0,
+        "novelty": 84.48438978240303,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 92,
+        "practical_usefulness": 82.2,
+        "educational_value": 87.09400000000001,
+        "profile_visit_probability": 66.68656575212867,
+        "follow_probability": 75.6558325449385,
+        "save_probability": 83.09531693472091,
+        "share_probability": 70.69453642384106,
+        "comment_probability": 35.0,
+        "follower_score": 70.09163505203406,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.58551965941344,
+        "repetition_similarity": 15.515610217596972,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.58551965941344,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2868,7 +2921,8 @@
     "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
-    "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be"
+    "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be",
+    "3D-Aware VLMs with Implicit and Explicit Geometries"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2923,27 +2977,28 @@
     "5ed34fb9e3431947f80140dd3808c575b4161b1b30f373a3e4ffa695281cc9b3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "88dea252cfc5fb4f5b7fa324127877571e817107fed2c948b50aca1a02872c06",
-    "52e4da7cd666ffff7ace6e53e8275941a90d516316be1e6500f5dc27d77d581c"
+    "52e4da7cd666ffff7ace6e53e8275941a90d516316be1e6500f5dc27d77d581c",
+    "7e4459daecf08c4167e06f717db5380a5333be5e754df67922838a155b20b35f"
   ],
   "cta_history": [
-    "opinion",
     "resource",
     "discussion",
     "profile_visit",
-    "opinion"
+    "opinion",
+    "resource"
   ],
   "voice_history": [
-    "startup founder",
     "practical engineer",
     "principal engineer",
     "cto",
-    "startup founder"
+    "startup founder",
+    "contrarian builder"
   ],
   "image_styles": [
-    "product visualization",
     "data visualization",
     "magazine style",
     "infographic",
-    "data visualization"
+    "data visualization",
+    "technical diagram"
   ]
 }
