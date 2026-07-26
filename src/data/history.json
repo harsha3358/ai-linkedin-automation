@@ -2866,6 +2866,60 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-26T04:06:47.630847+00:00",
+      "topic": "aither-adk 2.38.1",
+      "audience": "ai engineers",
+      "voice": "ceo",
+      "post_type": "trend breakdown",
+      "image_style": "editorial cover",
+      "cta_type": "profile_visit",
+      "text": "The biggest mistake around aither-adk 2.38.1 is treating it like a buzzword.\n\nMany builders hit this problem when they try to apply aither-adk 2.38.1 in production.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because better workflows save time and reduce wasted effort.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe catch is that better efficiency often comes with a more complicated setup.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for practical AI/ML breakdowns that save time.\n\nNote: Text: raise educational value; add real-world context; add a limitation or tradeoff; make the explanation more topic-specific; make the hook stronger. Image: improve image quality and contrast; make the image match the topic better.",
+      "image_path": "",
+      "scores": {
+        "text_quality": 78.11573806881242,
+        "hook_strength": 82.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.25527192008879,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 44,
+        "practical_usefulness": 82.2,
+        "educational_value": 83.40400000000001,
+        "profile_visit_probability": 73.83615982241953,
+        "follow_probability": 76.02732630410655,
+        "save_probability": 79.27658157602664,
+        "share_probability": 80.88934517203108,
+        "comment_probability": 63.599999999999994,
+        "follower_score": 75.61595593784683,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.30322432852387,
+        "repetition_similarity": 29.74472807991121,
+        "publish_ready": 1.0
+      },
+      "final_score": 84.30322432852387,
+      "publish_result": {
+        "success": false,
+        "post_id": null,
+        "url": null,
+        "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      }
     }
   ],
   "topics": [
@@ -2922,7 +2976,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
     "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be",
-    "3D-Aware VLMs with Implicit and Explicit Geometries"
+    "3D-Aware VLMs with Implicit and Explicit Geometries",
+    "aither-adk 2.38.1"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -2978,27 +3033,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "88dea252cfc5fb4f5b7fa324127877571e817107fed2c948b50aca1a02872c06",
     "52e4da7cd666ffff7ace6e53e8275941a90d516316be1e6500f5dc27d77d581c",
-    "7e4459daecf08c4167e06f717db5380a5333be5e754df67922838a155b20b35f"
+    "7e4459daecf08c4167e06f717db5380a5333be5e754df67922838a155b20b35f",
+    "b027c2ef57c933baaf3b3b46fb7cedf9106702255d5c44e226a3dc7290521c2c"
   ],
   "cta_history": [
-    "resource",
     "discussion",
     "profile_visit",
     "opinion",
-    "resource"
+    "resource",
+    "profile_visit"
   ],
   "voice_history": [
-    "practical engineer",
     "principal engineer",
     "cto",
     "startup founder",
-    "contrarian builder"
+    "contrarian builder",
+    "ceo"
   ],
   "image_styles": [
-    "data visualization",
     "magazine style",
     "infographic",
     "data visualization",
-    "technical diagram"
+    "technical diagram",
+    "editorial cover"
   ]
 }
