@@ -2920,6 +2920,59 @@
         "url": null,
         "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
       }
+    },
+    {
+      "created_at": "2026-07-27T04:14:03.033372+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "product visualization",
+      "cta_type": "opinion",
+      "text": "Here's a look at what’s rapidly becoming non-negotiable for serious LLM deployments: automated, objective quality assurance. As",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.12086455331412,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.72046109510086,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.14999999999999,
+        "educational_value": 86.13799999999999,
+        "profile_visit_probability": 63.65850144092219,
+        "follow_probability": 71.54041786743517,
+        "save_probability": 79.41613832853025,
+        "share_probability": 66.2521613832853,
+        "comment_probability": 35.0,
+        "follower_score": 66.69780259365994,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.0042027665706,
+        "repetition_similarity": 29.279538904899134,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.0042027665706,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -2977,7 +3030,8 @@
     "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
     "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be",
     "3D-Aware VLMs with Implicit and Explicit Geometries",
-    "aither-adk 2.38.1"
+    "aither-adk 2.38.1",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3034,27 +3088,28 @@
     "88dea252cfc5fb4f5b7fa324127877571e817107fed2c948b50aca1a02872c06",
     "52e4da7cd666ffff7ace6e53e8275941a90d516316be1e6500f5dc27d77d581c",
     "7e4459daecf08c4167e06f717db5380a5333be5e754df67922838a155b20b35f",
-    "b027c2ef57c933baaf3b3b46fb7cedf9106702255d5c44e226a3dc7290521c2c"
+    "b027c2ef57c933baaf3b3b46fb7cedf9106702255d5c44e226a3dc7290521c2c",
+    "470c3b70707a1013390ce9bc33e3ef980527b53f9917acd4728c6b190593ed3c"
   ],
   "cta_history": [
-    "discussion",
     "profile_visit",
     "opinion",
     "resource",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "principal engineer",
     "cto",
     "startup founder",
     "contrarian builder",
-    "ceo"
+    "ceo",
+    "principal engineer"
   ],
   "image_styles": [
-    "magazine style",
     "infographic",
     "data visualization",
     "technical diagram",
-    "editorial cover"
+    "editorial cover",
+    "product visualization"
   ]
 }
