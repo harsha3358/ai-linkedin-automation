@@ -3026,6 +3026,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-07-29T03:50:36.654440+00:00",
+      "topic": "Chipmakers fall in US and Asia as AI jitters rattle investors",
+      "audience": "recruiters",
+      "voice": "practical engineer",
+      "post_type": "lesson from failure",
+      "image_style": "magazine style",
+      "cta_type": "follow",
+      "text": "Most people miss the real lesson in Chipmakers fall in US and Asia as AI jitters rattle investors. In practice, Chipmakers fall in US and Asia as AI jitters rattle investors shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make the post interesting enough to visit...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.0112643678161,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 79.08045977011494,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 92,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.308,
+        "profile_visit_probability": 64.57770114942528,
+        "follow_probability": 71.12605747126437,
+        "save_probability": 77.92413793103448,
+        "share_probability": 65.17816091954023,
+        "comment_probability": 35.4,
+        "follower_score": 66.38379425287357,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.54598988505747,
+        "repetition_similarity": 20.919540229885058,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.54598988505747,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -3085,7 +3138,8 @@
     "3D-Aware VLMs with Implicit and Explicit Geometries",
     "aither-adk 2.38.1",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "Chipmakers fall in US and Asia as AI jitters rattle investors"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3144,27 +3198,28 @@
     "7e4459daecf08c4167e06f717db5380a5333be5e754df67922838a155b20b35f",
     "b027c2ef57c933baaf3b3b46fb7cedf9106702255d5c44e226a3dc7290521c2c",
     "470c3b70707a1013390ce9bc33e3ef980527b53f9917acd4728c6b190593ed3c",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "830e6985311d7ec249b2a428d15500478a9be7f4ad722f18c873ad900d1944c0"
   ],
   "cta_history": [
-    "opinion",
     "resource",
     "profile_visit",
     "opinion",
-    "resource"
+    "resource",
+    "follow"
   ],
   "voice_history": [
-    "startup founder",
     "contrarian builder",
     "ceo",
     "principal engineer",
-    "startup founder"
+    "startup founder",
+    "practical engineer"
   ],
   "image_styles": [
-    "data visualization",
     "technical diagram",
     "editorial cover",
     "product visualization",
-    "technical diagram"
+    "technical diagram",
+    "magazine style"
   ]
 }
