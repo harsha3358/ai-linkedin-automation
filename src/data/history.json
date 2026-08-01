@@ -3185,6 +3185,60 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-01T04:01:36.478972+00:00",
+      "topic": "Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better",
+      "audience": "ctos",
+      "voice": "research analyst",
+      "post_type": "lesson from failure",
+      "image_style": "data visualization",
+      "cta_type": "resource",
+      "text": "The biggest mistake around Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better is treating it like a buzzword. Many builders hit this problem when they try to apply Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better in production. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, an ML team could compare this method with a full retrain and see whether the tradeoff is worth it. The catch is that better efficiency often comes with a more complicated setup. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: Text: raise educational value; add real-world context; add...",
+      "image_path": "",
+      "scores": {
+        "text_quality": 71.24790536641663,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 79.34218118869013,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.69999999999999,
+        "educational_value": 86.984,
+        "profile_visit_probability": 68.43527986151183,
+        "follow_probability": 75.41431217541835,
+        "save_probability": 82.00265435660704,
+        "share_probability": 69.26976341604154,
+        "comment_probability": 41.4,
+        "follower_score": 70.66410900173109,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.3146509867282,
+        "repetition_similarity": 20.657818811309866,
+        "publish_ready": 1.0
+      },
+      "final_score": 86.3146509867282,
+      "publish_result": {
+        "success": false,
+        "post_id": null,
+        "url": null,
+        "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      }
     }
   ],
   "topics": [
@@ -3247,7 +3301,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Chipmakers fall in US and Asia as AI jitters rattle investors",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "TripGain Releases 'State of Business Travel in India 2026' Report, Revealing Persistent Gaps Between Digital Adoption and Operational Reality"
+    "TripGain Releases 'State of Business Travel in India 2026' Report, Revealing Persistent Gaps Between Digital Adoption and Operational Reality",
+    "Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3309,27 +3364,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "830e6985311d7ec249b2a428d15500478a9be7f4ad722f18c873ad900d1944c0",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "1aad330685eefe08d5e8c7702839bbdde026b7c61e3ae775cad586703be5ba78"
+    "1aad330685eefe08d5e8c7702839bbdde026b7c61e3ae775cad586703be5ba78",
+    "c2a55e2d10a9b72ab623e47fef45573cc20d3462070cfe4030ac97307b7310bc"
   ],
   "cta_history": [
-    "opinion",
     "resource",
     "follow",
     "opinion",
-    "profile_visit"
+    "profile_visit",
+    "resource"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "practical engineer",
     "principal engineer",
-    "contrarian builder"
+    "contrarian builder",
+    "research analyst"
   ],
   "image_styles": [
-    "product visualization",
     "technical diagram",
     "magazine style",
     "product visualization",
-    "before after comparison"
+    "before after comparison",
+    "data visualization"
   ]
 }
