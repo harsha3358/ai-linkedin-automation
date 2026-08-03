@@ -3293,6 +3293,59 @@
         "url": null,
         "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
       }
+    },
+    {
+      "created_at": "2026-08-03T04:06:36.658400+00:00",
+      "topic": "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
+      "audience": "ml engineers",
+      "voice": "ai founder",
+      "post_type": "future prediction",
+      "image_style": "infographic",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in TokTier: Exact Stateful Tokenization for Agentic LLM Serving.\n\nIn practice, TokTier: Exact Stateful Tokenization for Agentic LLM Serving shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.22631341600902,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 80.04509582863585,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.94800000000001,
+        "profile_visit_probability": 61.90992108229989,
+        "follow_probability": 70.11848365276212,
+        "save_probability": 78.21352874859076,
+        "share_probability": 65.51578354002254,
+        "comment_probability": 29.0,
+        "follower_score": 64.88309864712515,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.67765429537769,
+        "repetition_similarity": 19.95490417136415,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.67765429537769,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -3357,7 +3410,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "TripGain Releases 'State of Business Travel in India 2026' Report, Revealing Persistent Gaps Between Digital Adoption and Operational Reality",
     "Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better",
-    "ai-edge-litert-nightly 2.2.0.dev20260731"
+    "ai-edge-litert-nightly 2.2.0.dev20260731",
+    "TokTier: Exact Stateful Tokenization for Agentic LLM Serving"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3421,27 +3475,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "1aad330685eefe08d5e8c7702839bbdde026b7c61e3ae775cad586703be5ba78",
     "c2a55e2d10a9b72ab623e47fef45573cc20d3462070cfe4030ac97307b7310bc",
-    "64df184d0b2f3617767c42ba569afeef84739bfdc91680e6b022031232405f41"
+    "64df184d0b2f3617767c42ba569afeef84739bfdc91680e6b022031232405f41",
+    "097cb6ebf994f5f1daf6bea4cc9191b49db68c4329850c98d441030966ff2f26"
   ],
   "cta_history": [
-    "follow",
     "opinion",
     "profile_visit",
     "resource",
-    "discussion"
+    "discussion",
+    "opinion"
   ],
   "voice_history": [
-    "practical engineer",
     "principal engineer",
     "contrarian builder",
     "research analyst",
-    "practical engineer"
+    "practical engineer",
+    "ai founder"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "before after comparison",
     "data visualization",
-    "realistic future scene"
+    "realistic future scene",
+    "infographic"
   ]
 }
