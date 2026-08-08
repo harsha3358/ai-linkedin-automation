@@ -3558,6 +3558,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-08T02:29:06.803593+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "opinion",
+      "text": "The future of your product's credibility, powered by LLMs, hinges on one thing: unwavering output quality. But how do you truly",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.13935483870968,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.85253456221199,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.14999999999999,
+        "educational_value": 86.13799999999999,
+        "profile_visit_probability": 63.687557603686635,
+        "follow_probability": 71.57990783410139,
+        "save_probability": 79.45576036866359,
+        "share_probability": 66.29838709677419,
+        "comment_probability": 35.0,
+        "follower_score": 66.73177188940093,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.01232792626728,
+        "repetition_similarity": 29.147465437788018,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.01232792626728,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -3627,7 +3680,8 @@
     "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
-    "AI Agents Views"
+    "AI Agents Views",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3696,27 +3750,28 @@
     "6572552a77d9e85148a7e3e443f42af261ee77ba0863e222de3ca8c3f3b9a80e",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "f8bb0bd3c141152b320b22123afe24b0ef9b8a390e7f0f86154e7efa0c70b7bb",
-    "7c182375e382f0d46fadb2c6c141183acb2aa316bcace586a9c110e7d391e6cf"
+    "7c182375e382f0d46fadb2c6c141183acb2aa316bcace586a9c110e7d391e6cf",
+    "8c16b800a37078521d895be2c8ab9aec94dee955e26675f99ed5c6e271174084"
   ],
   "cta_history": [
-    "opinion",
     "profile_visit",
     "resource",
     "discussion",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "ai founder",
     "industry insider",
     "principal engineer",
     "practical engineer",
-    "ceo"
+    "ceo",
+    "principal engineer"
   ],
   "image_styles": [
-    "infographic",
     "product visualization",
     "magazine style",
     "realistic future scene",
-    "infographic"
+    "infographic",
+    "magazine style"
   ]
 }
