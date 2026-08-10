@@ -3664,6 +3664,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-10T02:41:43.723171+00:00",
+      "topic": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+      "audience": "ai engineers",
+      "voice": "future predictor",
+      "post_type": "practical tutorial",
+      "image_style": "data visualization",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity.\n\nIn practice, CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.76272974442632,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 84.44806960304514,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.548,
+        "profile_visit_probability": 65.75857531266993,
+        "follow_probability": 72.7309728113105,
+        "save_probability": 79.53442088091354,
+        "share_probability": 67.0568243610658,
+        "comment_probability": 35.4,
+        "follower_score": 67.76434350190321,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.33860524197934,
+        "repetition_similarity": 15.551930396954866,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.33860524197934,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -3735,7 +3788,8 @@
     "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
     "AI Agents Views",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Learning When to Trust via Selective Context Preference Optimization"
+    "Learning When to Trust via Selective Context Preference Optimization",
+    "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3806,27 +3860,28 @@
     "f8bb0bd3c141152b320b22123afe24b0ef9b8a390e7f0f86154e7efa0c70b7bb",
     "7c182375e382f0d46fadb2c6c141183acb2aa316bcace586a9c110e7d391e6cf",
     "8c16b800a37078521d895be2c8ab9aec94dee955e26675f99ed5c6e271174084",
-    "b35c22f62ee26360a32c96eaf34897a5e2202cf721ef32a6e21782ec7e1cd731"
+    "b35c22f62ee26360a32c96eaf34897a5e2202cf721ef32a6e21782ec7e1cd731",
+    "e8112dcf00da3c19aa449634a2af69c8794e53c39b0edec4dd6be521f8823c57"
   ],
   "cta_history": [
-    "resource",
     "discussion",
     "profile_visit",
     "opinion",
-    "follow"
+    "follow",
+    "resource"
   ],
   "voice_history": [
-    "principal engineer",
     "practical engineer",
     "ceo",
     "principal engineer",
-    "practical engineer"
+    "practical engineer",
+    "future predictor"
   ],
   "image_styles": [
-    "magazine style",
     "realistic future scene",
     "infographic",
     "magazine style",
-    "product visualization"
+    "product visualization",
+    "data visualization"
   ]
 }
