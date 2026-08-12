@@ -3770,6 +3770,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-12T03:04:51.697424+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "product visualization",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. A common situation is a product team trying to use Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.20808917197452,
+        "hook_strength": 45.0,
+        "clarity": 94.5,
+        "utility": 75.0,
+        "novelty": 70.70063694267516,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 81.1,
+        "educational_value": 86.242,
+        "profile_visit_probability": 63.65414012738854,
+        "follow_probability": 71.53449044585987,
+        "save_probability": 79.56019108280255,
+        "share_probability": 66.3702229299363,
+        "comment_probability": 35.0,
+        "follower_score": 66.74145382165605,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.94402318471337,
+        "repetition_similarity": 29.29936305732484,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.94402318471337,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -3843,7 +3896,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Learning When to Trust via Selective Context Preference Optimization",
     "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
-    "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting"
+    "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -3916,27 +3970,28 @@
     "8c16b800a37078521d895be2c8ab9aec94dee955e26675f99ed5c6e271174084",
     "b35c22f62ee26360a32c96eaf34897a5e2202cf721ef32a6e21782ec7e1cd731",
     "e8112dcf00da3c19aa449634a2af69c8794e53c39b0edec4dd6be521f8823c57",
-    "ed8ccec2f4617175ac45204b5279df1bbc0289d0bb259bee53a105438528208e"
+    "ed8ccec2f4617175ac45204b5279df1bbc0289d0bb259bee53a105438528208e",
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
   ],
   "cta_history": [
-    "profile_visit",
     "opinion",
     "follow",
     "resource",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "ceo",
     "principal engineer",
     "practical engineer",
     "future predictor",
-    "ai founder"
+    "ai founder",
+    "principal engineer"
   ],
   "image_styles": [
-    "infographic",
     "magazine style",
     "product visualization",
     "data visualization",
-    "magazine style"
+    "magazine style",
+    "product visualization"
   ]
 }
