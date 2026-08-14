@@ -3876,6 +3876,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-14T03:09:18.021512+00:00",
+      "topic": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+      "audience": "recruiters",
+      "voice": "ceo",
+      "post_type": "case study",
+      "image_style": "infographic",
+      "cta_type": "follow",
+      "text": "Did you know that 80% of AI systems, once deployed, struggle to adapt to new data or user needs without costly manual redesign",
+      "image_path": null,
+      "scores": {
+        "text_quality": 56.73224814422057,
+        "hook_strength": 35.0,
+        "clarity": 91.5,
+        "utility": 65.0,
+        "novelty": 22.58748674443266,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.394,
+        "profile_visit_probability": 49.269247083775184,
+        "follow_probability": 52.93865853658536,
+        "save_probability": 60.2262460233298,
+        "share_probability": 44.78062036055143,
+        "comment_probability": 29.0,
+        "follower_score": 49.861251590668076,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 80.89482218451752,
+        "repetition_similarity": 77.41251325556733,
+        "publish_ready": 0.0
+      },
+      "final_score": 80.89482218451752,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -3951,7 +4004,8 @@
     "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
     "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "AVA-Encoder: Towards Agent-Native Video Representation Learning"
+    "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+    "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -4026,27 +4080,28 @@
     "e8112dcf00da3c19aa449634a2af69c8794e53c39b0edec4dd6be521f8823c57",
     "ed8ccec2f4617175ac45204b5279df1bbc0289d0bb259bee53a105438528208e",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "6a54a9fb12a7313b71d2b78e0eef9762ff5723fc861613e69d6585ca7de275c0"
+    "6a54a9fb12a7313b71d2b78e0eef9762ff5723fc861613e69d6585ca7de275c0",
+    "7c9d0ae10c02b59fb1a305bc87a10aa1f7d9e7dcd2573da5239435c44b050961"
   ],
   "cta_history": [
-    "follow",
     "resource",
     "opinion",
     "discussion",
-    "profile_visit"
+    "profile_visit",
+    "follow"
   ],
   "voice_history": [
-    "practical engineer",
     "future predictor",
     "ai founder",
     "principal engineer",
-    "industry insider"
+    "industry insider",
+    "ceo"
   ],
   "image_styles": [
-    "product visualization",
     "data visualization",
     "magazine style",
     "product visualization",
-    "technical diagram"
+    "technical diagram",
+    "infographic"
   ]
 }
