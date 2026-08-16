@@ -3982,6 +3982,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-16T02:06:16.433594+00:00",
+      "topic": "f/prompts.chat",
+      "audience": "ml engineers",
+      "voice": "contrarian builder",
+      "post_type": "one-chart explanation",
+      "image_style": "technical diagram",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in f/prompts.chat.\n\nIn practice, f/prompts.chat shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the explanation more topic-specific; improve the follow reason; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.50981132075472,
+        "hook_strength": 72.0,
+        "clarity": 95.0,
+        "utility": 65.0,
+        "novelty": 22.64150943396226,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 48,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 85.888,
+        "profile_visit_probability": 56.681132075471695,
+        "follow_probability": 56.28481132075471,
+        "save_probability": 61.29245283018868,
+        "share_probability": 60.47452830188679,
+        "comment_probability": 51.199999999999996,
+        "follower_score": 57.505396226415094,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 80.90898566037735,
+        "repetition_similarity": 77.35849056603774,
+        "publish_ready": 0.0
+      },
+      "final_score": 80.90898566037735,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -4059,6 +4112,7 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "AVA-Encoder: Towards Agent-Native Video Representation Learning",
     "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+    "f/prompts.chat",
     "f/prompts.chat"
   ],
   "signatures": [
@@ -4136,27 +4190,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "6a54a9fb12a7313b71d2b78e0eef9762ff5723fc861613e69d6585ca7de275c0",
     "7c9d0ae10c02b59fb1a305bc87a10aa1f7d9e7dcd2573da5239435c44b050961",
+    "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147",
     "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "profile_visit",
     "follow",
-    "opinion"
+    "opinion",
+    "resource"
   ],
   "voice_history": [
-    "ai founder",
     "principal engineer",
     "industry insider",
     "ceo",
-    "research analyst"
+    "research analyst",
+    "contrarian builder"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "technical diagram",
     "infographic",
-    "product visualization"
+    "product visualization",
+    "technical diagram"
   ]
 }
