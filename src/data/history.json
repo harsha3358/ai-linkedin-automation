@@ -4088,6 +4088,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-18T01:58:18.353903+00:00",
+      "topic": "Show HN: An open-source workspace for your agents",
+      "audience": "ai engineers",
+      "voice": "principal engineer",
+      "post_type": "contrarian insight",
+      "image_style": "realistic future scene",
+      "cta_type": "follow",
+      "text": "Most people miss the real lesson in Show HN: An open-source workspace for your agents.\n\nThis week, a real-world team could run into Show HN: An open-source workspace for your agents while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.4352289429056,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 76.82306387789711,
+        "audience_match": 52,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 96,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.22400000000002,
+        "profile_visit_probability": 66.96107405313737,
+        "follow_probability": 71.74709609949124,
+        "save_probability": 76.94691916336913,
+        "share_probability": 64.13807235726398,
+        "comment_probability": 41.8,
+        "follower_score": 67.45449202939514,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.09535488976825,
+        "repetition_similarity": 23.176936122102884,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.09535488976825,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -4167,7 +4220,8 @@
     "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
     "f/prompts.chat",
     "f/prompts.chat",
-    "f/prompts.chat"
+    "f/prompts.chat",
+    "Show HN: An open-source workspace for your agents"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -4246,27 +4300,28 @@
     "7c9d0ae10c02b59fb1a305bc87a10aa1f7d9e7dcd2573da5239435c44b050961",
     "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147",
     "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147",
-    "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147"
+    "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147",
+    "972cc5a0891398ba72fdc485700a07a97f94fe0a50d6803cc045116179ae8701"
   ],
   "cta_history": [
-    "profile_visit",
     "follow",
     "opinion",
     "resource",
-    "discussion"
+    "discussion",
+    "follow"
   ],
   "voice_history": [
-    "industry insider",
     "ceo",
     "research analyst",
     "contrarian builder",
-    "ai founder"
+    "ai founder",
+    "principal engineer"
   ],
   "image_styles": [
-    "technical diagram",
     "infographic",
     "product visualization",
     "technical diagram",
-    "data visualization"
+    "data visualization",
+    "realistic future scene"
   ]
 }
