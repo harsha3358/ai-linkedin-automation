@@ -4194,6 +4194,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-20T01:59:42.439983+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "cto",
+      "post_type": "future prediction",
+      "image_style": "product visualization",
+      "cta_type": "resource",
+      "text": "Soon, the biggest question won't be if your LLM *can* generate a response, but if that response is *object",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.13935483870968,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 70.85253456221199,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 82.14999999999999,
+        "educational_value": 86.13799999999999,
+        "profile_visit_probability": 63.687557603686635,
+        "follow_probability": 71.57990783410139,
+        "save_probability": 79.45576036866359,
+        "share_probability": 66.29838709677419,
+        "comment_probability": 35.0,
+        "follower_score": 66.73177188940093,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.01232792626728,
+        "repetition_similarity": 29.147465437788018,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.01232792626728,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -4275,6 +4328,7 @@
     "f/prompts.chat",
     "f/prompts.chat",
     "Show HN: An open-source workspace for your agents",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
@@ -4356,27 +4410,28 @@
     "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147",
     "c72498bdb75aba08c556aaa8193b291877fafcba21160e912b7b090dd332a147",
     "972cc5a0891398ba72fdc485700a07a97f94fe0a50d6803cc045116179ae8701",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "ccec832e8d75d72d7d312ae541a9289b8b986e8c6e6826d3e5c8cc51685c10f6"
   ],
   "cta_history": [
-    "opinion",
     "resource",
     "discussion",
     "follow",
-    "opinion"
+    "opinion",
+    "resource"
   ],
   "voice_history": [
-    "research analyst",
     "contrarian builder",
     "ai founder",
     "principal engineer",
-    "startup founder"
+    "startup founder",
+    "cto"
   ],
   "image_styles": [
-    "product visualization",
     "technical diagram",
     "data visualization",
     "realistic future scene",
-    "magazine style"
+    "magazine style",
+    "product visualization"
   ]
 }
