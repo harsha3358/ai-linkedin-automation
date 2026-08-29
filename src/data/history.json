@@ -4672,6 +4672,59 @@
         "url": null,
         "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
       }
+    },
+    {
+      "created_at": "2026-08-29T07:16:26.900629+00:00",
+      "topic": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "audience": "ai engineers",
+      "voice": "industry insider",
+      "post_type": "myth vs reality",
+      "image_style": "magazine style",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes. This week, a real-world team could run into CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes while trying to ship faster without losing quality. The technical point is that the system tries to adapt better without adding unnecessary complexity. That matters because a small technical improvement can make the whole system more usable. For example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model. The tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain. Challenge: audit one process today and find one place where you can simplify it without losing quality. Follow for clear AI/ML lessons without the fluff. Note: make the hook stronger; improve the follow reason; make the post...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 64.88338769068912,
+        "hook_strength": 35.0,
+        "clarity": 91.0,
+        "utility": 65.0,
+        "novelty": 54.02419779063651,
+        "audience_match": 52,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 86.944,
+        "profile_visit_probability": 61.945323513940025,
+        "follow_probability": 64.93023513940031,
+        "save_probability": 69.50725933719094,
+        "share_probability": 55.65846922672277,
+        "comment_probability": 41.8,
+        "follower_score": 61.39562367175171,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 83.65996864807994,
+        "repetition_similarity": 45.97580220936349,
+        "publish_ready": 0.0
+      },
+      "final_score": 83.65996864807994,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -4762,6 +4815,7 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Microsoft AI watermarks in Paint and Photos are linked to user IDs, researcher finds",
     "Lawsuits against AI companies surge over chatbot harm allegations",
+    "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes"
   ],
   "signatures": [
@@ -4852,27 +4906,28 @@
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
     "969d1952f832288a811faa2163b939643a7d21af6ffa10601cc8dbda90d601d0",
     "553b7736bdd8eb3e3de56a7eab82485538c74712ca953bb28c8689b853c8b4ca",
-    "add6143d7c66bdfdbd30a332035d7e8f985077602905ba889ca7d443ffc06121"
+    "add6143d7c66bdfdbd30a332035d7e8f985077602905ba889ca7d443ffc06121",
+    "15f4725b79f8a675ea4109fb1afbc62f461b57a03e52028f8631561e5a2663f2"
   ],
   "cta_history": [
-    "discussion",
     "opinion",
     "follow",
     "resource",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "ai founder",
     "ceo",
-    "cto"
+    "cto",
+    "industry insider"
   ],
   "image_styles": [
-    "product visualization",
     "magazine style",
     "data visualization",
     "product visualization",
-    "editorial cover"
+    "editorial cover",
+    "magazine style"
   ]
 }
