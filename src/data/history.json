@@ -4725,6 +4725,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-08-30T05:40:11.529612+00:00",
+      "topic": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
+      "audience": "ai engineers",
+      "voice": "ceo",
+      "post_type": "myth vs reality",
+      "image_style": "product visualization",
+      "cta_type": "resource",
+      "text": "Imagine a future where your smallest LLMs debug themselves, achieving complex reasoning without endless re-prompts or costly external checks. This",
+      "image_path": null,
+      "scores": {
+        "text_quality": 44.833333333333336,
+        "hook_strength": 35.0,
+        "clarity": 90.0,
+        "utility": 25.0,
+        "novelty": 66.66666666666667,
+        "audience_match": 20,
+        "cta_strength": 30.0,
+        "real_world_context_score": 50,
+        "example_score": 20,
+        "limitation_score": 33,
+        "challenge_score": 20,
+        "simple_language_score": 92.0,
+        "technical_accuracy": 24,
+        "practical_usefulness": 30.45,
+        "educational_value": 41.814,
+        "profile_visit_probability": 43.36666666666667,
+        "follow_probability": 39.098333333333336,
+        "save_probability": 57.0,
+        "share_probability": 59.83333333333333,
+        "comment_probability": 29.0,
+        "follower_score": 45.84616666666667,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 57.75617333333334,
+        "repetition_similarity": 33.33333333333333,
+        "publish_ready": 0.0
+      },
+      "final_score": 57.75617333333334,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -4815,6 +4868,7 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Microsoft AI watermarks in Paint and Photos are linked to user IDs, researcher finds",
     "Lawsuits against AI companies surge over chatbot harm allegations",
+    "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes"
   ],
@@ -4907,27 +4961,28 @@
     "969d1952f832288a811faa2163b939643a7d21af6ffa10601cc8dbda90d601d0",
     "553b7736bdd8eb3e3de56a7eab82485538c74712ca953bb28c8689b853c8b4ca",
     "add6143d7c66bdfdbd30a332035d7e8f985077602905ba889ca7d443ffc06121",
-    "15f4725b79f8a675ea4109fb1afbc62f461b57a03e52028f8631561e5a2663f2"
+    "15f4725b79f8a675ea4109fb1afbc62f461b57a03e52028f8631561e5a2663f2",
+    "a51f3c0b466b602ad79e8742e85751d67f1d9e2d6dfe38921f8d3e559bf564e5"
   ],
   "cta_history": [
-    "opinion",
     "follow",
     "resource",
     "opinion",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "startup founder",
     "ai founder",
     "ceo",
     "cto",
-    "industry insider"
+    "industry insider",
+    "ceo"
   ],
   "image_styles": [
-    "magazine style",
     "data visualization",
     "product visualization",
     "editorial cover",
-    "magazine style"
+    "magazine style",
+    "product visualization"
   ]
 }
