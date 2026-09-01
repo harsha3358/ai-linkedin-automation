@@ -4832,6 +4832,60 @@
         "url": null,
         "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
       }
+    },
+    {
+      "created_at": "2026-09-01T05:27:10.960644+00:00",
+      "topic": "Context-Aware Interleaved Batching for WhisperX",
+      "audience": "founders",
+      "voice": "industry insider",
+      "post_type": "one-chart explanation",
+      "image_style": "infographic",
+      "cta_type": "discussion",
+      "text": "The biggest mistake around Context-Aware Interleaved Batching for WhisperX is treating it like a buzzword.\n\nMany builders hit this problem when they try to apply Context-Aware Interleaved Batching for WhisperX in production.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, an ML team could compare this method with a full retrain and see whether the tradeoff is worth it.\n\nThe catch is that better efficiency often comes with a more complicated setup.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: Text: raise educational value; add real-world context; add a limitation or tradeoff. Image: improve image quality and contrast; make the image match the topic better.",
+      "image_path": "",
+      "scores": {
+        "text_quality": 73.41426484907498,
+        "hook_strength": 60.0,
+        "clarity": 93.5,
+        "utility": 65.0,
+        "novelty": 86.17332035053555,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 80,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 88.298,
+        "profile_visit_probability": 71.13813047711781,
+        "follow_probability": 75.49682278481013,
+        "save_probability": 79.90199610516066,
+        "share_probability": 77.53566212268744,
+        "comment_probability": 50.4,
+        "follower_score": 73.08432799415775,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.65974266796495,
+        "repetition_similarity": 13.82667964946446,
+        "publish_ready": 1.0
+      },
+      "final_score": 86.65974266796495,
+      "publish_result": {
+        "success": false,
+        "post_id": null,
+        "url": null,
+        "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
+      }
     }
   ],
   "topics": [
@@ -4925,7 +4979,8 @@
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
-    "FPIs turn buyers for second straight month, invest Rs 30,919 cr in August"
+    "FPIs turn buyers for second straight month, invest Rs 30,919 cr in August",
+    "Context-Aware Interleaved Batching for WhisperX"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -5018,27 +5073,28 @@
     "add6143d7c66bdfdbd30a332035d7e8f985077602905ba889ca7d443ffc06121",
     "15f4725b79f8a675ea4109fb1afbc62f461b57a03e52028f8631561e5a2663f2",
     "a51f3c0b466b602ad79e8742e85751d67f1d9e2d6dfe38921f8d3e559bf564e5",
-    "dcf0ef42c805431d3909470f143cecfc5878f4751c2241040f1ceb7c408540a0"
+    "dcf0ef42c805431d3909470f143cecfc5878f4751c2241040f1ceb7c408540a0",
+    "b50bd876fcd6cca58ddfe5b7029bf7b38c4edc389affb4003291b25fcb4a2e1e"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "discussion",
     "resource",
-    "follow"
+    "follow",
+    "discussion"
   ],
   "voice_history": [
-    "ceo",
     "cto",
     "industry insider",
     "ceo",
-    "contrarian builder"
+    "contrarian builder",
+    "industry insider"
   ],
   "image_styles": [
-    "product visualization",
     "editorial cover",
     "magazine style",
     "product visualization",
-    "data visualization"
+    "data visualization",
+    "infographic"
   ]
 }
