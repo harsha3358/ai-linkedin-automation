@@ -4886,6 +4886,59 @@
         "url": null,
         "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
       }
+    },
+    {
+      "created_at": "2026-09-02T04:54:01.131644+00:00",
+      "topic": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+      "audience": "job seekers",
+      "voice": "ceo",
+      "post_type": "contrarian insight",
+      "image_style": "magazine style",
+      "cta_type": "resource",
+      "text": "You think you're accurately evaluating AI by just looking at pass/fail? You're missing the entire story – and wasting a fortune",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.97123948401571,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 86.65171060011217,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.848,
+        "profile_visit_probability": 63.36337633202467,
+        "follow_probability": 72.09386146943353,
+        "save_probability": 79.89551318003365,
+        "share_probability": 67.57809871003926,
+        "comment_probability": 29.0,
+        "follower_score": 66.48481996634884,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.97809323611888,
+        "repetition_similarity": 13.34828939988783,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.97809323611888,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -4980,7 +5033,8 @@
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "FPIs turn buyers for second straight month, invest Rs 30,919 cr in August",
-    "Context-Aware Interleaved Batching for WhisperX"
+    "Context-Aware Interleaved Batching for WhisperX",
+    "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -5074,27 +5128,28 @@
     "15f4725b79f8a675ea4109fb1afbc62f461b57a03e52028f8631561e5a2663f2",
     "a51f3c0b466b602ad79e8742e85751d67f1d9e2d6dfe38921f8d3e559bf564e5",
     "dcf0ef42c805431d3909470f143cecfc5878f4751c2241040f1ceb7c408540a0",
-    "b50bd876fcd6cca58ddfe5b7029bf7b38c4edc389affb4003291b25fcb4a2e1e"
+    "b50bd876fcd6cca58ddfe5b7029bf7b38c4edc389affb4003291b25fcb4a2e1e",
+    "5bdac47c81dbd311945bb8bf76252d00fcab9117345d4e9d78bdd808d75a5d05"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "resource",
     "follow",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "cto",
     "industry insider",
     "ceo",
     "contrarian builder",
-    "industry insider"
+    "industry insider",
+    "ceo"
   ],
   "image_styles": [
-    "editorial cover",
     "magazine style",
     "product visualization",
     "data visualization",
-    "infographic"
+    "infographic",
+    "magazine style"
   ]
 }
