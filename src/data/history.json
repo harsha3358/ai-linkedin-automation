@@ -4939,6 +4939,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-03T04:51:47.536824+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "product visualization",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. A common situation is a product team trying to use Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.18949015063731,
+        "hook_strength": 45.0,
+        "clarity": 94.5,
+        "utility": 75.0,
+        "novelty": 70.56778679026652,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 81.1,
+        "educational_value": 86.242,
+        "profile_visit_probability": 63.62491309385864,
+        "follow_probability": 71.4947682502897,
+        "save_probability": 79.52033603707994,
+        "share_probability": 66.32372537659327,
+        "comment_probability": 35.0,
+        "follower_score": 66.70728476245655,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.9358502433372,
+        "repetition_similarity": 29.432213209733487,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.9358502433372,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -5034,7 +5087,8 @@
     "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
     "FPIs turn buyers for second straight month, invest Rs 30,919 cr in August",
     "Context-Aware Interleaved Batching for WhisperX",
-    "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation"
+    "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -5129,27 +5183,28 @@
     "a51f3c0b466b602ad79e8742e85751d67f1d9e2d6dfe38921f8d3e559bf564e5",
     "dcf0ef42c805431d3909470f143cecfc5878f4751c2241040f1ceb7c408540a0",
     "b50bd876fcd6cca58ddfe5b7029bf7b38c4edc389affb4003291b25fcb4a2e1e",
-    "5bdac47c81dbd311945bb8bf76252d00fcab9117345d4e9d78bdd808d75a5d05"
+    "5bdac47c81dbd311945bb8bf76252d00fcab9117345d4e9d78bdd808d75a5d05",
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
   ],
   "cta_history": [
-    "discussion",
     "resource",
     "follow",
     "discussion",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
-    "industry insider",
     "ceo",
     "contrarian builder",
     "industry insider",
-    "ceo"
+    "ceo",
+    "principal engineer"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "data visualization",
     "infographic",
-    "magazine style"
+    "magazine style",
+    "product visualization"
   ]
 }
