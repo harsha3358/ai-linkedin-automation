@@ -4992,6 +4992,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-04T04:57:51.222032+00:00",
+      "topic": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "audience": "students",
+      "voice": "startup founder",
+      "post_type": "tool comparison",
+      "image_style": "data visualization",
+      "cta_type": "discussion",
+      "text": "Imagine a future where your AI's success is entirely decided by another AI. Sounds efficient, right? But what if that AI",
+      "image_path": null,
+      "scores": {
+        "text_quality": 55.531441048034935,
+        "hook_strength": 35.0,
+        "clarity": 90.0,
+        "utility": 30.0,
+        "novelty": 65.93886462882097,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 50,
+        "example_score": 20,
+        "limitation_score": 33,
+        "challenge_score": 36,
+        "simple_language_score": 89.5,
+        "technical_accuracy": 20,
+        "practical_usefulness": 34.65,
+        "educational_value": 43.717999999999996,
+        "profile_visit_probability": 52.506550218340614,
+        "follow_probability": 54.315720524017465,
+        "save_probability": 58.78165938864629,
+        "share_probability": 59.57860262008734,
+        "comment_probability": 29.0,
+        "follower_score": 53.01447598253275,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 61.18923895196508,
+        "repetition_similarity": 34.06113537117904,
+        "publish_ready": 0.0
+      },
+      "final_score": 61.18923895196508,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -5088,7 +5141,8 @@
     "FPIs turn buyers for second straight month, invest Rs 30,919 cr in August",
     "Context-Aware Interleaved Batching for WhisperX",
     "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -5184,27 +5238,28 @@
     "dcf0ef42c805431d3909470f143cecfc5878f4751c2241040f1ceb7c408540a0",
     "b50bd876fcd6cca58ddfe5b7029bf7b38c4edc389affb4003291b25fcb4a2e1e",
     "5bdac47c81dbd311945bb8bf76252d00fcab9117345d4e9d78bdd808d75a5d05",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "e97479c6b77d9ab9fd3142017857eb1b99b5f9b9fe5e1478e2d7488ab10a2527"
   ],
   "cta_history": [
-    "resource",
     "follow",
     "discussion",
     "resource",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "ceo",
     "contrarian builder",
     "industry insider",
     "ceo",
-    "principal engineer"
+    "principal engineer",
+    "startup founder"
   ],
   "image_styles": [
-    "product visualization",
     "data visualization",
     "infographic",
     "magazine style",
-    "product visualization"
+    "product visualization",
+    "data visualization"
   ]
 }
