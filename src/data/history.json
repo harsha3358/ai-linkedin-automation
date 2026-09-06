@@ -5098,6 +5098,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-06T04:59:05.348039+00:00",
+      "topic": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "audience": "students",
+      "voice": "principal engineer",
+      "post_type": "tool comparison",
+      "image_style": "product visualization",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints. In practice, Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.61483443708609,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 84.10596026490066,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 100.0,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.89999999999999,
+        "educational_value": 88.54799999999999,
+        "profile_visit_probability": 62.80331125827814,
+        "follow_probability": 71.3326821192053,
+        "save_probability": 79.1317880794702,
+        "share_probability": 66.68708609271523,
+        "comment_probability": 29.0,
+        "follower_score": 65.83005298013245,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.54347867549669,
+        "repetition_similarity": 15.894039735099339,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.54347867549669,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -5195,6 +5248,7 @@
     "Context-Aware Interleaved Batching for WhisperX",
     "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints"
   ],
@@ -5294,27 +5348,28 @@
     "5bdac47c81dbd311945bb8bf76252d00fcab9117345d4e9d78bdd808d75a5d05",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "e97479c6b77d9ab9fd3142017857eb1b99b5f9b9fe5e1478e2d7488ab10a2527",
+    "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143",
     "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143"
   ],
   "cta_history": [
-    "discussion",
     "resource",
     "opinion",
     "discussion",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
-    "industry insider",
     "ceo",
     "principal engineer",
     "startup founder",
-    "cto"
+    "cto",
+    "principal engineer"
   ],
   "image_styles": [
-    "infographic",
     "magazine style",
     "product visualization",
     "data visualization",
-    "technical diagram"
+    "technical diagram",
+    "product visualization"
   ]
 }
