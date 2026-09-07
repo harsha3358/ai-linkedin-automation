@@ -5151,6 +5151,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-07T05:02:21.314712+00:00",
+      "topic": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+      "audience": "job seekers",
+      "voice": "practical engineer",
+      "post_type": "lesson from failure",
+      "image_style": "realistic future scene",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data. In practice, WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: raise educational value; add real-world context; add a practical example; add a limitation...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 41.55217391304348,
+        "hook_strength": 25.0,
+        "clarity": 90.0,
+        "utility": 20.0,
+        "novelty": 66.08695652173913,
+        "audience_match": 20,
+        "cta_strength": 30.0,
+        "real_world_context_score": 50,
+        "example_score": 20,
+        "limitation_score": 33,
+        "challenge_score": 20,
+        "simple_language_score": 92.0,
+        "technical_accuracy": 84,
+        "practical_usefulness": 29.45,
+        "educational_value": 46.494,
+        "profile_visit_probability": 40.33913043478261,
+        "follow_probability": 36.370000000000005,
+        "save_probability": 54.826086956521735,
+        "share_probability": 55.63043478260869,
+        "comment_probability": 23.0,
+        "follower_score": 42.6055652173913,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 60.980909565217395,
+        "repetition_similarity": 33.91304347826087,
+        "publish_ready": 0.0
+      },
+      "final_score": 60.980909565217395,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -5250,7 +5303,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
-    "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints"
+    "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+    "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -5349,27 +5403,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "e97479c6b77d9ab9fd3142017857eb1b99b5f9b9fe5e1478e2d7488ab10a2527",
     "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143",
-    "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143"
+    "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143",
+    "ab3819753cc6a726d996c5aec8eac1a1b4948924acce8e77d15d3b12e8e1f842"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "discussion",
     "resource",
-    "opinion"
+    "opinion",
+    "profile_visit"
   ],
   "voice_history": [
-    "ceo",
     "principal engineer",
     "startup founder",
     "cto",
-    "principal engineer"
+    "principal engineer",
+    "practical engineer"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "data visualization",
     "technical diagram",
-    "product visualization"
+    "product visualization",
+    "realistic future scene"
   ]
 }
