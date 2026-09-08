@@ -5204,6 +5204,59 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-08T05:01:02.585368+00:00",
+      "topic": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+      "audience": "ctos",
+      "voice": "ceo",
+      "post_type": "lesson from failure",
+      "image_style": "data visualization",
+      "cta_type": "discussion",
+      "text": "Is your team sacrificing speed and privacy for \"AI-powered\" developer tools?\n\nWe often associate \"AI\" with large language models,",
+      "image_path": null,
+      "scores": {
+        "text_quality": 66.28961303462322,
+        "hook_strength": 35.0,
+        "clarity": 95.0,
+        "utility": 65.0,
+        "novelty": 86.35437881873726,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 76.94999999999999,
+        "educational_value": 83.69399999999999,
+        "profile_visit_probability": 63.297963340122195,
+        "follow_probability": 72.00495926680244,
+        "save_probability": 80.40631364562118,
+        "share_probability": 67.97403258655804,
+        "comment_probability": 29.0,
+        "follower_score": 66.60334623217923,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 83.74576138492871,
+        "repetition_similarity": 13.64562118126273,
+        "publish_ready": 0.0
+      },
+      "final_score": 83.74576138492871,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
@@ -5304,7 +5357,8 @@
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
     "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
-    "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data"
+    "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -5404,27 +5458,28 @@
     "e97479c6b77d9ab9fd3142017857eb1b99b5f9b9fe5e1478e2d7488ab10a2527",
     "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143",
     "4dbd7f28348856d79db9d63eca2baa7aa9eb8667fce6fb25e2f2ba37fab1a143",
-    "ab3819753cc6a726d996c5aec8eac1a1b4948924acce8e77d15d3b12e8e1f842"
+    "ab3819753cc6a726d996c5aec8eac1a1b4948924acce8e77d15d3b12e8e1f842",
+    "0986d1df1d15b27f4cfe1ba480fde4cf9789bfb22791ad69ace457425b6cfdd3"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "resource",
     "opinion",
-    "profile_visit"
+    "profile_visit",
+    "discussion"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "cto",
     "principal engineer",
-    "practical engineer"
+    "practical engineer",
+    "ceo"
   ],
   "image_styles": [
-    "product visualization",
     "data visualization",
     "technical diagram",
     "product visualization",
-    "realistic future scene"
+    "realistic future scene",
+    "data visualization"
   ]
 }
