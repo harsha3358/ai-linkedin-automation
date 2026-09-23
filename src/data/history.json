@@ -5999,10 +5999,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-23T04:59:43.888708+00:00",
+      "topic": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "audience": "students",
+      "voice": "future predictor",
+      "post_type": "myth vs reality",
+      "image_style": "technical diagram",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs. In practice, Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make the post interesting enough...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.04291390728477,
+        "hook_strength": 35.0,
+        "clarity": 91.0,
+        "utility": 65.0,
+        "novelty": 82.59224219489121,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.69999999999999,
+        "educational_value": 86.44399999999999,
+        "profile_visit_probability": 62.47029328287607,
+        "follow_probability": 70.88008041627248,
+        "save_probability": 78.07767265846736,
+        "share_probability": 65.65728476821192,
+        "comment_probability": 29.0,
+        "follower_score": 65.24572469252603,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.3593147398297,
+        "repetition_similarity": 17.407757805108798,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.3593147398297,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
     "Shield AI, EFA GROUP partner on autonomous defense systems",
@@ -6101,7 +6153,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -6216,27 +6269,28 @@
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
     "2abaf7c431725e68845d9f6b92c3e6202858b2524edb6d8c76a4e373fd8c398e",
-    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e"
+    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
+    "146b8c2f11630e88a25e37a9c6747ce26a994ee5b605407175a6d224460a0035"
   ],
   "cta_history": [
-    "profile_visit",
     "resource",
     "discussion",
     "profile_visit",
-    "resource"
+    "resource",
+    "discussion"
   ],
   "voice_history": [
-    "industry insider",
     "ceo",
     "cto",
     "industry insider",
-    "ceo"
+    "ceo",
+    "future predictor"
   ],
   "image_styles": [
-    "before after comparison",
     "data visualization",
     "technical diagram",
     "before after comparison",
-    "data visualization"
+    "data visualization",
+    "technical diagram"
   ]
 }
