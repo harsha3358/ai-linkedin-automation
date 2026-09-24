@@ -6052,10 +6052,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-09-24T05:10:16.661615+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. In practice, Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality shows up when a team wants better results without adding more compute or manual work. The technical point is that the system tries to adapt better without adding unnecessary complexity. That matters because a small technical improvement can make the whole system more usable. For example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model. The tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain. Challenge: audit one process today and find one place where you can simplify it without losing quality. Follow for clear AI/ML lessons without the fluff. Note: make the hook stronger...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.1220979020979,
+        "hook_strength": 45.0,
+        "clarity": 94.0,
+        "utility": 75.0,
+        "novelty": 49.3006993006993,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 80,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 78.94999999999999,
+        "educational_value": 83.83399999999999,
+        "profile_visit_probability": 58.94615384615385,
+        "follow_probability": 65.13590909090908,
+        "save_probability": 72.99020979020979,
+        "share_probability": 58.75524475524475,
+        "comment_probability": 35.0,
+        "follower_score": 61.18863986013986,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 82.70341902097903,
+        "repetition_similarity": 50.6993006993007,
+        "publish_ready": 0.0
+      },
+      "final_score": 82.70341902097903,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
     "Shield AI, EFA GROUP partner on autonomous defense systems",
     "Two techies from India and Pakistan built an AI startup - Now both are billionaires thanks to Elon Musk. Here's all about Aman Sanger and Sualeh Asif",
@@ -6154,7 +6206,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-    "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs"
+    "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -6270,27 +6323,28 @@
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
     "2abaf7c431725e68845d9f6b92c3e6202858b2524edb6d8c76a4e373fd8c398e",
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
-    "146b8c2f11630e88a25e37a9c6747ce26a994ee5b605407175a6d224460a0035"
+    "146b8c2f11630e88a25e37a9c6747ce26a994ee5b605407175a6d224460a0035",
+    "f8cd7c45d3e260029445539de4fec6eb2aaf5083a589ee1fef5f8284201d72ab"
   ],
   "cta_history": [
-    "resource",
     "discussion",
     "profile_visit",
     "resource",
-    "discussion"
+    "discussion",
+    "opinion"
   ],
   "voice_history": [
-    "ceo",
     "cto",
     "industry insider",
     "ceo",
-    "future predictor"
+    "future predictor",
+    "principal engineer"
   ],
   "image_styles": [
-    "data visualization",
     "technical diagram",
     "before after comparison",
     "data visualization",
-    "technical diagram"
+    "technical diagram",
+    "magazine style"
   ]
 }
