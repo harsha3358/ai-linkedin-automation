@@ -6530,10 +6530,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-10-03T05:34:54.927814+00:00",
+      "topic": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+      "audience": "ctos",
+      "voice": "cto",
+      "post_type": "lesson from failure",
+      "image_style": "data visualization",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in Show HN: TERMy – A fast terminal assistant that does not use LLMs. A common situation is a product team trying to use Show HN: TERMy – A fast terminal assistant that does not use LLMs without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.9566765578635,
+        "hook_strength": 35.0,
+        "clarity": 95.0,
+        "utility": 65.0,
+        "novelty": 83.97626112759644,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 75.89999999999999,
+        "educational_value": 83.74799999999999,
+        "profile_visit_probability": 62.77477744807122,
+        "follow_probability": 71.29390207715134,
+        "save_probability": 79.69287833827893,
+        "share_probability": 67.14169139465875,
+        "comment_probability": 29.0,
+        "follower_score": 65.99169436201781,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 83.48749958456973,
+        "repetition_similarity": 16.023738872403563,
+        "publish_ready": 0.0
+      },
+      "final_score": 83.48749958456973,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "trinity-agent 1.0.36",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
@@ -6632,7 +6684,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Imagine3D-LLM: Teaching MLLMs to Imagine 3D Scenes Before Answering",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-    "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards"
+    "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -6757,27 +6810,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "30f488927e82cbd7dbbfcfbc24d19cabda6b8e3cadfa1298acdc2f77c505684a",
     "d6763ba2cffed9f3f1de7665ed5ac208ca5554304bea1496eb4b9f26f624cc30",
-    "ba8b0bec5fffbe0a1ec9ce6d13d75254a89987d5ce55d489f99147d968454d40"
+    "ba8b0bec5fffbe0a1ec9ce6d13d75254a89987d5ce55d489f99147d968454d40",
+    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e"
   ],
   "cta_history": [
-    "resource",
     "opinion",
     "discussion",
     "profile_visit",
-    "follow"
+    "follow",
+    "resource"
   ],
   "voice_history": [
-    "ceo",
     "principal engineer",
     "future predictor",
     "ceo",
-    "ai founder"
+    "ai founder",
+    "cto"
   ],
   "image_styles": [
-    "before after comparison",
     "product visualization",
     "editorial cover",
     "before after comparison",
-    "technical diagram"
+    "technical diagram",
+    "data visualization"
   ]
 }
