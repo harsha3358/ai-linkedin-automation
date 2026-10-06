@@ -6690,10 +6690,62 @@
         "url": null,
         "message": "401: {\"status\":401,\"serviceErrorCode\":65602,\"code\":\"EXPIRED_ACCESS_TOKEN\",\"message\":\"The token used in the request has expired\"}"
       }
+    },
+    {
+      "created_at": "2026-10-06T06:44:15.297719+00:00",
+      "topic": "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline",
+      "audience": "ctos",
+      "voice": "cto",
+      "post_type": "future prediction",
+      "image_style": "technical diagram",
+      "cta_type": "profile_visit",
+      "text": "Forget \"AI will change everything.\" Let's talk about something truly broken: **your engineering team's manual diagram layout.** We",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.29761589403974,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 81.12582781456953,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.94800000000001,
+        "profile_visit_probability": 65.0276821192053,
+        "follow_probability": 71.73762251655629,
+        "save_probability": 78.53774834437087,
+        "share_probability": 65.89403973509934,
+        "comment_probability": 35.4,
+        "follower_score": 66.90986291390729,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.23822092715231,
+        "repetition_similarity": 18.874172185430464,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.23822092715231,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "openagentd 1.77.0",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
@@ -6792,7 +6844,8 @@
     "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-    "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes"
+    "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+    "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -6920,27 +6973,28 @@
     "ba8b0bec5fffbe0a1ec9ce6d13d75254a89987d5ce55d489f99147d968454d40",
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
-    "cd0e0ce47e9c042c4e5142f4d8d7470220e618180a33cdaf3baacfe3e07861cf"
+    "cd0e0ce47e9c042c4e5142f4d8d7470220e618180a33cdaf3baacfe3e07861cf",
+    "6a10595503fe982f10d2e7519f7cefd711d8c785a851eb043d678c1aaf46b773"
   ],
   "cta_history": [
-    "profile_visit",
     "follow",
     "resource",
     "discussion",
-    "opinion"
+    "opinion",
+    "profile_visit"
   ],
   "voice_history": [
-    "ceo",
     "ai founder",
     "cto",
     "ceo",
-    "principal engineer"
+    "principal engineer",
+    "cto"
   ],
   "image_styles": [
-    "before after comparison",
     "technical diagram",
     "data visualization",
     "before after comparison",
-    "infographic"
+    "infographic",
+    "technical diagram"
   ]
 }
