@@ -6902,10 +6902,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-10-10T06:11:37.991067+00:00",
+      "topic": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "audience": "students",
+      "voice": "research analyst",
+      "post_type": "tool comparison",
+      "image_style": "infographic",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in On the estimation and validity of AI time horizons---a statistical look at the METR plot. In practice, On the estimation and validity of AI time horizons---a statistical look at the METR plot shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 64.64992667794698,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 77.21376198533558,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.69999999999999,
+        "educational_value": 86.64399999999999,
+        "profile_visit_probability": 61.28702763677383,
+        "follow_probability": 69.27191483361534,
+        "save_probability": 77.06412859560066,
+        "share_probability": 64.27481669486745,
+        "comment_probability": 29.0,
+        "follower_score": 64.05737958262831,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.24043063733784,
+        "repetition_similarity": 22.786238014664413,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.24043063733784,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
     "Distributed Attacks in Persistent-State AI Control",
     "Rabby Wallet integrates Robinhood Chain for enhanced access to onchain finance",
     "Distributed Attacks in Persistent-State AI Control",
@@ -7004,7 +7056,8 @@
     "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline",
     "Conformal Prediction Sets Quantify Information Gain: A Theoretical Perspective",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "On the estimation and validity of AI time horizons---a statistical look at the METR plot"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -7136,27 +7189,28 @@
     "6a10595503fe982f10d2e7519f7cefd711d8c785a851eb043d678c1aaf46b773",
     "2c0e0663e4db92e49509ed26f24735707304ba87b8f49b318196b85c2ebd1127",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e"
+    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
+    "39a89704136ec2185a528e4944fa3c48666a148110dba18197518b956e69a60a"
   ],
   "cta_history": [
-    "opinion",
     "profile_visit",
     "resource",
     "opinion",
-    "profile_visit"
+    "profile_visit",
+    "discussion"
   ],
   "voice_history": [
-    "principal engineer",
     "cto",
     "industry insider",
     "principal engineer",
-    "ceo"
+    "ceo",
+    "research analyst"
   ],
   "image_styles": [
-    "infographic",
     "technical diagram",
     "magazine style",
     "product visualization",
-    "before after comparison"
+    "before after comparison",
+    "infographic"
   ]
 }
