@@ -7273,10 +7273,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-10-17T04:48:53.397474+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "cto",
+      "post_type": "future prediction",
+      "image_style": "technical diagram",
+      "cta_type": "resource",
+      "text": "Imagine a future where your critical business logic isn't just code, but the nuanced reasoning of an LLM. How will",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.18949015063731,
+        "hook_strength": 45.0,
+        "clarity": 94.5,
+        "utility": 75.0,
+        "novelty": 70.56778679026652,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 81.1,
+        "educational_value": 86.242,
+        "profile_visit_probability": 63.62491309385864,
+        "follow_probability": 71.4947682502897,
+        "save_probability": 79.52033603707994,
+        "share_probability": 66.32372537659327,
+        "comment_probability": 35.0,
+        "follower_score": 66.70728476245655,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.9358502433372,
+        "repetition_similarity": 29.432213209733487,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.9358502433372,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "AI servers squeeze MOSFET supply while PC slump tests power component pricing power",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
@@ -7371,6 +7423,7 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
     "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
@@ -7514,27 +7567,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58"
+    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
+    "d5bd6d8ad2ae863509daf159010d801bd697d2288f0c1e052a9b6a6dfc8687be"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "resource",
     "opinion",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "cto",
     "principal engineer",
-    "startup founder"
+    "startup founder",
+    "cto"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "technical diagram",
     "magazine style",
-    "product visualization"
+    "product visualization",
+    "technical diagram"
   ]
 }
