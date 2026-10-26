@@ -7750,10 +7750,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-10-26T05:08:55.149061+00:00",
+      "topic": "The Language of Instruction: Genre and Generative AI",
+      "audience": "recruiters",
+      "voice": "principal engineer",
+      "post_type": "tool comparison",
+      "image_style": "infographic",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in The Language of Instruction: Genre and Generative AI. This week, a real-world team could run into The Language of Instruction: Genre and Generative AI while trying to ship faster without losing quality. The technical point is that the system tries to adapt better without adding unnecessary complexity. That matters because a small technical improvement can make the whole system more usable. For example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model. The tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain. Challenge: audit one process today and find one place where you can simplify it without losing quality. Follow for clear AI/ML lessons without the fluff. Note: make the hook stronger; improve the follow reason; make the post interesting enough to visit...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 56.94988133764832,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 20.9277238403452,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 80,
+        "practical_usefulness": 80.2,
+        "educational_value": 86.04400000000001,
+        "profile_visit_probability": 48.904099244875944,
+        "follow_probability": 52.44238942826322,
+        "save_probability": 60.478317152103564,
+        "share_probability": 44.82470334412082,
+        "comment_probability": 29.0,
+        "follower_score": 49.67811057173678,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 79.64171357065806,
+        "repetition_similarity": 79.07227615965479,
+        "publish_ready": 0.0
+      },
+      "final_score": 79.64171357065806,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "IRGC Wipes out US Drone-Boat Depot in Bahrain",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
@@ -7852,7 +7904,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "The Language of Instruction: Genre and Generative AI"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -8000,27 +8053,28 @@
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "2278137f18cc04977329852095c5df10cdb575dca38cb87f80c1bfa9a2054e46"
   ],
   "cta_history": [
-    "resource",
     "profile_visit",
     "opinion",
     "resource",
-    "discussion"
+    "discussion",
+    "profile_visit"
   ],
   "voice_history": [
-    "cto",
     "ceo",
     "principal engineer",
     "startup founder",
-    "cto"
+    "cto",
+    "principal engineer"
   ],
   "image_styles": [
-    "technical diagram",
     "data visualization",
     "magazine style",
     "product visualization",
-    "technical diagram"
+    "technical diagram",
+    "infographic"
   ]
 }
