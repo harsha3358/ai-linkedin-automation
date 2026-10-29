@@ -7909,10 +7909,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-10-29T06:11:01.154352+00:00",
+      "topic": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "audience": "developers",
+      "voice": "cto",
+      "post_type": "future prediction",
+      "image_style": "realistic future scene",
+      "cta_type": "discussion",
+      "text": "Imagine a future where your robot assistant doesn't just mimic tasks, but truly *understands* the physics of its environment",
+      "image_path": null,
+      "scores": {
+        "text_quality": 66.41103081827843,
+        "hook_strength": 35.0,
+        "clarity": 92.0,
+        "utility": 65.0,
+        "novelty": 77.36450584484591,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.748,
+        "profile_visit_probability": 64.2001912858661,
+        "follow_probability": 70.61298724760891,
+        "save_probability": 76.80935175345377,
+        "share_probability": 64.07757704569607,
+        "comment_probability": 35.4,
+        "follower_score": 65.74745090329436,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.7948243995749,
+        "repetition_similarity": 22.635494155154092,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.7948243995749,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
     "Psychology says grandmothers who resist the urge to fix, advise, and intervene aren’t withholding love — they’re offering the rarer thing: enough faith in their own children to let them become the parents they need to be",
@@ -8011,6 +8063,7 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "The Language of Instruction: Genre and Generative AI",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
     "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning"
   ],
   "signatures": [
@@ -8162,27 +8215,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "2278137f18cc04977329852095c5df10cdb575dca38cb87f80c1bfa9a2054e46",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "9303c8825151a83f19af82a74e1a101750cace303215ecdc61b49686cbdeb89f"
+    "9303c8825151a83f19af82a74e1a101750cace303215ecdc61b49686cbdeb89f",
+    "ebdc2338f61b769a6eb5d00fadf41f7b33cae58fbcf2829241e9639c7fc507de"
   ],
   "cta_history": [
-    "resource",
     "discussion",
     "profile_visit",
     "opinion",
-    "resource"
+    "resource",
+    "discussion"
   ],
   "voice_history": [
-    "startup founder",
     "cto",
     "principal engineer",
     "startup founder",
-    "ceo"
+    "ceo",
+    "cto"
   ],
   "image_styles": [
-    "product visualization",
     "technical diagram",
     "infographic",
     "magazine style",
-    "before after comparison"
+    "before after comparison",
+    "realistic future scene"
   ]
 }
