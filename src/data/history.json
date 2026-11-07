@@ -8386,10 +8386,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-07T06:21:22.604024+00:00",
+      "topic": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+      "audience": "ctos",
+      "voice": "ceo",
+      "post_type": "lesson from failure",
+      "image_style": "data visualization",
+      "cta_type": "profile_visit",
+      "text": "Most people miss the real lesson in Show HN: TERMy – A fast terminal assistant that does not use LLMs. A common situation is a product team trying to use Show HN: TERMy – A fast terminal assistant that does not use LLMs without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 66.15473251028807,
+        "hook_strength": 35.0,
+        "clarity": 95.0,
+        "utility": 65.0,
+        "novelty": 85.3909465020576,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 75.89999999999999,
+        "educational_value": 83.74799999999999,
+        "profile_visit_probability": 63.08600823045268,
+        "follow_probability": 71.71689300411522,
+        "save_probability": 80.11728395061728,
+        "share_probability": 67.63683127572016,
+        "comment_probability": 29.0,
+        "follower_score": 66.35555144032922,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 83.57453102880659,
+        "repetition_similarity": 14.609053497942387,
+        "publish_ready": 0.0
+      },
+      "final_score": 83.57453102880659,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "TripGain Releases 'State of Business Travel in India 2026' Report, Revealing Persistent Gaps Between Digital Adoption and Operational Reality",
     "Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better",
     "ai-edge-litert-nightly 2.2.0.dev20260731",
@@ -8488,7 +8540,8 @@
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
     "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -8648,27 +8701,28 @@
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "2d1bafa02a5d8ebe034cdc12f2f31e32c5affc8070d9d63402272b9c01051a38",
     "3e6b8a16d8eeaa75ca880e31eaf08592c6909fd96b2be795d7472640df938e13",
-    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
+    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e"
   ],
   "cta_history": [
-    "opinion",
     "resource",
     "profile_visit",
     "opinion",
-    "resource"
+    "resource",
+    "profile_visit"
   ],
   "voice_history": [
-    "principal engineer",
     "startup founder",
     "contrarian builder",
     "ai founder",
-    "principal engineer"
+    "principal engineer",
+    "ceo"
   ],
   "image_styles": [
-    "magazine style",
     "product visualization",
     "data visualization",
     "realistic future scene",
-    "magazine style"
+    "magazine style",
+    "data visualization"
   ]
 }
