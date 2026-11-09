@@ -8492,10 +8492,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-09T07:00:16.381540+00:00",
+      "topic": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+      "audience": "ctos",
+      "voice": "contrarian builder",
+      "post_type": "lesson from failure",
+      "image_style": "product visualization",
+      "cta_type": "follow",
+      "text": "Most people miss the real lesson in CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse.\n\nThis week, a real-world team could run into CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse while trying to ship faster without losing quality.\n\nThe technical point is that the system tries to adapt better without adding unnecessary complexity.\n\nThat matters because a small technical improvement can make the whole system more usable.\n\nFor example, a support team could use this approach to improve answers for a specific domain instead of retraining a full model.\n\nThe tradeoff is that faster methods can add complexity at inference time or make the system harder to maintain.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nFollow for clear AI/ML lessons without the fluff.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.78821394460363,
+        "hook_strength": 35.0,
+        "clarity": 92.0,
+        "utility": 65.0,
+        "novelty": 87.20152817574021,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 96,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.124,
+        "profile_visit_probability": 66.36433619866284,
+        "follow_probability": 73.55425692454632,
+        "save_probability": 79.76045845272205,
+        "share_probability": 67.52053486150908,
+        "comment_probability": 35.4,
+        "follower_score": 68.27753304680037,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.13375801337153,
+        "repetition_similarity": 12.79847182425979,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.13375801337153,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Apple's Long-Awaited Siri AI Is Finally Here. These 12 Tips Make It Even Better",
     "ai-edge-litert-nightly 2.2.0.dev20260731",
     "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
     "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
@@ -8594,7 +8646,8 @@
     "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -8756,27 +8809,28 @@
     "3e6b8a16d8eeaa75ca880e31eaf08592c6909fd96b2be795d7472640df938e13",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
-    "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639"
+    "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639",
+    "e7a62db5f78006bfb0a902673de090a42debd39cfec3f257651956fda1114084"
   ],
   "cta_history": [
-    "profile_visit",
     "opinion",
     "resource",
     "profile_visit",
-    "discussion"
+    "discussion",
+    "follow"
   ],
   "voice_history": [
-    "contrarian builder",
     "ai founder",
     "principal engineer",
     "ceo",
-    "industry insider"
+    "industry insider",
+    "contrarian builder"
   ],
   "image_styles": [
-    "data visualization",
     "realistic future scene",
     "magazine style",
     "data visualization",
-    "before after comparison"
+    "before after comparison",
+    "product visualization"
   ]
 }
