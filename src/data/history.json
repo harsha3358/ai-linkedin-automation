@@ -8598,10 +8598,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-11T06:55:23.508580+00:00",
+      "topic": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+      "audience": "ctos",
+      "voice": "ceo",
+      "post_type": "lesson from failure",
+      "image_style": "before after comparison",
+      "cta_type": "discussion",
+      "text": "Most people miss the real lesson in Show HN: TERMy – A fast terminal assistant that does not use LLMs. A common situation is a product team trying to use Show HN: TERMy – A fast terminal assistant that does not use LLMs without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 66.15473251028807,
+        "hook_strength": 35.0,
+        "clarity": 95.0,
+        "utility": 65.0,
+        "novelty": 85.3909465020576,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 75.89999999999999,
+        "educational_value": 83.74799999999999,
+        "profile_visit_probability": 63.08600823045268,
+        "follow_probability": 71.71689300411522,
+        "save_probability": 80.11728395061728,
+        "share_probability": 67.63683127572016,
+        "comment_probability": 29.0,
+        "follower_score": 66.35555144032922,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 83.57453102880659,
+        "repetition_similarity": 14.609053497942387,
+        "publish_ready": 0.0
+      },
+      "final_score": 83.57453102880659,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "TokTier: Exact Stateful Tokenization for Agentic LLM Serving",
     "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
@@ -8700,7 +8752,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -8864,27 +8917,28 @@
     "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
     "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639",
     "e7a62db5f78006bfb0a902673de090a42debd39cfec3f257651956fda1114084",
-    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58"
+    "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
+    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e"
   ],
   "cta_history": [
-    "resource",
     "profile_visit",
     "discussion",
     "follow",
-    "opinion"
+    "opinion",
+    "discussion"
   ],
   "voice_history": [
-    "principal engineer",
     "ceo",
     "industry insider",
     "contrarian builder",
-    "principal engineer"
+    "principal engineer",
+    "ceo"
   ],
   "image_styles": [
-    "magazine style",
     "data visualization",
     "before after comparison",
     "product visualization",
-    "magazine style"
+    "magazine style",
+    "before after comparison"
   ]
 }
