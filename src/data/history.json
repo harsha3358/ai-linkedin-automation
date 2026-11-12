@@ -8651,10 +8651,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-12T07:31:38.259270+00:00",
+      "topic": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+      "audience": "recruiters",
+      "voice": "cto",
+      "post_type": "one-chart explanation",
+      "image_style": "realistic future scene",
+      "cta_type": "follow",
+      "text": "\"Foundation models are *not* a silver bullet for medical imaging. Let's be clear.\"\n\nImagine a hospital needing AI to precisely",
+      "image_path": null,
+      "scores": {
+        "text_quality": 66.16720588235295,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 88.05147058823529,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 68,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.2,
+        "educational_value": 87.54400000000001,
+        "profile_visit_probability": 63.671323529411765,
+        "follow_probability": 72.51238970588236,
+        "save_probability": 80.31544117647059,
+        "share_probability": 68.06801470588235,
+        "comment_probability": 29.0,
+        "follower_score": 66.84483823529412,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.08116647058826,
+        "repetition_similarity": 11.948529411764707,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.08116647058826,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
     "AI Agents Views",
@@ -8753,7 +8805,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -8918,27 +8971,28 @@
     "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639",
     "e7a62db5f78006bfb0a902673de090a42debd39cfec3f257651956fda1114084",
     "3c55ffb88e3cbda7054cb8217742e20708ebee1eb174366a296e14c9e36b6b58",
-    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e"
+    "e310707b38ee98c5a540c689be034bbfd7c0325dd0c4c6b773d7c7e7ffd2024e",
+    "1c67a78f68f2fa201d381c8ea0bb0ca294893dca6e1326d9bf664fb827edaeb5"
   ],
   "cta_history": [
-    "profile_visit",
     "discussion",
     "follow",
     "opinion",
-    "discussion"
+    "discussion",
+    "follow"
   ],
   "voice_history": [
-    "ceo",
     "industry insider",
     "contrarian builder",
     "principal engineer",
-    "ceo"
+    "ceo",
+    "cto"
   ],
   "image_styles": [
-    "data visualization",
     "before after comparison",
     "product visualization",
     "magazine style",
-    "before after comparison"
+    "before after comparison",
+    "realistic future scene"
   ]
 }
