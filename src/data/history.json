@@ -8863,10 +8863,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-16T07:01:53.198829+00:00",
+      "topic": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
+      "audience": "recruiters",
+      "voice": "practical engineer",
+      "post_type": "one-chart explanation",
+      "image_style": "infographic",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion. In practice, Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make the post...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.11606837606838,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 79.82905982905983,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.94800000000001,
+        "profile_visit_probability": 64.74239316239317,
+        "follow_probability": 71.3498888888889,
+        "save_probability": 78.14871794871794,
+        "share_probability": 65.44017094017094,
+        "comment_probability": 35.4,
+        "follower_score": 66.5763341880342,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.15844376068377,
+        "repetition_similarity": 20.17094017094017,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.15844376068377,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Learning When to Trust via Selective Context Preference Optimization",
     "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
     "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting",
@@ -8965,7 +9017,8 @@
     "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
     "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-    "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research"
+    "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+    "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -9134,27 +9187,28 @@
     "1c67a78f68f2fa201d381c8ea0bb0ca294893dca6e1326d9bf664fb827edaeb5",
     "57a46f7d3e03cc75787683ac3f38ea604a31855ec0cd4bdadf714824bbe757af",
     "2abaf7c431725e68845d9f6b92c3e6202858b2524edb6d8c76a4e373fd8c398e",
-    "57a46f7d3e03cc75787683ac3f38ea604a31855ec0cd4bdadf714824bbe757af"
+    "57a46f7d3e03cc75787683ac3f38ea604a31855ec0cd4bdadf714824bbe757af",
+    "ddf4f24ce544246c95802ead7901f3a1ea0e68df42f1210ef0d48964d0a560a1"
   ],
   "cta_history": [
-    "discussion",
     "follow",
     "opinion",
     "discussion",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
-    "ceo",
     "cto",
     "ai founder",
     "ceo",
-    "future predictor"
+    "future predictor",
+    "practical engineer"
   ],
   "image_styles": [
-    "before after comparison",
     "realistic future scene",
     "editorial cover",
     "data visualization",
-    "magazine style"
+    "magazine style",
+    "infographic"
   ]
 }
