@@ -8969,10 +8969,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-18T07:50:18.361358+00:00",
+      "topic": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+      "audience": "students",
+      "voice": "cto",
+      "post_type": "beginner mistake",
+      "image_style": "technical diagram",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching.\n\nIn practice, Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.00818941504178,
+        "hook_strength": 35.0,
+        "clarity": 92.0,
+        "utility": 65.0,
+        "novelty": 81.05849582172702,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.748,
+        "profile_visit_probability": 62.13286908077994,
+        "follow_probability": 70.42149025069638,
+        "save_probability": 77.9175487465181,
+        "share_probability": 65.37047353760445,
+        "comment_probability": 29.0,
+        "follower_score": 64.94874512534818,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.52799866295264,
+        "repetition_similarity": 18.94150417827298,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.52799866295264,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
     "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "AVA-Encoder: Towards Agent-Native Video Representation Learning",
@@ -9071,7 +9123,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
     "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
-    "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization"
+    "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+    "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -9242,27 +9295,28 @@
     "2abaf7c431725e68845d9f6b92c3e6202858b2524edb6d8c76a4e373fd8c398e",
     "57a46f7d3e03cc75787683ac3f38ea604a31855ec0cd4bdadf714824bbe757af",
     "ddf4f24ce544246c95802ead7901f3a1ea0e68df42f1210ef0d48964d0a560a1",
-    "1e70a4cda10d74bcdd00310bf89618fd94d3e8c8946d29c5b7712fff51f37995"
+    "1e70a4cda10d74bcdd00310bf89618fd94d3e8c8946d29c5b7712fff51f37995",
+    "4957cd4c8753942bae75e7316a4ad4281cf614ef62f9737e041f1c8f8280ea71"
   ],
   "cta_history": [
-    "opinion",
     "discussion",
     "resource",
     "opinion",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "ai founder",
     "ceo",
     "future predictor",
     "practical engineer",
-    "research analyst"
+    "research analyst",
+    "cto"
   ],
   "image_styles": [
-    "editorial cover",
     "data visualization",
     "magazine style",
     "infographic",
-    "realistic future scene"
+    "realistic future scene",
+    "technical diagram"
   ]
 }
