@@ -9022,10 +9022,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-19T07:46:03.559545+00:00",
+      "topic": "Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems",
+      "audience": "students",
+      "voice": "ai founder",
+      "post_type": "future prediction",
+      "image_style": "editorial cover",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems. In practice, Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 65.0851093210587,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 80.32220943613349,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 69,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 80.69999999999999,
+        "educational_value": 86.64399999999999,
+        "profile_visit_probability": 61.970886075949366,
+        "follow_probability": 70.20134062140392,
+        "save_probability": 77.99666283084005,
+        "share_probability": 65.36277330264672,
+        "comment_probability": 29.0,
+        "follower_score": 64.85687226697354,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.43166232451094,
+        "repetition_similarity": 19.677790563866512,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.43166232451094,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "AirFlow: Context Preserving and Multi-Rate State Modeling for Air Quality Forecasting",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "AVA-Encoder: Towards Agent-Native Video Representation Learning",
     "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
@@ -9124,7 +9176,8 @@
     "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
     "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
     "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
-    "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching"
+    "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+    "Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -9296,27 +9349,28 @@
     "57a46f7d3e03cc75787683ac3f38ea604a31855ec0cd4bdadf714824bbe757af",
     "ddf4f24ce544246c95802ead7901f3a1ea0e68df42f1210ef0d48964d0a560a1",
     "1e70a4cda10d74bcdd00310bf89618fd94d3e8c8946d29c5b7712fff51f37995",
-    "4957cd4c8753942bae75e7316a4ad4281cf614ef62f9737e041f1c8f8280ea71"
+    "4957cd4c8753942bae75e7316a4ad4281cf614ef62f9737e041f1c8f8280ea71",
+    "26cd407e4e2abbf94ba3093003d2566068d86c47c9370ef0dd4e7074c35817cc"
   ],
   "cta_history": [
-    "discussion",
     "resource",
     "opinion",
     "discussion",
-    "resource"
+    "resource",
+    "opinion"
   ],
   "voice_history": [
-    "ceo",
     "future predictor",
     "practical engineer",
     "research analyst",
-    "cto"
+    "cto",
+    "ai founder"
   ],
   "image_styles": [
-    "data visualization",
     "magazine style",
     "infographic",
     "realistic future scene",
-    "technical diagram"
+    "technical diagram",
+    "editorial cover"
   ]
 }
