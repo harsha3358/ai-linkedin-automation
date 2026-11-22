@@ -9181,10 +9181,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-22T07:14:43.521894+00:00",
+      "topic": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+      "audience": "ctos",
+      "voice": "ai founder",
+      "post_type": "tool comparison",
+      "image_style": "product visualization",
+      "cta_type": "resource",
+      "text": "Most people miss the real lesson in PlayCraft: Designing Engaging Games from Agent Play Experience.\n\nIn practice, PlayCraft: Designing Engaging Games from Agent Play Experience shows up when a team wants better results without adding more compute or manual work.\n\nIn plain English, the idea is to improve the result while keeping the process efficient and manageable.\n\nThat matters because teams care about speed, cost, and quality at the same time.\n\nFor example, a startup could test this on one workflow before investing in a bigger training pipeline.\n\nThe limitation is that not every workflow benefits equally, and the gains can depend on the use case.\n\nChallenge: audit one process today and find one place where you can simplify it without losing quality.\n\nCheck my profile for more simple, useful AI/ML posts.\n\nNote: make the hook stronger; make the post interesting enough to visit the profile",
+      "image_path": null,
+      "scores": {
+        "text_quality": 67.2017297908423,
+        "hook_strength": 35.0,
+        "clarity": 94.0,
+        "utility": 65.0,
+        "novelty": 80.44092707744488,
+        "audience_match": 36,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.94800000000001,
+        "profile_visit_probability": 64.87700395703787,
+        "follow_probability": 71.53283719615602,
+        "save_probability": 78.33227812323346,
+        "share_probability": 65.6543244771057,
+        "comment_probability": 35.4,
+        "follower_score": 66.73370644431883,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 86.1960858338044,
+        "repetition_similarity": 19.559072922555114,
+        "publish_ready": 0.0
+      },
+      "final_score": 86.1960858338044,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
     "f/prompts.chat",
     "f/prompts.chat",
     "f/prompts.chat",
@@ -9282,6 +9334,7 @@
     "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
     "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
     "Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems",
+    "PlayCraft: Designing Engaging Games from Agent Play Experience",
     "PlayCraft: Designing Engaging Games from Agent Play Experience",
     "PlayCraft: Designing Engaging Games from Agent Play Experience"
   ],
@@ -9458,27 +9511,28 @@
     "4957cd4c8753942bae75e7316a4ad4281cf614ef62f9737e041f1c8f8280ea71",
     "26cd407e4e2abbf94ba3093003d2566068d86c47c9370ef0dd4e7074c35817cc",
     "8553be93e50b3c0afd0a1e368b07833472b4e52c050cf4e4e5bd26cd4292294f",
+    "8553be93e50b3c0afd0a1e368b07833472b4e52c050cf4e4e5bd26cd4292294f",
     "8553be93e50b3c0afd0a1e368b07833472b4e52c050cf4e4e5bd26cd4292294f"
   ],
   "cta_history": [
-    "discussion",
     "resource",
     "opinion",
     "profile_visit",
-    "discussion"
+    "discussion",
+    "resource"
   ],
   "voice_history": [
-    "research analyst",
     "cto",
     "ai founder",
     "research analyst",
-    "contrarian builder"
+    "contrarian builder",
+    "ai founder"
   ],
   "image_styles": [
-    "realistic future scene",
     "technical diagram",
     "editorial cover",
     "data visualization",
-    "technical diagram"
+    "technical diagram",
+    "product visualization"
   ]
 }
