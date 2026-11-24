@@ -9287,10 +9287,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-24T10:14:18.281970+00:00",
+      "topic": "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
+      "audience": "ctos",
+      "voice": "principal engineer",
+      "post_type": "future prediction",
+      "image_style": "magazine style",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality. A common situation is a product team trying to use Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality without making the system too complex. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: add real-world context; make the hook stronger; make...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 68.18949015063731,
+        "hook_strength": 45.0,
+        "clarity": 94.5,
+        "utility": 75.0,
+        "novelty": 70.56778679026652,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 65,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 100.0,
+        "simple_language_score": 100.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 81.1,
+        "educational_value": 86.242,
+        "profile_visit_probability": 63.62491309385864,
+        "follow_probability": 71.4947682502897,
+        "save_probability": 79.52033603707994,
+        "share_probability": 66.32372537659327,
+        "comment_probability": 35.0,
+        "follower_score": 66.70728476245655,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 84.9358502433372,
+        "repetition_similarity": 29.432213209733487,
+        "publish_ready": 0.0
+      },
+      "final_score": 84.9358502433372,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "f/prompts.chat",
     "f/prompts.chat",
     "Show HN: An open-source workspace for your agents",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
@@ -9389,7 +9441,8 @@
     "PlayCraft: Designing Engaging Games from Agent Play Experience",
     "PlayCraft: Designing Engaging Games from Agent Play Experience",
     "PlayCraft: Designing Engaging Games from Agent Play Experience",
-    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -9566,27 +9619,28 @@
     "8553be93e50b3c0afd0a1e368b07833472b4e52c050cf4e4e5bd26cd4292294f",
     "8553be93e50b3c0afd0a1e368b07833472b4e52c050cf4e4e5bd26cd4292294f",
     "8553be93e50b3c0afd0a1e368b07833472b4e52c050cf4e4e5bd26cd4292294f",
-    "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639"
+    "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639",
+    "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3"
   ],
   "cta_history": [
-    "opinion",
     "profile_visit",
     "discussion",
     "resource",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "ai founder",
     "research analyst",
     "contrarian builder",
     "ai founder",
-    "cto"
+    "cto",
+    "principal engineer"
   ],
   "image_styles": [
-    "editorial cover",
     "data visualization",
     "technical diagram",
     "product visualization",
-    "before after comparison"
+    "before after comparison",
+    "magazine style"
   ]
 }
