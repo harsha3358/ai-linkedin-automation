@@ -9446,10 +9446,62 @@
         "dry_run": false,
         "reason": "Best candidate did not pass the publish gate"
       }
+    },
+    {
+      "created_at": "2026-11-27T08:55:51.995501+00:00",
+      "topic": "Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning",
+      "audience": "ai engineers",
+      "voice": "ai founder",
+      "post_type": "lesson from failure",
+      "image_style": "technical diagram",
+      "cta_type": "opinion",
+      "text": "Most people miss the real lesson in Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning. In practice, Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning shows up when a team wants better results without adding more compute or manual work. In plain English, the idea is to improve the result while keeping the process efficient and manageable. That matters because teams care about speed, cost, and quality at the same time. For example, a startup could test this on one workflow before investing in a bigger training pipeline. The limitation is that not every workflow benefits equally, and the gains can depend on the use case. Challenge: audit one process today and find one place where you can simplify it without losing quality. Check my profile for more simple, useful AI/ML posts. Note: make the hook stronger; improve the follow reason; make the post interesting enough to visit...",
+      "image_path": null,
+      "scores": {
+        "text_quality": 64.99016685205784,
+        "hook_strength": 35.0,
+        "clarity": 93.0,
+        "utility": 65.0,
+        "novelty": 79.6440489432703,
+        "audience_match": 20,
+        "cta_strength": 100.0,
+        "real_world_context_score": 95,
+        "example_score": 84,
+        "limitation_score": 87,
+        "challenge_score": 84,
+        "simple_language_score": 95.0,
+        "technical_accuracy": 100.0,
+        "practical_usefulness": 83.39999999999999,
+        "educational_value": 89.448,
+        "profile_visit_probability": 61.82169076751947,
+        "follow_probability": 69.99857063403783,
+        "save_probability": 77.79321468298109,
+        "share_probability": 65.1254171301446,
+        "comment_probability": 29.0,
+        "follower_score": 64.68244938820912,
+        "image_quality_score": 100.0,
+        "brightness": 1.0,
+        "contrast": 1.0,
+        "texture": 1.0,
+        "is_black": 0.0,
+        "is_blank": 0.0,
+        "reason": "text-only post",
+        "passed": 1.0,
+        "image_alignment_score": 100.0,
+        "clip": 100.0,
+        "final_score": 85.44298189098998,
+        "repetition_similarity": 20.355951056729698,
+        "publish_ready": 0.0
+      },
+      "final_score": 85.44298189098998,
+      "publish_result": {
+        "published": false,
+        "dry_run": false,
+        "reason": "Best candidate did not pass the publish gate"
+      }
     }
   ],
   "topics": [
-    "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
@@ -9548,7 +9600,8 @@
     "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
     "Show HN: UpTrain (YC W23) – open-source tool to evaluate LLM response quality",
-    "Show HN: TERMy – A fast terminal assistant that does not use LLMs"
+    "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
+    "Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning"
   ],
   "signatures": [
     "67622d37a2e15b6aaf4d0aa13bcf1d70ebc962ad2b67a6a7d0fcdecf999bd0fb",
@@ -9728,27 +9781,28 @@
     "7e11df134fc663bc8575856a9caebb5336cca8705f2bbb8ac8b951af80734639",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
     "449f864522e768013bd3f528af28b6d4183c7024870d67cb0c3fc87380c1cfd3",
-    "08215f4adb75955c7579eb38957b7cb530a91926f61a852f0d5295d7f7e663a3"
+    "08215f4adb75955c7579eb38957b7cb530a91926f61a852f0d5295d7f7e663a3",
+    "be9386c00247fe1f069c76ee20baf204a6e3b7800a3254e51a7bf7ec48a7092d"
   ],
   "cta_history": [
-    "resource",
     "profile_visit",
     "opinion",
     "resource",
-    "profile_visit"
+    "profile_visit",
+    "opinion"
   ],
   "voice_history": [
-    "ai founder",
     "cto",
     "principal engineer",
     "startup founder",
-    "industry insider"
+    "industry insider",
+    "ai founder"
   ],
   "image_styles": [
-    "product visualization",
     "before after comparison",
     "magazine style",
     "product visualization",
-    "before after comparison"
+    "before after comparison",
+    "technical diagram"
   ]
 }
